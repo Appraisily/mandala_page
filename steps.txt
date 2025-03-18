@@ -1,0 +1,125 @@
+{
+  "projectName": "Mandala Ourense Website Implementation",
+  "steps": [
+    {
+      "stepNumber": 1,
+      "stepTitle": "Define Brand Identity and Visual Style",
+      "stepDescription": "Establish the core brand values for Mandala Ourense and translate them into a visual style. This includes defining color palettes (inspired by nature, earthy tones, calming), typography (clean, modern, readable), and overall aesthetic direction, aiming for a minimalist and elegant style similar to shadcn/ui.",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 2,
+      "stepTitle": "Homepage Design Conceptualization",
+      "stepDescription": "Plan the layout and content for the homepage. Focus on a compelling hero section with a strong visual and tagline, sections for 'About Mandala Ourense', 'Featured Yoga Styles', 'Visual Schedule preview', and a clear Call to Action (e.g., 'Book a Class', 'Contact Us').",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 3,
+      "stepTitle": "Navigation and Information Architecture Planning",
+      "stepDescription": "Define the main navigation menu and structure of the website. Plan how users will navigate to key sections like 'Yoga Styles', 'Schedule', 'Prices', 'Contact', and 'About Us'. Ensure intuitive and easy navigation across all devices.",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 4,
+      "stepTitle": "Design of 'Yoga Styles' Pages",
+      "stepDescription": "Create a template for detailed pages for each yoga modality offered (e.g., Hatha, Vinyasa, Yin). Each page should include a description of the yoga style, benefits, target audience, and possibly instructor information. Use high-quality images and videos to enhance visual appeal.",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 5,
+      "stepTitle": "Visual Class Schedule Design",
+      "stepDescription": "Design an interactive and visually appealing class schedule. Explore calendar-style layouts or weekly grids that are easy to read and filter by yoga style, instructor, or time. Ensure it's responsive and user-friendly on mobile.",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 6,
+      "stepTitle": "Pricing and Tariffs Page Design",
+      "stepDescription": "Design a clear and structured 'Prices' page. Organize pricing options for different class packages, memberships, and introductory offers. Use tables or cards for easy comparison and highlight value propositions. Consider adding a FAQ section about pricing.",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 7,
+      "stepTitle": "Interactive Contact Form Design",
+      "stepDescription": "Design a user-friendly and attractive contact form. Include fields for name, email, phone (optional), and message. Consider adding a dropdown for 'Inquiry type' to categorize requests. Implement form validation and clear success/error messages. Ensure GDPR compliance.",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 8,
+      "stepTitle": "Map Integration and 'Location' Page Design",
+      "stepDescription": "Integrate Google Maps or a similar service to display the location of Mandala Ourense. Design a 'Location' page that includes the map, address, contact details, and potentially directions or parking information. Ensure the map is responsive and visually integrated.",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 9,
+      "stepTitle": "Responsive Design Implementation for Mobile and Desktop",
+      "stepDescription": "Plan and implement responsive design principles across all pages. Ensure the website adapts seamlessly to different screen sizes (desktops, tablets, smartphones). Prioritize mobile-first design for optimal user experience on smaller devices.",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 10,
+      "stepTitle": "SEO Optimization Strategy",
+      "stepDescription": "Define and implement SEO best practices. This includes keyword research for yoga and wellness in Ourense, optimizing page titles and meta descriptions, ensuring website speed, and structuring content for search engines. Plan for schema markup for local business and services.",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 11,
+      "stepTitle": "Content Creation and Gathering",
+      "stepDescription": "Collect and create all website content, including text for all pages, high-quality images of the studio and classes (replace Unsplash placeholders), instructor bios (if needed), and prepare all information for yoga styles, schedule, and pricing.",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 12,
+      "stepTitle": "Development of Core Website Structure (Next.js Setup)",
+      "stepDescription": "Set up the Next.js 15 project structure as outlined (src/app, components, lib, styles). Configure Tailwind CSS and shadcn/ui integration. Establish the basic routing and layout components for the website.",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 13,
+      "stepTitle": "Implementation of UI Components (shadcn/ui)",
+      "stepDescription": "Develop reusable UI components using shadcn/ui. This includes buttons, forms, modals, navigation elements, and any other necessary UI elements to maintain design consistency and accessibility.",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 14,
+      "stepTitle": "Development of Page Components and Content Integration",
+      "stepDescription": "Build individual page components (Homepage, Yoga Styles pages, Schedule page, Pricing page, Contact page, Location page) and integrate the created content. Focus on clean code and maintainability.",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 15,
+      "stepTitle": "Integration of Framer Motion for Subtle Animations",
+      "stepDescription": "Implement subtle and tasteful animations using Framer Motion to enhance user experience and engagement. Focus on transitions, hover effects, and page load animations that align with the minimalist design.",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 16,
+      "stepTitle": "Contact Form Functionality Implementation",
+      "stepDescription": "Implement the backend functionality for the contact form. Choose a method for handling form submissions (e.g., email service, database integration). Ensure proper data handling and security measures.",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 17,
+      "stepTitle": "Testing and Quality Assurance",
+      "stepDescription": "Conduct thorough testing of the website across different browsers and devices. Check for responsiveness, functionality of all elements, form submissions, and overall user experience. Address any bugs or issues identified.",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 18,
+      "stepTitle": "Performance Optimization and SEO Check",
+      "stepDescription": "Optimize website performance for speed and efficiency. Review SEO implementation, check website loading times, and ensure all SEO best practices are in place before deployment.",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 19,
+      "stepTitle": "Deployment to Netlify/Vercel",
+      "stepDescription": "Deploy the website to Netlify or Vercel following the project's deployment configuration. Configure automatic deployments for future updates.",
+      "isCompleted": false
+    },
+    {
+      "stepNumber": 20,
+      "stepTitle": "Post-Launch Review and Iteration Planning",
+      "stepDescription": "After launch, monitor website performance and gather user feedback. Plan for future iterations and improvements based on user data and business goals. Establish a process for ongoing maintenance and content updates.",
+      "isCompleted": false
+    }
+  ]
+}

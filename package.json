@@ -1,0 +1,14 @@
+{
+  "name": "mandala-ourense-website",
+  "version": "1.0.0",
+  "description": "Website for Mandala Ourense yoga and wellness center",
+  "scripts": {
+    "build": "cd mandala-site/mandala-new/mandala-site && npm install && npm run build",
+    "start": "cd mandala-site/mandala-new/mandala-site && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/mandala_page.git"
+  },
+  "private": true
+}

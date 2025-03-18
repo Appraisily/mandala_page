@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 30% 99%;
+    --foreground: 222 47% 11%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+    
+    --primary: 173 71% 55%;
+    --primary-foreground: 210 40% 98%;
+    
+    --secondary: 271 15% 42%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    
+    --accent: 38 94% 56%;
+    --accent-foreground: 222 47% 11%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 173 71% 55%;
+    
+    --radius: 0.75rem;
+  }
+  
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+    
+    --card: 222 47% 11%;
+    --card-foreground: 210 40% 98%;
+    
+    --popover: 222 47% 11%;
+    --popover-foreground: 210 40% 98%;
+    
+    --primary: 173 71% 55%;
+    --primary-foreground: 222 47% 11%;
+    
+    --secondary: 271 15% 42%;
+    --secondary-foreground: 210 40% 98%;
+    
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    
+    --accent: 38 94% 56%;
+    --accent-foreground: 210 40% 98%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 173 71% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .heading-1 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-heading font-medium tracking-tight;
+  }
+  
+  .heading-2 {
+    @apply text-2xl md:text-3xl font-heading font-medium tracking-tight;
+  }
+  
+  .heading-3 {
+    @apply text-xl md:text-2xl font-heading font-medium tracking-tight;
+  }
+  
+  .section-padding {
+    @apply py-12 md:py-16 lg:py-24;
+  }
+
+  /* Card designs */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .card-base {
+    @apply bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm;
+  }
+
+  /* Button styles */
+  .btn-primary {
+    @apply bg-brand-teal hover:bg-brand-teal/90 text-white px-6 py-3 rounded-md font-medium inline-flex items-center transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-brand-purple hover:bg-brand-purple/90 text-white px-6 py-3 rounded-md font-medium inline-flex items-center transition-colors;
+  }
+
+  .btn-outline {
+    @apply bg-white hover:bg-gray-50 text-brand-purple border border-gray-200 px-6 py-3 rounded-md font-medium inline-flex items-center transition-colors;
+  }
+
+  /* Image styling */
+  .img-zoom {
+    @apply transition-transform duration-500 hover:scale-105;
+  }
+
+  /* Gradient backgrounds */
+  .bg-gradient-brand {
+    @apply bg-gradient-to-r from-brand-purple to-brand-teal;
+  }
+
+  .bg-gradient-light {
+    @apply bg-gradient-to-b from-brand-beige to-white;
+  }
+
+  /* Section styles */
+  .section-divider {
+    @apply relative py-12 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-px after:w-16 after:bg-gray-200;
+  }
+
+  /* Animations */
+  .animate-fade-in {
+    @apply animate-fade-in;
+  }
+
+  .animate-slide-up {
+    @apply animate-slide-up;
+  }
+
+  /* Typography */
+  .text-balance {
+    text-wrap: balance;
+  }
+}
