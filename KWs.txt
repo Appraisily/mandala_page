@@ -1,0 +1,244 @@
+{
+  "keywords": [
+    {
+      "keyword": "clases yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "ourense yoga",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "clases de yoga en ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "estudio yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "centro de yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "escuela de yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga para principiantes ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga para embarazadas ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga niños ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "hatha yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "vinyasa yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yin yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga restaurativo ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga terapéutico ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "profesor yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "instructor yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "mejor yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga cerca de mi ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga en el centro de ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "horario clases yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "precios clases yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "ofertas yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "descuentos yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "bienestar ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "relajación ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "meditación ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "mindfulness ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "actividades bienestar ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "terapias ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "centro terapias ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga y terapias ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga para estrés ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga para la espalda ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga para mejorar postura ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga para flexibilidad ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga para salud mental ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "clases prueba yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "primera clase yoga gratis ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga online ourense (if offered)",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga a domicilio ourense (if offered)",
+      "isProcessed": false
+    },
+    {
+      "keyword": "retiros yoga ourense (if offered)",
+      "isProcessed": false
+    },
+    {
+      "keyword": "talleres yoga ourense (if offered)",
+      "isProcessed": false
+    },
+    {
+      "keyword": "eventos yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga en [Nombre Barrio Ourense] (if applicable)",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga cerca de [Nombre Lugar Conocido Ourense]",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga galicia",
+      "isProcessed": false
+    },
+    {
+      "keyword": "clases yoga galicia",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga studio ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga center ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga school ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "best yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga classes ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "ourense wellness",
+      "isProcessed": false
+    },
+    {
+      "keyword": "wellness ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga for health ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga for beginners ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "prenatal yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "kids yoga ourense",
+      "isProcessed": false
+    },
+    {
+      "keyword": "yoga prices ourense",
+      "isProcessed": false
+    }
+  ]
+}
