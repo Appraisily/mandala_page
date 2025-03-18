@@ -2,51 +2,51 @@
   "keywords": [
     {
       "keyword": "clases yoga ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "ourense yoga",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "yoga ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "clases de yoga en ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "estudio yoga ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "centro de yoga ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "escuela de yoga ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "yoga para principiantes ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "yoga para embarazadas ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "yoga niños ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "hatha yoga ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "vinyasa yoga ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "yin yoga ourense",
