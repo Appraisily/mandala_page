@@ -11,6 +11,7 @@ const nextConfig = {
         hostname: 'randomuser.me',
       },
     ],
+    domains: ['mandala-new.netlify.app'],
     unoptimized: true,
   },
   eslint: {
@@ -18,6 +19,7 @@ const nextConfig = {
     // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
+  output: 'standalone',
 }
 
 module.exports = nextConfig

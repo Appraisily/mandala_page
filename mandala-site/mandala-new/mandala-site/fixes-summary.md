@@ -1,5 +1,36 @@
 # Mandala Site Fixes Summary
 
+## Latest Image Fixes - Update
+
+After reviewing the deployed files on Netlify, the following image-related fixes were implemented:
+
+1. **Yoga Style Images**:
+   - Changed file extensions back to `.png` since that's what actually exists on the Netlify deploy
+   - Verified all paths match the actual file structure on the server
+   - The files exist at: `/images/yoga/hatha-yoga.png`, `/images/yoga/daoyin-yoga.png`, and `/images/yoga/yoga-nidra.png`
+
+2. **Hero Image**:
+   - Replaced `/images/hero.webp` (which wasn't found) with `/images/yoga-meditation.jpg`
+   - Added a dark background to prevent white flashing if image doesn't load
+   - Enhanced the gradient overlay for better text readability
+
+3. **Testimonial Images**:
+   - Updated testimonial avatar paths to use the existing images on the server 
+   - Changed from `/images/testimonials/testimonial1.jpg` to `/images/woman1.jpg`
+   - Changed from `/images/testimonials/testimonial2.jpg` to `/images/man1.jpg`
+   - Changed from `/images/testimonials/testimonial3.jpg` to `/images/woman2.jpg`
+
+4. **Therapy Section Images**:
+   - Updated the thumbnail image from `/images/yoga-studio.jpg` to `/images/yoga-meditation.jpg`
+   - Verified the main image path at `/images/therapy.jpg` exists on the server
+
+5. **First Class CTA Enhancement**:
+   - Added background image using `/images/cta-background.jpg`
+   - Layered with subtle opacity for better text readability
+   - Maintained decorative elements for visual appeal
+
+These fixes ensure all images load correctly on the deployed version, preventing missing images and improving the overall visual appearance of the site.
+
 ## Issues Fixed
 
 ### 1. Hero Section Image Not Loading
