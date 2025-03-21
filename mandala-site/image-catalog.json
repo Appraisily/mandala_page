@@ -1,0 +1,114 @@
+{
+  "images": [
+    {
+      "filename": "yoga-meditation.jpg",
+      "path": "/images/yoga-meditation.jpg",
+      "alt": "Background image of a serene yoga studio",
+      "usage": "Hero section background",
+      "section": "Hero section",
+      "status": "Missing",
+      "required": true,
+      "description": "A full-width background image for the hero section showing a serene yoga studio or meditation space with soft lighting. Sets the tranquil tone for the entire site."
+    },
+    {
+      "filename": "testimonial1.jpg",
+      "path": "/images/testimonials/testimonial1.jpg",
+      "alt": "Laura García",
+      "usage": "Testimonial avatar",
+      "section": "Testimonials section",
+      "status": "Missing",
+      "required": true,
+      "description": "A small circular avatar image of a woman (Laura García) displayed alongside her testimonial quote. Adds credibility and a personal touch to the testimonial section."
+    },
+    {
+      "filename": "testimonial2.jpg",
+      "path": "/images/testimonials/testimonial2.jpg",
+      "alt": "Carlos Rodríguez",
+      "usage": "Testimonial avatar",
+      "section": "Testimonials section",
+      "status": "Missing",
+      "required": true,
+      "description": "A small circular avatar image of a man (Carlos Rodríguez) displayed alongside his testimonial quote. Adds credibility and a personal touch to the testimonial section."
+    },
+    {
+      "filename": "testimonial3.jpg",
+      "path": "/images/testimonials/testimonial3.jpg",
+      "alt": "Marta Fernández",
+      "usage": "Testimonial avatar",
+      "section": "Testimonials section",
+      "status": "Missing",
+      "required": true,
+      "description": "A small circular avatar image of a woman (Marta Fernández) displayed alongside her testimonial quote. Adds credibility and a personal touch to the testimonial section."
+    },
+    {
+      "filename": "therapy.jpg",
+      "path": "/images/therapy.jpg",
+      "alt": "Terapias holísticas en Mandala Ourense",
+      "usage": "Therapies section main image",
+      "section": "Therapies section",
+      "status": "Missing",
+      "required": true,
+      "description": "A medium-sized image illustrating holistic therapies, possibly showing a massage, reiki session, or other therapy treatment. Used as a visual representation of the therapy services offered."
+    },
+    {
+      "filename": "yoga-pose.jpg",
+      "path": "/images/yoga-pose.jpg",
+      "alt": "Yoga class",
+      "usage": "Classes section image",
+      "section": "Classes section",
+      "status": "Partial",
+      "required": true,
+      "description": "An image of a person performing a yoga pose or a yoga class in session. Used to illustrate different yoga classes offered by the studio. Some instances of this image are loading correctly while others are not."
+    },
+    {
+      "filename": "yoga-studio.jpg",
+      "path": "/images/yoga-studio.jpg",
+      "alt": "Mandala Ourense yoga studio space",
+      "usage": "About page studio image",
+      "section": "About section",
+      "status": "Loaded",
+      "required": true,
+      "description": "A photo of the Mandala Ourense yoga studio interior, showing the practice space. This image successfully loads on the About page and provides visitors with a visual of the actual studio space."
+    },
+    {
+      "filename": "cta-background.jpg",
+      "path": "/images/cta-background.jpg",
+      "alt": "Call to action background",
+      "usage": "CTA section background",
+      "section": "CTA section",
+      "status": "Missing",
+      "required": false,
+      "description": "A gradient or textured background image for the call-to-action section. Enhances the visual appeal of the section prompting visitors to take action (book a class/contact the studio)."
+    },
+    {
+      "filename": "woman1.jpg",
+      "path": "/images/woman1.jpg",
+      "alt": "Ana García - Profesora de Hatha Yoga",
+      "usage": "Teacher profile image",
+      "section": "About page - Our Team section",
+      "status": "Partial",
+      "required": true,
+      "description": "Portrait photo of a female yoga teacher (Ana García) who teaches Hatha Yoga. Used on the About page to introduce the studio's teaching staff."
+    },
+    {
+      "filename": "man1.jpg",
+      "path": "/images/man1.jpg",
+      "alt": "Carlos Martínez - Profesor de Daoyin Yoga",
+      "usage": "Teacher profile image",
+      "section": "About page - Our Team section",
+      "status": "Partial",
+      "required": true,
+      "description": "Portrait photo of a male yoga teacher (Carlos Martínez) who teaches Daoyin Yoga. Used on the About page to introduce the studio's teaching staff."
+    },
+    {
+      "filename": "woman2.jpg",
+      "path": "/images/woman2.jpg",
+      "alt": "Lucía Fernández - Instructora de Meditación",
+      "usage": "Teacher profile image",
+      "section": "About page - Our Team section",
+      "status": "Partial",
+      "required": true,
+      "description": "Portrait photo of a female meditation instructor (Lucía Fernández). Used on the About page to introduce the studio's teaching staff."
+    }
+  ]
+} 
