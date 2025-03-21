@@ -4,23 +4,20 @@ import { motion } from "framer-motion"
 import { Instagram, Facebook, ArrowRight } from "lucide-react"
 
 // Components for homepage
-import { HeroSection } from "@/components/sections/hero-section"
-import { ClassesSection } from "@/components/sections/classes-section"
-import { TherapiesSection } from "@/components/sections/therapies-section"
-import { TestimonialsSection } from "@/components/sections/testimonials-section"
-import { SchedulePreview } from "@/components/sections/schedule-preview"
-import { CtaSection } from "@/components/sections/cta-section"
+import { HeroSection } from "@/components/hero-section"
+import { YogaStylesSection } from "@/components/yoga-styles-section"
+import { TherapiesSection } from "@/components/therapies-section"
+import { TestimonialsSection } from "@/components/testimonials-section"
+import { CTASection } from "@/components/cta-section"
 
 export default function Home() {
-  // Fallback content if we need to render a basic page first
   return (
     <>
       <HeroSection />
-      <ClassesSection />
+      <YogaStylesSection />
       <TherapiesSection />
-      <SchedulePreview />
       <TestimonialsSection />
-      <CtaSection />
+      <CTASection />
     </>
   )
 }

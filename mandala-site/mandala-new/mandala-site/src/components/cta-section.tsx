@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
 
 export function CTASection() {
   return (
@@ -14,10 +15,13 @@ export function CTASection() {
             Descubre los beneficios del yoga y nuestras terapias holísticas. Primera clase de prueba gratuita para nuevos alumnos.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button asChild variant="amber" size="lg">
-              <Link href="/contacto">Reservar Primera Clase</Link>
+            <Button asChild variant="amber" size="lg" className="rounded-full shadow-lg">
+              <Link href="/contacto" className="flex items-center">
+                Reservar Primera Clase
+                <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="bg-white/10 text-white border-white/20 hover:bg-white/20">
+            <Button asChild variant="outline" size="lg" className="bg-white/10 text-white border-white/20 hover:bg-white/20 rounded-full">
               <Link href="/horarios-precios">Ver Horarios y Precios</Link>
             </Button>
           </div>
