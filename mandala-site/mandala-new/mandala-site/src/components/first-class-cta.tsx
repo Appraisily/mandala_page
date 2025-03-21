@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { Container } from "@/components/ui/container"
 import { ArrowRight, Sparkles, Star } from "lucide-react"
+import Image from "next/image"
 
 export function FirstClassCTA() {
   const [isVisible, setIsVisible] = useState(false)
@@ -19,6 +20,16 @@ export function FirstClassCTA() {
   
   return (
     <section className="py-32 md:py-40 relative overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/images/cta-background.jpg"
+          alt="Yoga practice background"
+          fill
+          className="object-cover opacity-20"
+        />
+      </div>
+      
       {/* Background elements */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white via-amber-50/30 to-brand-beige/20"></div>
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(#f9d386_1px,transparent_1px)] [background-size:32px_32px] opacity-15"></div>

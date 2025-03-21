@@ -55,7 +55,7 @@ export function TherapiesSection() {
             {/* Thumbnail image */}
             <div className="absolute -bottom-6 -right-6 w-28 h-28 rounded-lg overflow-hidden border-4 border-white shadow-lg hidden lg:block">
               <Image
-                src="/images/yoga-studio.jpg"
+                src="/images/yoga-meditation.jpg"
                 alt="Centro de terapias"
                 fill
                 className="object-cover"

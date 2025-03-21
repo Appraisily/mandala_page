@@ -12,7 +12,7 @@ const yogaStyles = [
     id: "hatha-yoga",
     title: "Hatha Yoga",
     description: "Yoga tradicional que trabaja posturas físicas, técnicas de respiración y meditación para equilibrar cuerpo y mente.",
-    imageSrc: "/images/yoga/hatha-yoga.jpg",
+    imageSrc: "/images/yoga/hatha-yoga.png",
     iconSrc: "/images/icons/hatha-icon.svg",
     benefits: [
       "Mejora la flexibilidad y fuerza",
@@ -24,7 +24,7 @@ const yogaStyles = [
     id: "daoyin-yoga",
     title: "Daoyin Yoga",
     description: "Una fusión de yoga con principios de medicina china, fortaleciendo el cuerpo y equilibrando la energía vital.",
-    imageSrc: "/images/yoga/daoyin-yoga.jpg",
+    imageSrc: "/images/yoga/daoyin-yoga.png",
     iconSrc: "/images/icons/daoyin-icon.svg",
     benefits: [
       "Equilibra la energía del cuerpo",
@@ -36,7 +36,7 @@ const yogaStyles = [
     id: "yoga-nidra",
     title: "Yoga Nidra & Meditación",
     description: "Técnica de relajación profunda y meditación guiada que ayuda a reducir el estrés y mejorar la calidad del sueño.",
-    imageSrc: "/images/yoga/yoga-nidra.jpg",
+    imageSrc: "/images/yoga/yoga-nidra.png",
     iconSrc: "/images/icons/nidra-icon.svg",
     benefits: [
       "Reduce el insomnio",

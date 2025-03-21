@@ -12,9 +12,9 @@ function HeroSection() {
   return (
     <section className="relative min-h-[600px] lg:min-h-[700px] flex items-center overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 -z-10">
+      <div className="absolute inset-0 -z-10 bg-gray-900">
         <Image
-          src="/images/hero.webp"
+          src="/images/yoga-meditation.jpg"
           alt="Yoga practice at Mandala Ourense"
           fill
           priority

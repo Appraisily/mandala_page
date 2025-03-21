@@ -7,19 +7,19 @@ const testimonials = [
     content: "Mandala Ourense ha cambiado mi forma de entender el yoga. Las clases de Hatha Yoga me han ayudado a mejorar mi postura y a reducir el estrés del día a día. Sin duda, recomendaría este centro a cualquier persona.",
     author: "Laura García",
     role: "Practicante de Hatha Yoga",
-    avatar: "/images/testimonials/testimonial1.jpg" 
+    avatar: "/images/woman1.jpg" 
   },
   {
     content: "Llevo más de un año asistiendo a las sesiones de Yoga Nidra y mi calidad de sueño ha mejorado notablemente. Los profesores son excelentes y el ambiente es muy acogedor. ¡Es mi pequeño oasis de paz en Ourense!",
     author: "Carlos Rodríguez",
     role: "Practicante de Yoga Nidra",
-    avatar: "/images/testimonials/testimonial2.jpg"
+    avatar: "/images/man1.jpg"
   },
   {
     content: "Los masajes terapéuticos de Mandala son increíbles. He probado varios centros en la ciudad, pero aquí el nivel de atención y profesionalidad es superior. Siempre salgo renovada y con mucha más energía.",
     author: "Marta Fernández",
     role: "Cliente de terapias",
-    avatar: "/images/testimonials/testimonial3.jpg"
+    avatar: "/images/woman2.jpg"
   },
 ]
 
