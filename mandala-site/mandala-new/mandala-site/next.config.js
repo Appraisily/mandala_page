@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
   images: {
     remotePatterns: [
       {
@@ -9,12 +8,14 @@ const nextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'mandalaourense.com',
+        hostname: 'randomuser.me',
       },
     ],
+    unoptimized: true,
   },
   eslint: {
-    // Disabling for development speed, enable for production
+    // Warning: This allows production builds to successfully complete even if
+    // your project has ESLint errors.
     ignoreDuringBuilds: true,
   },
 }

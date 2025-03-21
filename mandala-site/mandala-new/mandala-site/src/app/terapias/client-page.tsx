@@ -12,7 +12,7 @@ const therapies = [
     title: "Masaje Ayurvédico",
     description: "Técnica milenaria de la medicina tradicional India para equilibrar los doshas (energías vitales) del cuerpo.",
     fullDescription: "El masaje ayurvédico es uno de los tratamientos más antiguos del mundo, originario de la India con más de 5.000 años de historia. Este masaje se basa en los principios del Ayurveda, que busca el equilibrio entre mente, cuerpo y espíritu. Utilizando aceites esenciales y técnicas específicas para cada constitución corporal (dosha), el masaje ayurvédico mejora la circulación, desintoxica el organismo, relaja la musculatura y equilibra las energías vitales.",
-    image: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    image: "/images/therapy.jpg",
     benefits: [
       "Equilibra las energías vitales según el Ayurveda",
       "Mejora la circulación sanguínea y linfática",
@@ -28,7 +28,7 @@ const therapies = [
     title: "Reiki",
     description: "Terapia energética japonesa que canaliza la energía universal para estimular los procesos naturales de curación.",
     fullDescription: "El Reiki es una técnica de sanación energética desarrollada en Japón a principios del siglo XX por Mikao Usui. La palabra Reiki proviene de los términos japoneses 'rei' (energía universal) y 'ki' (fuerza vital). Esta terapia se basa en la canalización de energía a través de las manos del terapeuta, que actúa como canal para transmitir esta energía vital al receptor. El Reiki trabaja a nivel físico, mental y espiritual, ayudando a equilibrar la energía del cuerpo y facilitando los procesos naturales de curación.",
-    image: "https://images.unsplash.com/photo-1598901865264-4f6405cb0fb6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80",
+    image: "/images/therapy.jpg",
     benefits: [
       "Equilibra los centros energéticos (chakras)",
       "Promueve un estado profundo de relajación",
@@ -44,7 +44,7 @@ const therapies = [
     title: "Reflexología Podal",
     description: "Técnica de masaje en los pies que estimula puntos reflejos conectados con órganos y sistemas corporales.",
     fullDescription: "La reflexología podal es una terapia basada en la estimulación de puntos específicos ubicados en los pies, que se corresponden con todos los órganos, glándulas y partes del cuerpo. Este método terapéutico se basa en la teoría de que el cuerpo está dividido en diez zonas longitudinales que recorren el cuerpo desde la cabeza hasta los dedos de los pies. Al aplicar presión en puntos específicos de los pies, se envían impulsos a las áreas correspondientes del cuerpo, promoviendo la relajación y el equilibrio energético.",
-    image: "https://images.unsplash.com/photo-1554057009-dc20fe30502a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    image: "/images/therapy.jpg",
     benefits: [
       "Mejora la circulación sanguínea y linfática",
       "Alivia dolores musculares y articulares",
@@ -60,7 +60,7 @@ const therapies = [
     title: "Aromaterapia",
     description: "Uso terapéutico de aceites esenciales extraídos de plantas para mejorar la salud física y emocional.",
     fullDescription: "La aromaterapia es una forma de medicina alternativa que utiliza extractos vegetales aromáticos (aceites esenciales) para mejorar la salud física, mental y emocional. Estos aceites pueden ser inhalados directamente, aplicados en la piel durante un masaje o utilizados en difusores. Cada aceite esencial tiene propiedades diferentes y puede ayudar con distintas afecciones. La aromaterapia se basa en la premisa de que los aromas naturales de los aceites esenciales estimulan partes del cerebro que influyen en la salud física y mental.",
-    image: "https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    image: "/images/therapy.jpg",
     benefits: [
       "Reduce el estrés y la ansiedad",
       "Mejora la calidad del sueño",
@@ -80,7 +80,7 @@ export default function ClientPage() {
       <section className="relative pt-24 pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1608245449230-4ac19066d2d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+            src="/images/therapy.jpg"
             alt="Terapias holísticas en Mandala Ourense"
             fill
             className="object-cover object-center brightness-[0.7]"

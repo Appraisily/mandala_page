@@ -131,7 +131,7 @@ export function TherapiesSection() {
               {/* Main image */}
               <div className="aspect-[4/3] relative rounded-xl overflow-hidden shadow-lg border border-white">
                 <Image
-                  src="https://images.unsplash.com/photo-1600334129128-685c5582fd35?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                  src="/images/yoga-studio.jpg"
                   alt="Terapias holísticas en Mandala Ourense"
                   fill
                   className="object-cover"
@@ -141,7 +141,7 @@ export function TherapiesSection() {
               {/* Floating smaller image */}
               <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-lg overflow-hidden border-4 border-white shadow-lg hidden md:block">
                 <Image
-                  src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1220&q=80"
+                  src="/images/therapy.jpg"
                   alt="Terapia ayurvédica"
                   fill
                   className="object-cover"

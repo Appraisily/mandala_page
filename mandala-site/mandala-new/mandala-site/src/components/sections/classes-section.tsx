@@ -11,7 +11,7 @@ const classes = [
     id: "hatha-yoga",
     title: "Hatha Yoga",
     description: "Yoga tradicional que trabaja posturas físicas, técnicas de respiración y meditación para equilibrar cuerpo y mente.",
-    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    image: "/images/yoga-pose.jpg",
     href: "/yoga/hatha-yoga",
     benefits: [
       "Mejora la flexibilidad y fuerza",
@@ -26,7 +26,7 @@ const classes = [
     id: "daoyin-yoga",
     title: "Daoyin Yoga",
     description: "Una fusión de yoga con principios de medicina china, fortaleciendo el cuerpo y equilibrando la energía vital.",
-    image: "https://images.unsplash.com/photo-1599447421416-3414500d18a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80",
+    image: "/images/yoga-pose.jpg",
     href: "/yoga/daoyin-yoga",
     benefits: [
       "Equilibra la energía del cuerpo",
@@ -41,7 +41,7 @@ const classes = [
     id: "nidra-yoga",
     title: "Yoga Nidra & Meditación",
     description: "Técnica de relajación profunda y meditación guiada que ayuda a reducir el estrés y mejorar la calidad del sueño.",
-    image: "https://images.unsplash.com/photo-1536623975707-c4b3b2af565d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    image: "/images/yoga-pose.jpg",
     href: "/yoga/nidra-yoga-meditacion",
     benefits: [
       "Reduce el insomnio",

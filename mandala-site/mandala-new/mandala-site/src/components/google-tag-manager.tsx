@@ -2,9 +2,15 @@ import Script from 'next/script'
 
 interface GoogleTagManagerProps {
   gtmId: string
+  enableTracking?: boolean
 }
 
-export function GoogleTagManagerScript({ gtmId }: GoogleTagManagerProps) {
+export function GoogleTagManagerScript({ gtmId, enableTracking = false }: GoogleTagManagerProps) {
+  // Return null if tracking is disabled (useful for development or if we want to disable tracking)
+  if (!enableTracking) {
+    return null;
+  }
+
   return (
     <>
       {/* Google Tag Manager - Script */}
@@ -25,7 +31,12 @@ export function GoogleTagManagerScript({ gtmId }: GoogleTagManagerProps) {
   )
 }
 
-export function GoogleTagManagerNoScript({ gtmId }: GoogleTagManagerProps) {
+export function GoogleTagManagerNoScript({ gtmId, enableTracking = false }: GoogleTagManagerProps) {
+  // Return null if tracking is disabled
+  if (!enableTracking) {
+    return null;
+  }
+  
   return (
     <noscript>
       <iframe

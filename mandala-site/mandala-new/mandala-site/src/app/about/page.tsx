@@ -12,7 +12,7 @@ export default function AboutPage() {
       <section className="relative pt-24 pb-16 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1592427242959-bbce4c6a8670?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2072&q=80"
+            src="/images/yoga-studio.jpg"
             alt="Mandala Ourense yoga studio"
             fill
             className="object-cover object-center brightness-[0.7]"
@@ -131,7 +131,7 @@ export default function AboutPage() {
             <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100">
               <div className="relative h-64 w-full">
                 <Image
-                  src="https://images.unsplash.com/photo-1594751543129-6701ad444259?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                  src="/images/man1.jpg"
                   alt="Ana García - Profesora de Hatha Yoga"
                   fill
                   className="object-cover object-top"
@@ -151,7 +151,7 @@ export default function AboutPage() {
             <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100">
               <div className="relative h-64 w-full">
                 <Image
-                  src="https://images.unsplash.com/photo-1611695267521-9891f56679a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80"
+                  src="/images/man1.jpg"
                   alt="Carlos Martínez - Profesor de Daoyin Yoga"
                   fill
                   className="object-cover object-top"
@@ -171,7 +171,7 @@ export default function AboutPage() {
             <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-gray-100">
               <div className="relative h-64 w-full">
                 <Image
-                  src="https://images.unsplash.com/photo-1512291313931-d4291048e7b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+                  src="/images/man1.jpg"
                   alt="Lucía Fernández - Instructora de Meditación"
                   fill
                   className="object-cover object-center"
@@ -228,7 +228,7 @@ export default function AboutPage() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <Image
-                src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                src="/images/yoga-studio.jpg"
                 alt="Mandala Ourense yoga studio space"
                 width={600}
                 height={400}

@@ -1,0 +1,428 @@
+{
+  "timestamp": "2025-03-21T15:48:49.850Z",
+  "baseUrl": "https://mandala-new.netlify.app",
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "screenshotPath": "C:\\Users\\Andres\\Documents\\GitHub\\mandala_page\\mandala-site\\mandala-new\\mandala-site\\netify-site-screenshots\\home.png",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "brokenImages": [
+        {
+          "src": "https://mandala-new.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1544367567-0f2fcb009e0b%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1220%26q%3D80&w=3840&q=75",
+          "alt": "Terapia ayurvédica"
+        },
+        {
+          "src": "https://mandala-new.netlify.app/_next/image?url=https%3A%2F%2Frandomuser.me%2Fapi%2Fportraits%2Fwomen%2F44.jpg&w=3840&q=75",
+          "alt": "Laura García"
+        },
+        {
+          "src": "https://mandala-new.netlify.app/_next/image?url=https%3A%2F%2Frandomuser.me%2Fapi%2Fportraits%2Fmen%2F86.jpg&w=3840&q=75",
+          "alt": "Carlos Rodríguez"
+        },
+        {
+          "src": "https://mandala-new.netlify.app/_next/image?url=https%3A%2F%2Frandomuser.me%2Fapi%2Fportraits%2Fwomen%2F65.jpg&w=3840&q=75",
+          "alt": "Marta Fernández"
+        },
+        {
+          "src": "https://mandala-new.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1593810450967-f9c2004f8a69%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D2070%26q%3D80&w=3840&q=75",
+          "alt": "Yoga meditation background"
+        }
+      ],
+      "layoutIssues": {
+        "hasHorizontalScroll": false,
+        "viewportWidth": 1280,
+        "contentWidth": 1280,
+        "overflowAmount": 0
+      },
+      "performanceMetrics": {
+        "Timestamp": 262301.835193,
+        "Documents": 3,
+        "Frames": 1,
+        "JSEventListeners": 357,
+        "Nodes": 882,
+        "LayoutCount": 17,
+        "RecalcStyleCount": 115,
+        "LayoutDuration": 0.049235,
+        "RecalcStyleDuration": 0.053415,
+        "ScriptDuration": 0.186873,
+        "TaskDuration": 0.44342,
+        "JSHeapUsedSize": 4902024,
+        "JSHeapTotalSize": 46424064
+      }
+    },
+    {
+      "route": "/about",
+      "status": 200,
+      "screenshotPath": "C:\\Users\\Andres\\Documents\\GitHub\\mandala_page\\mandala-site\\mandala-new\\mandala-site\\netify-site-screenshots\\about.png",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "brokenImages": [
+        {
+          "src": "https://mandala-new.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1592427242959-bbce4c6a8670%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D2072%26q%3D80&w=3840&q=75",
+          "alt": "Mandala Ourense yoga studio"
+        },
+        {
+          "src": "https://mandala-new.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1611695267521-9891f56679a6%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D735%26q%3D80&w=3840&q=75",
+          "alt": "Carlos Martínez - Profesor de Daoyin Yoga"
+        }
+      ],
+      "layoutIssues": {
+        "hasHorizontalScroll": false,
+        "viewportWidth": 1280,
+        "contentWidth": 1280,
+        "overflowAmount": 0
+      },
+      "performanceMetrics": {
+        "Timestamp": 262304.680764,
+        "Documents": 3,
+        "Frames": 2,
+        "JSEventListeners": 673,
+        "Nodes": 1265,
+        "LayoutCount": 15,
+        "RecalcStyleCount": 104,
+        "LayoutDuration": 0.022218,
+        "RecalcStyleDuration": 0.032902,
+        "ScriptDuration": 0.267412,
+        "TaskDuration": 0.443523,
+        "JSHeapUsedSize": 7007264,
+        "JSHeapTotalSize": 86794240
+      }
+    },
+    {
+      "route": "/terapias",
+      "status": 200,
+      "screenshotPath": "C:\\Users\\Andres\\Documents\\GitHub\\mandala_page\\mandala-site\\mandala-new\\mandala-site\\netify-site-screenshots\\terapias.png",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "brokenImages": [
+        {
+          "src": "https://mandala-new.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1598901865264-4f6405cb0fb6%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1074%26q%3D80&w=1200&q=75",
+          "alt": "Reiki"
+        },
+        {
+          "src": "https://mandala-new.netlify.app/_next/image?url=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1554057009-dc20fe30502a%3Fixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D%26auto%3Dformat%26fit%3Dcrop%26w%3D1170%26q%3D80&w=1200&q=75",
+          "alt": "Reflexología Podal"
+        }
+      ],
+      "layoutIssues": {
+        "hasHorizontalScroll": false,
+        "viewportWidth": 1280,
+        "contentWidth": 1280,
+        "overflowAmount": 0
+      },
+      "performanceMetrics": {
+        "Timestamp": 262306.99968,
+        "Documents": 3,
+        "Frames": 3,
+        "JSEventListeners": 1001,
+        "Nodes": 1750,
+        "LayoutCount": 17,
+        "RecalcStyleCount": 120,
+        "LayoutDuration": 0.023484,
+        "RecalcStyleDuration": 0.041727,
+        "ScriptDuration": 0.035087,
+        "TaskDuration": 0.211128,
+        "JSHeapUsedSize": 8605124,
+        "JSHeapTotalSize": 78143488
+      }
+    },
+    {
+      "route": "/horarios-precios",
+      "status": 200,
+      "screenshotPath": "C:\\Users\\Andres\\Documents\\GitHub\\mandala_page\\mandala-site\\mandala-new\\mandala-site\\netify-site-screenshots\\horarios-precios.png",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "brokenImages": [],
+      "layoutIssues": {
+        "hasHorizontalScroll": false,
+        "viewportWidth": 1280,
+        "contentWidth": 1280,
+        "overflowAmount": 0
+      },
+      "performanceMetrics": {
+        "Timestamp": 262308.72005,
+        "Documents": 6,
+        "Frames": 7,
+        "JSEventListeners": 1358,
+        "Nodes": 2202,
+        "LayoutCount": 11,
+        "RecalcStyleCount": 123,
+        "LayoutDuration": 0.018126,
+        "RecalcStyleDuration": 0.029484,
+        "ScriptDuration": 0.035746,
+        "TaskDuration": 0.183911,
+        "JSHeapUsedSize": 14198452,
+        "JSHeapTotalSize": 78929920
+      }
+    },
+    {
+      "route": "/contacto",
+      "status": 200,
+      "screenshotPath": "C:\\Users\\Andres\\Documents\\GitHub\\mandala_page\\mandala-site\\mandala-new\\mandala-site\\netify-site-screenshots\\contacto.png",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "brokenImages": [],
+      "layoutIssues": {
+        "hasHorizontalScroll": false,
+        "viewportWidth": 1280,
+        "contentWidth": 1280,
+        "overflowAmount": 0
+      },
+      "performanceMetrics": {
+        "Timestamp": 262310.564536,
+        "Documents": 8,
+        "Frames": 11,
+        "JSEventListeners": 1663,
+        "Nodes": 2511,
+        "LayoutCount": 9,
+        "RecalcStyleCount": 99,
+        "LayoutDuration": 0.015253,
+        "RecalcStyleDuration": 0.023748,
+        "ScriptDuration": 0.029514,
+        "TaskDuration": 0.156359,
+        "JSHeapUsedSize": 15498728,
+        "JSHeapTotalSize": 81027072
+      }
+    },
+    {
+      "route": "/noticias",
+      "status": 200,
+      "screenshotPath": "C:\\Users\\Andres\\Documents\\GitHub\\mandala_page\\mandala-site\\mandala-new\\mandala-site\\netify-site-screenshots\\noticias.png",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "brokenImages": [],
+      "layoutIssues": {
+        "hasHorizontalScroll": false,
+        "viewportWidth": 1280,
+        "contentWidth": 1280,
+        "overflowAmount": 0
+      },
+      "performanceMetrics": {
+        "Timestamp": 262312.182591,
+        "Documents": 7,
+        "Frames": 12,
+        "JSEventListeners": 1970,
+        "Nodes": 2784,
+        "LayoutCount": 7,
+        "RecalcStyleCount": 17,
+        "LayoutDuration": 0.015704,
+        "RecalcStyleDuration": 0.009815,
+        "ScriptDuration": 0.041917,
+        "TaskDuration": 0.123639,
+        "JSHeapUsedSize": 14652012,
+        "JSHeapTotalSize": 84434944
+      }
+    },
+    {
+      "route": "/docs",
+      "status": 200,
+      "screenshotPath": "C:\\Users\\Andres\\Documents\\GitHub\\mandala_page\\mandala-site\\mandala-new\\mandala-site\\netify-site-screenshots\\docs.png",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "brokenImages": [],
+      "layoutIssues": {
+        "hasHorizontalScroll": false,
+        "viewportWidth": 1280,
+        "contentWidth": 1280,
+        "overflowAmount": 0
+      },
+      "performanceMetrics": {
+        "Timestamp": 262315.126138,
+        "Documents": 8,
+        "Frames": 13,
+        "JSEventListeners": 2325,
+        "Nodes": 4550,
+        "LayoutCount": 6,
+        "RecalcStyleCount": 11,
+        "LayoutDuration": 0.045955,
+        "RecalcStyleDuration": 0.02393,
+        "ScriptDuration": 0.281369,
+        "TaskDuration": 0.439295,
+        "JSHeapUsedSize": 16609724,
+        "JSHeapTotalSize": 95444992
+      }
+    },
+    {
+      "route": "/admin",
+      "status": 200,
+      "screenshotPath": "C:\\Users\\Andres\\Documents\\GitHub\\mandala_page\\mandala-site\\mandala-new\\mandala-site\\netify-site-screenshots\\admin.png",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "brokenImages": [],
+      "layoutIssues": {
+        "hasHorizontalScroll": false,
+        "viewportWidth": 1280,
+        "contentWidth": 1280,
+        "overflowAmount": 0
+      },
+      "performanceMetrics": {
+        "Timestamp": 262317.295049,
+        "Documents": 8,
+        "Frames": 13,
+        "JSEventListeners": 2296,
+        "Nodes": 4806,
+        "LayoutCount": 4,
+        "RecalcStyleCount": 12,
+        "LayoutDuration": 0.010316,
+        "RecalcStyleDuration": 0.00835,
+        "ScriptDuration": 0.266728,
+        "TaskDuration": 0.360689,
+        "JSHeapUsedSize": 18490464,
+        "JSHeapTotalSize": 99901440
+      }
+    },
+    {
+      "route": "/yoga/hatha-yoga",
+      "status": 200,
+      "screenshotPath": "C:\\Users\\Andres\\Documents\\GitHub\\mandala_page\\mandala-site\\mandala-new\\mandala-site\\netify-site-screenshots\\hatha-yoga.png",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()",
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "brokenImages": [],
+      "layoutIssues": {
+        "hasHorizontalScroll": false,
+        "viewportWidth": 1280,
+        "contentWidth": 1280,
+        "overflowAmount": 0
+      },
+      "performanceMetrics": {
+        "Timestamp": 262319.067063,
+        "Documents": 10,
+        "Frames": 15,
+        "JSEventListeners": 2647,
+        "Nodes": 5299,
+        "LayoutCount": 10,
+        "RecalcStyleCount": 150,
+        "LayoutDuration": 0.021046,
+        "RecalcStyleDuration": 0.033127,
+        "ScriptDuration": 0.031551,
+        "TaskDuration": 0.182674,
+        "JSHeapUsedSize": 24148600,
+        "JSHeapTotalSize": 99901440
+      }
+    },
+    {
+      "route": "/yoga/nidra-yoga-meditacion",
+      "status": 200,
+      "screenshotPath": "C:\\Users\\Andres\\Documents\\GitHub\\mandala_page\\mandala-site\\mandala-new\\mandala-site\\netify-site-screenshots\\nidra-yoga.png",
+      "consoleErrors": [
+        "Failed to load resource: the server responded with a status of 404 ()"
+      ],
+      "brokenImages": [],
+      "layoutIssues": {
+        "hasHorizontalScroll": false,
+        "viewportWidth": 1280,
+        "contentWidth": 1280,
+        "overflowAmount": 0
+      },
+      "performanceMetrics": {
+        "Timestamp": 262320.722067,
+        "Documents": 12,
+        "Frames": 17,
+        "JSEventListeners": 3004,
+        "Nodes": 5765,
+        "LayoutCount": 10,
+        "RecalcStyleCount": 139,
+        "LayoutDuration": 0.022392,
+        "RecalcStyleDuration": 0.034216,
+        "ScriptDuration": 0.031358,
+        "TaskDuration": 0.187114,
+        "JSHeapUsedSize": 29754784,
+        "JSHeapTotalSize": 100687872
+      }
+    },
+    {
+      "route": "/yoga/yin-yoga",
+      "status": 200,
+      "screenshotPath": "C:\\Users\\Andres\\Documents\\GitHub\\mandala_page\\mandala-site\\mandala-new\\mandala-site\\netify-site-screenshots\\yin-yoga.png",
+      "consoleErrors": [],
+      "brokenImages": [],
+      "layoutIssues": {
+        "hasHorizontalScroll": false,
+        "viewportWidth": 1280,
+        "contentWidth": 1280,
+        "overflowAmount": 0
+      },
+      "performanceMetrics": {
+        "Timestamp": 262322.528522,
+        "Documents": 14,
+        "Frames": 19,
+        "JSEventListeners": 3355,
+        "Nodes": 6256,
+        "LayoutCount": 10,
+        "RecalcStyleCount": 154,
+        "LayoutDuration": 0.021842,
+        "RecalcStyleDuration": 0.043987,
+        "ScriptDuration": 0.03965,
+        "TaskDuration": 0.23889,
+        "JSHeapUsedSize": 35381968,
+        "JSHeapTotalSize": 101212160
+      }
+    }
+  ]
+}
