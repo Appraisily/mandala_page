@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import { GoogleCalendar } from '@/components/google-calendar'
 
 export const metadata: Metadata = {
   title: 'Horario Clases Yoga Ourense | Mandala | Amplia Disponibilidad',
@@ -62,7 +63,16 @@ export default function HorarioClasesYogaOurensePage() {
             Horario Semanal de Clases
           </h2>
           
-          <div className="bg-white shadow-md rounded-xl overflow-hidden mb-8">
+          {/* Google Calendar Integration */}
+          <div className="bg-white p-6 rounded-xl shadow-md mb-12">
+            <GoogleCalendar 
+              height="700px"
+              title=""
+              description=""
+            />
+          </div>
+          
+          <div className="bg-white shadow-md rounded-xl overflow-hidden mb-12">
             <div className="bg-brand-purple text-white p-4 text-center">
               <h3 className="text-xl font-medium">Horario de Lunes a Viernes</h3>
             </div>
