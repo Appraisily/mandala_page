@@ -17,8 +17,8 @@ const navigation = [
   ]},
   { name: "Terapias", href: "/terapias" },
   { name: "Noticias", href: "/noticias" },
-  { name: "Cursos & Eventos", href: "/cursos-eventos" },
-  { name: "Horarios & Precios", href: "/horarios-precios" },
+  { name: "Cursos y Eventos", href: "/cursos-eventos" },
+  { name: "Horarios y Precios", href: "/horarios-precios" },
   { name: "Contacto", href: "/contacto" },
 ]
 
@@ -51,29 +51,42 @@ export function Navbar() {
   return (
     <header 
       className={cn(
-        "sticky top-0 z-50 w-full transition-all duration-300",
-        isScrolled ? "bg-white shadow-md" : "bg-white/95"
+        "fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300",
+        isScrolled 
+          ? "bg-white shadow-md py-2" 
+          : "bg-gradient-to-b from-black/30 to-transparent backdrop-blur-sm py-4"
       )}
     >
-      <div className="container-custom">
-        <nav className="flex items-center justify-between py-4">
+      <div className="container mx-auto px-4 md:px-6">
+        <nav className="flex items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
-              <span className="text-2xl font-heading font-semibold text-brand-purple">
+              <span className={cn(
+                "text-2xl font-heading font-semibold transition-colors duration-300",
+                isScrolled ? "text-brand-purple" : "text-white"
+              )}>
                 Mandala
               </span>
-              <span className="ml-1 text-2xl font-heading text-brand-teal">
+              <span className={cn(
+                "ml-1 text-2xl font-heading transition-colors duration-300",
+                isScrolled ? "text-brand-teal" : "text-brand-amber"
+              )}>
                 Ourense
               </span>
             </Link>
           </div>
-          <div className="hidden md:flex md:gap-x-6 items-center">
+          <div className="hidden md:flex md:gap-x-1 items-center">
             {navigation.map((item) => (
-              <div key={item.name} className="relative group">
+              <div key={item.name} className="relative group px-2">
                 {item.submenu ? (
                   <button 
                     onClick={() => toggleSubmenu(item.href)}
-                    className="flex items-center text-sm font-medium text-gray-700 hover:text-brand-teal transition-colors py-2 px-1"
+                    className={cn(
+                      "flex items-center text-sm font-medium transition-colors px-3 py-2 rounded-full hover:bg-white/10",
+                      isScrolled 
+                        ? "text-gray-700 hover:text-brand-teal hover:bg-brand-beige" 
+                        : "text-white hover:text-white"
+                    )}
                   >
                     {item.name}
                     <ChevronDown className="ml-1 h-4 w-4 transition-transform group-hover:rotate-180" />
@@ -81,14 +94,19 @@ export function Navbar() {
                 ) : (
                   <Link
                     href={item.href}
-                    className="text-sm font-medium text-gray-700 hover:text-brand-teal transition-colors py-2 px-1"
+                    className={cn(
+                      "text-sm font-medium transition-colors px-3 py-2 rounded-full hover:bg-white/10 block",
+                      isScrolled 
+                        ? "text-gray-700 hover:text-brand-teal hover:bg-brand-beige" 
+                        : "text-white hover:text-white"
+                    )}
                   >
                     {item.name}
                   </Link>
                 )}
                 
                 {item.submenu && (
-                  <div className="absolute left-0 mt-1 w-48 origin-top-left bg-white shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                  <div className="absolute left-0 mt-1 w-52 origin-top-left bg-white shadow-lg rounded-md overflow-hidden opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border border-gray-100">
                     <div className="py-1">
                       {item.submenu.map((subitem) => (
                         <Link
@@ -104,14 +122,25 @@ export function Navbar() {
                 )}
               </div>
             ))}
-            <Button asChild variant="teal" size="sm" className="ml-3">
+            <Button 
+              asChild 
+              variant={isScrolled ? "amber" : "outline"} 
+              size="sm" 
+              className={cn(
+                "ml-3 rounded-full",
+                !isScrolled && "border-white text-white hover:bg-white/20"
+              )}
+            >
               <Link href="/contacto">Reservar Clase</Link>
             </Button>
           </div>
           <div className="flex md:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              className={cn(
+                "-m-2.5 inline-flex items-center justify-center rounded-full p-2.5",
+                isScrolled ? "text-gray-700" : "text-white"
+              )}
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Abrir menú</span>
@@ -125,41 +154,47 @@ export function Navbar() {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div 
-            className="fixed inset-0 z-50 bg-white"
-            initial={{ x: "100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "100%" }}
-            transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            className="fixed inset-0 z-50 bg-gradient-to-br from-brand-purple to-brand-teal"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
           >
-            <div className="container-custom">
-              <div className="flex items-center justify-between py-4">
-                <Link href="/" className="flex items-center" onClick={() => setMobileMenuOpen(false)}>
-                  <span className="text-2xl font-heading font-semibold text-brand-purple">
-                    Mandala
-                  </span>
-                  <span className="ml-1 text-2xl font-heading text-brand-teal">
-                    Ourense
-                  </span>
-                </Link>
-                <button
-                  type="button"
-                  className="-m-2.5 rounded-md p-2.5 text-gray-700"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  <span className="sr-only">Cerrar menú</span>
-                  <X className="h-6 w-6" aria-hidden="true" />
-                </button>
-              </div>
-              <div className="mt-6 flow-root">
-                <div className="divide-y divide-gray-200">
-                  <div className="space-y-2 py-6">
+            <motion.div
+              className="h-full overflow-y-auto"
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", stiffness: 300, damping: 30 }}
+            >
+              <div className="container mx-auto px-4 pt-5 pb-6">
+                <div className="flex items-center justify-between">
+                  <Link href="/" className="flex items-center" onClick={() => setMobileMenuOpen(false)}>
+                    <span className="text-2xl font-heading font-semibold text-white">
+                      Mandala
+                    </span>
+                    <span className="ml-1 text-2xl font-heading text-brand-amber">
+                      Ourense
+                    </span>
+                  </Link>
+                  <button
+                    type="button"
+                    className="rounded-full p-2.5 text-white hover:bg-white/10"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    <span className="sr-only">Cerrar menú</span>
+                    <X className="h-6 w-6" aria-hidden="true" />
+                  </button>
+                </div>
+                <div className="mt-8 flow-root">
+                  <div className="space-y-2">
                     {navigation.map((item) => (
-                      <div key={item.name}>
+                      <div key={item.name} className="py-1">
                         {item.submenu ? (
                           <>
                             <button
                               onClick={() => toggleSubmenu(item.href)}
-                              className="flex w-full items-center justify-between rounded-lg py-3 text-base font-medium text-gray-900 hover:bg-gray-50"
+                              className="flex w-full items-center justify-between rounded-xl py-3 px-4 text-lg font-medium text-white hover:bg-white/10"
                             >
                               <span>{item.name}</span>
                               <ChevronDown className={cn(
@@ -174,13 +209,13 @@ export function Navbar() {
                                   animate={{ height: "auto", opacity: 1 }}
                                   exit={{ height: 0, opacity: 0 }}
                                   transition={{ duration: 0.3 }}
-                                  className="mt-2 space-y-2 pl-6 overflow-hidden"
+                                  className="mt-1 space-y-1 pl-6 overflow-hidden"
                                 >
                                   {item.submenu.map((subitem) => (
                                     <Link
                                       key={subitem.name}
                                       href={subitem.href}
-                                      className="block rounded-lg py-2 text-base font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-900"
+                                      className="block rounded-xl py-2 px-4 text-base font-medium text-white/80 hover:bg-white/10 hover:text-white"
                                       onClick={() => setMobileMenuOpen(false)}
                                     >
                                       {subitem.name}
@@ -193,7 +228,7 @@ export function Navbar() {
                         ) : (
                           <Link
                             href={item.href}
-                            className="block rounded-lg py-3 text-base font-medium text-gray-900 hover:bg-gray-50"
+                            className="block rounded-xl py-3 px-4 text-lg font-medium text-white hover:bg-white/10"
                             onClick={() => setMobileMenuOpen(false)}
                           >
                             {item.name}
@@ -202,11 +237,12 @@ export function Navbar() {
                       </div>
                     ))}
                   </div>
-                  <div className="py-6">
+                  <div className="mt-8 pt-6 border-t border-white/20">
                     <Button
                       asChild
-                      variant="teal"
-                      className="w-full"
+                      variant="amber"
+                      size="lg"
+                      className="w-full rounded-full font-medium"
                     >
                       <Link href="/contacto" onClick={() => setMobileMenuOpen(false)}>
                         Reservar Clase
@@ -215,7 +251,7 @@ export function Navbar() {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
