@@ -36,6 +36,31 @@ const routeCategories = [
         path: "/terapias",
         title: "Terapias",
         description: "Información sobre las diferentes terapias ofrecidas en el centro."
+      },
+      {
+        path: "/docs",
+        title: "Documentación",
+        description: "Documentación técnica del sitio web (solo para administradores)."
+      },
+      {
+        path: "/noticias",
+        title: "Noticias",
+        description: "Blog y novedades del centro."
+      },
+      {
+        path: "/aviso-legal",
+        title: "Aviso Legal",
+        description: "Términos legales del sitio."
+      },
+      {
+        path: "/politica-privacidad",
+        title: "Política de Privacidad",
+        description: "Política de privacidad y cookies del sitio."
+      },
+      {
+        path: "/admin",
+        title: "Panel de Administración",
+        description: "Panel de control para administradores del sitio."
       }
     ]
   },
@@ -245,19 +270,19 @@ const routeCategories = [
     ]
   },
   {
-    name: "Otras Páginas",
-    icon: "📄",
+    name: "API y Otras Rutas",
+    icon: "⚙️",
     color: "bg-gray-100 border-gray-200",
     routes: [
       {
-        path: "/noticias",
-        title: "Noticias",
-        description: "Blog y noticias del centro Mandala."
+        path: "/api/hello",
+        title: "API de Ejemplo",
+        description: "Endpoint de API para pruebas."
       },
       {
-        path: "/aviso-legal",
-        title: "Aviso Legal",
-        description: "Información legal y política de privacidad del sitio."
+        path: "/robots.txt",
+        title: "Robots.txt",
+        description: "Archivo de configuración para bots de motores de búsqueda."
       },
       {
         path: "/sitemap.xml",
@@ -268,9 +293,63 @@ const routeCategories = [
   }
 ];
 
+// Lista completa de todas las rutas para SEO y sitemap
+const allRoutesFlat = [
+  "/",
+  "/about",
+  "/actividades-bienestar-ourense",
+  "/admin",
+  "/api/hello",
+  "/aviso-legal",
+  "/bienestar-ourense",
+  "/centro-de-yoga-ourense",
+  "/centro-terapias-ourense",
+  "/clases-de-yoga-en-ourense",
+  "/clases-yoga-ourense",
+  "/contacto",
+  "/descuentos-yoga-ourense",
+  "/docs",
+  "/docs/images",
+  "/docs/sitemap",
+  "/escuela-de-yoga-ourense",
+  "/estudio-yoga-ourense",
+  "/hatha-yoga-ourense",
+  "/horario-clases-yoga-ourense",
+  "/horarios-precios",
+  "/meditacion-ourense",
+  "/mejor-yoga-ourense",
+  "/mindfulness-ourense",
+  "/noticias",
+  "/ofertas-yoga-ourense",
+  "/ourense-yoga",
+  "/politica-privacidad",
+  "/precios-clases-yoga-ourense",
+  "/profesor-yoga-ourense",
+  "/relajacion-ourense",
+  "/terapias-ourense",
+  "/terapias",
+  "/vinyasa-yoga-ourense",
+  "/yin-yoga-ourense",
+  "/yoga-cerca-ourense",
+  "/yoga-en-el-centro-de-ourense",
+  "/yoga-ninos-ourense",
+  "/yoga-para-embarazadas-ourense",
+  "/yoga-para-principiantes-ourense",
+  "/yoga-restaurativo-ourense",
+  "/yoga-terapeutico-ourense",
+  "/yoga-y-terapias-ourense",
+  "/yoga/daoyin-yoga",
+  "/yoga/hatha-yoga",
+  "/yoga/nidra-yoga-meditacion",
+  "/yoga/yin-yoga",
+  "/robots.txt",
+  "/sitemap.xml"
+];
+
 export default function SitemapPage() {
   const [searchTerm, setSearchTerm] = useState("");
   const [expandedCategories, setExpandedCategories] = useState<string[]>(routeCategories.map(cat => cat.name));
+  const [view, setView] = useState<"categorized" | "flat">("categorized");
 
   const toggleCategory = (categoryName: string) => {
     setExpandedCategories(prev => 
@@ -283,11 +362,15 @@ export default function SitemapPage() {
   const filterRoutes = (routes: any[], term: string) => {
     if (!term) return routes;
     return routes.filter(route => 
-      route.title.toLowerCase().includes(term.toLowerCase()) || 
+      route.title?.toLowerCase().includes(term.toLowerCase()) || 
       route.path.toLowerCase().includes(term.toLowerCase()) || 
-      route.description.toLowerCase().includes(term.toLowerCase())
+      route.description?.toLowerCase().includes(term.toLowerCase())
     );
   };
+
+  const filteredFlatRoutes = allRoutesFlat.filter(route => 
+    !searchTerm || route.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div className="bg-white min-h-screen pb-20">
@@ -314,17 +397,41 @@ export default function SitemapPage() {
       {/* Search bar */}
       <div className="bg-white border-b border-gray-200 py-4 sticky top-0 z-10">
         <div className="container mx-auto px-4">
-          <div className="relative max-w-md mx-auto">
-            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <Search className="h-5 w-5 text-gray-400" />
+          <div className="flex items-center justify-between">
+            <div className="relative max-w-md w-full">
+              <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                <Search className="h-5 w-5 text-gray-400" />
+              </div>
+              <input
+                type="text"
+                className="block w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-purple focus:border-brand-purple"
+                placeholder="Buscar páginas..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
             </div>
-            <input
-              type="text"
-              className="block w-full pl-10 pr-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-purple focus:border-brand-purple"
-              placeholder="Buscar páginas..."
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
+            <div className="flex gap-2">
+              <button
+                onClick={() => setView("categorized")}
+                className={`px-3 py-2 text-sm font-medium rounded-md ${
+                  view === "categorized" 
+                    ? "bg-brand-purple text-white" 
+                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                }`}
+              >
+                Ver por Categorías
+              </button>
+              <button
+                onClick={() => setView("flat")}
+                className={`px-3 py-2 text-sm font-medium rounded-md ${
+                  view === "flat" 
+                    ? "bg-brand-purple text-white" 
+                    : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                }`}
+              >
+                Ver Lista Completa
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -332,178 +439,106 @@ export default function SitemapPage() {
       {/* Main content */}
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-5xl mx-auto">
-          {/* Route categories */}
-          {routeCategories.map((category) => {
-            const filteredRoutes = filterRoutes(category.routes, searchTerm);
-            if (filteredRoutes.length === 0) return null;
-            
-            return (
-              <div 
-                key={category.name} 
-                className={`mb-8 border rounded-xl overflow-hidden ${category.color}`}
-              >
-                <button
-                  onClick={() => toggleCategory(category.name)}
-                  className="w-full flex items-center justify-between p-4 text-left focus:outline-none"
-                >
-                  <div className="flex items-center">
-                    <span className="text-2xl mr-3">{category.icon}</span>
-                    <h2 className="text-xl font-heading font-semibold text-gray-800">
-                      {category.name} <span className="text-gray-500 text-sm ml-2">({filteredRoutes.length} páginas)</span>
-                    </h2>
-                  </div>
-                  <div>
-                    {expandedCategories.includes(category.name) ? (
-                      <ChevronDown className="h-5 w-5 text-gray-500" />
-                    ) : (
-                      <ChevronRight className="h-5 w-5 text-gray-500" />
-                    )}
-                  </div>
-                </button>
+          {view === "categorized" ? (
+            // Categorized view
+            <>
+              {/* Route categories */}
+              {routeCategories.map((category) => {
+                const filteredRoutes = filterRoutes(category.routes, searchTerm);
+                if (filteredRoutes.length === 0) return null;
+                
+                return (
+                  <div 
+                    key={category.name} 
+                    className={`mb-8 border rounded-xl overflow-hidden ${category.color}`}
+                  >
+                    <button
+                      onClick={() => toggleCategory(category.name)}
+                      className="w-full flex items-center justify-between p-4 text-left focus:outline-none"
+                    >
+                      <div className="flex items-center">
+                        <span className="text-2xl mr-3">{category.icon}</span>
+                        <h2 className="text-xl font-heading font-semibold text-gray-800">
+                          {category.name} <span className="text-gray-500 text-sm ml-2">({filteredRoutes.length} páginas)</span>
+                        </h2>
+                      </div>
+                      <div>
+                        {expandedCategories.includes(category.name) ? (
+                          <ChevronDown className="h-5 w-5 text-gray-500" />
+                        ) : (
+                          <ChevronRight className="h-5 w-5 text-gray-500" />
+                        )}
+                      </div>
+                    </button>
 
-                {expandedCategories.includes(category.name) && (
-                  <div className="bg-white">
-                    <div className="grid grid-cols-1 divide-y divide-gray-100">
-                      {filteredRoutes.map((route) => (
-                        <div key={route.path} className="p-4 hover:bg-gray-50">
-                          <div className="flex justify-between items-start">
-                            <div>
-                              <h3 className="font-medium text-brand-purple text-lg mb-1">
-                                {route.title}
-                              </h3>
-                              <p className="text-gray-600 mb-2">{route.description}</p>
-                              <code className="text-xs bg-gray-100 px-2 py-1 rounded text-gray-700">
-                                {route.path}
-                              </code>
-                            </div>
-                            <Button
-                              asChild
-                              variant="outline"
-                              size="sm"
-                              className="ml-4 flex-shrink-0"
-                            >
-                              <Link href={route.path} target="_blank">
-                                Ver Página
-                              </Link>
-                            </Button>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
-              </div>
-            );
-          })}
-
-          {/* Sitemap visualization */}
-          <div className="mt-16 pt-8 border-t border-gray-200">
-            <h2 className="text-2xl font-heading font-semibold text-brand-purple mb-6">
-              Visualización Jerárquica
-            </h2>
-            <div className="bg-white p-8 border rounded-xl shadow-sm overflow-auto">
-              <div className="flex">
-                <div className="flex flex-col items-center">
-                  <div className="w-24 h-16 border-2 border-brand-purple rounded-lg flex items-center justify-center bg-brand-purple/10 font-medium">
-                    <span>Home</span>
-                  </div>
-                  <div className="h-8 w-0.5 bg-gray-300"></div>
-                </div>
-              </div>
-
-              <div className="flex justify-center">
-                <div className="w-4/5 h-0.5 bg-gray-300"></div>
-              </div>
-
-              <div className="flex justify-center gap-4 flex-wrap">
-                {/* Primary Level Pages */}
-                {['Sobre Nosotros', 'Yoga', 'Terapias', 'Horarios', 'Contacto'].map((item, i) => (
-                  <div key={i} className="flex flex-col items-center mt-4">
-                    <div className="h-6 w-0.5 bg-gray-300"></div>
-                    <div className="w-32 h-12 border-2 border-brand-teal rounded-lg flex items-center justify-center bg-brand-teal/10 font-medium text-sm">
-                      <span>{item}</span>
-                    </div>
-                    {item === 'Yoga' && (
-                      <>
-                        <div className="h-6 w-0.5 bg-gray-300"></div>
-                        <div className="flex">
-                          <div className="w-48 h-0.5 bg-gray-300"></div>
-                        </div>
-                        <div className="flex justify-between w-48 mt-2">
-                          {['Hatha', 'Yin', 'Daoyin', 'Nidra'].map((subitem, j) => (
-                            <div key={j} className="flex flex-col items-center">
-                              <div className="h-4 w-0.5 bg-gray-300"></div>
-                              <div className="w-10 h-8 border border-amber-400 rounded flex items-center justify-center bg-amber-50 text-xs">
-                                {subitem}
+                    {expandedCategories.includes(category.name) && (
+                      <div className="bg-white">
+                        <div className="grid grid-cols-1 divide-y divide-gray-100">
+                          {filteredRoutes.map((route) => (
+                            <div key={route.path} className="p-4 hover:bg-gray-50">
+                              <div className="flex justify-between items-start">
+                                <div>
+                                  <h3 className="font-medium text-brand-purple text-lg mb-1">
+                                    {route.title}
+                                  </h3>
+                                  <p className="text-gray-600 mb-2">{route.description}</p>
+                                  <code className="text-xs bg-gray-100 px-2 py-1 rounded text-gray-700">
+                                    {route.path}
+                                  </code>
+                                </div>
+                                <Button
+                                  asChild
+                                  variant="outline"
+                                  size="sm"
+                                  className="ml-4 flex-shrink-0"
+                                >
+                                  <Link href={route.path} target="_blank">
+                                    Ver Página
+                                  </Link>
+                                </Button>
                               </div>
                             </div>
                           ))}
                         </div>
-                      </>
+                      </div>
                     )}
                   </div>
-                ))}
+                );
+              })}
+            </>
+          ) : (
+            // Flat list view
+            <div className="border rounded-xl overflow-hidden">
+              <div className="bg-brand-purple/10 border-b border-brand-purple/20 p-4">
+                <h2 className="text-xl font-heading font-semibold text-gray-800 flex items-center">
+                  <span className="text-2xl mr-3">📋</span>
+                  Lista Completa de Rutas <span className="text-gray-500 text-sm ml-2">({filteredFlatRoutes.length} páginas)</span>
+                </h2>
               </div>
-
-              <div className="mt-12 pt-12 border-t border-gray-200">
-                <h3 className="text-xl font-heading font-medium text-gray-700 mb-4 text-center">
-                  Landing Pages SEO
-                </h3>
-                
-                <div className="flex justify-center mb-6">
-                  <div className="flex flex-col items-center">
-                    <div className="w-36 h-16 border-2 border-indigo-500 rounded-lg flex items-center justify-center bg-indigo-50 font-medium">
-                      <span>SEO Pages</span>
-                    </div>
-                    <div className="h-8 w-0.5 bg-gray-300"></div>
-                  </div>
-                </div>
-
-                <div className="flex justify-center">
-                  <div className="w-4/5 h-0.5 bg-gray-300"></div>
-                </div>
-
-                <div className="flex justify-center gap-6 flex-wrap mt-4">
-                  {['Yoga', 'Bienestar', 'Terapias', 'Horarios'].map((category, i) => (
-                    <div key={i} className="flex flex-col items-center">
-                      <div className="h-6 w-0.5 bg-gray-300"></div>
-                      <div className={`w-28 h-12 border-2 rounded-lg flex items-center justify-center font-medium text-sm
-                        ${i === 0 ? 'border-green-500 bg-green-50' : ''}
-                        ${i === 1 ? 'border-purple-500 bg-purple-50' : ''}
-                        ${i === 2 ? 'border-rose-500 bg-rose-50' : ''}
-                        ${i === 3 ? 'border-blue-500 bg-blue-50' : ''}
-                      `}>
-                        <span>{category}</span>
-                      </div>
-                      <div className="h-6 w-0.5 bg-gray-300"></div>
-                      <div className="flex">
-                        <div className={`w-56 h-0.5 bg-gray-300`}></div>
-                      </div>
-                      <div className="flex gap-2 flex-wrap justify-center w-56 mt-2">
-                        {Array(i === 0 ? 12 : (i === 1 ? 5 : (i === 2 ? 3 : 4))).fill(0).map((_, j) => (
-                          <div key={j} className="flex flex-col items-center mt-1">
-                            <div className="h-4 w-0.5 bg-gray-300"></div>
-                            <div className={`w-3 h-3 rounded-full
-                              ${i === 0 ? 'bg-green-500' : ''}
-                              ${i === 1 ? 'bg-purple-500' : ''}
-                              ${i === 2 ? 'bg-rose-500' : ''}
-                              ${i === 3 ? 'bg-blue-500' : ''}
-                            `}></div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
+              <div className="bg-white">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 p-4">
+                  {filteredFlatRoutes.map((route) => (
+                    <Link
+                      key={route}
+                      href={route}
+                      target="_blank"
+                      className="p-3 rounded-lg hover:bg-gray-50 border border-gray-100 transition-colors"
+                    >
+                      <code className="text-sm text-gray-700 break-all">
+                        {route}
+                      </code>
+                    </Link>
                   ))}
                 </div>
               </div>
             </div>
-          </div>
+          )}
 
           {/* Stats */}
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
               <div className="text-4xl font-bold text-brand-purple mb-2">
-                {routeCategories.reduce((total, cat) => total + cat.routes.length, 0)}
+                {allRoutesFlat.length}
               </div>
               <div className="text-gray-600">Páginas Totales</div>
             </div>
@@ -518,21 +553,6 @@ export default function SitemapPage() {
                 {routeCategories.filter(cat => cat.name.includes("Landing")).reduce((total, cat) => total + cat.routes.length, 0)}
               </div>
               <div className="text-gray-600">Landing Pages SEO</div>
-            </div>
-          </div>
-
-          {/* Legend */}
-          <div className="mt-12 p-6 bg-gray-50 rounded-xl border border-gray-200">
-            <h2 className="text-xl font-heading font-medium text-gray-800 mb-4">Leyenda de Categorías</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {routeCategories.map((category) => (
-                <div key={category.name} className="flex items-center">
-                  <div className={`w-6 h-6 flex items-center justify-center rounded mr-3 ${category.color}`}>
-                    <span>{category.icon}</span>
-                  </div>
-                  <span className="text-gray-700">{category.name}</span>
-                </div>
-              ))}
             </div>
           </div>
         </div>

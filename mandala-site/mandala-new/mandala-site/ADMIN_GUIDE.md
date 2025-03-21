@@ -5,7 +5,7 @@ Esta guía explica cómo usar el panel de administración para configurar y pers
 ## Acceso al Panel de Administración
 
 1. Abre tu navegador y visita: `https://www.mandalaourense.com/admin`
-2. Introduce la contraseña: `mandala2024`
+2. Introduce la contraseña proporcionada por el administrador del sistema
 3. Accederás al panel de administración donde podrás configurar todos los aspectos del sitio web
 
 ## Configuración del Sitio

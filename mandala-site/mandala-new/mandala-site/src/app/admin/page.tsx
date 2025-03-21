@@ -21,9 +21,10 @@ interface SiteSettings {
   }
 }
 
-// Password to access the admin panel (this is a simple implementation)
-// In a real production app, you'd use a more secure authentication method
-const ADMIN_PASSWORD = "mandala2024"
+// Password to access the admin panel
+// In a real production app, this would be set as an environment variable
+// For development, we'll use a default password if the env var is not set
+const ADMIN_PASSWORD = process.env.NEXT_PUBLIC_ADMIN_PASSWORD || "admin_dev_temp_password"
 
 export default function AdminPage() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -126,9 +127,9 @@ export default function AdminPage() {
       <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-8">
           <div>
-            <h2 className="mt-6 text-center text-3xl font-heading font-semibold text-brand-purple">
+            <h1 className="mt-6 text-center text-3xl font-heading font-semibold text-brand-purple">
               Panel de Administración
-            </h2>
+            </h1>
             <p className="mt-2 text-center text-sm text-gray-600">
               Introduce la contraseña para acceder
             </p>

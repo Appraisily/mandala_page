@@ -559,7 +559,7 @@ export default function DocsPage() {
                       <h3 className="text-xl font-heading font-medium text-brand-purple mb-3">Acceso</h3>
                       <div className="p-4 bg-gray-50 rounded-lg border border-gray-200">
                         <p className="mb-2 text-gray-700 font-medium">URL: <code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/admin</code></p>
-                        <p className="mb-0 text-gray-700">Contraseña: <code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">mandala2024</code></p>
+                        <p className="mb-0 text-gray-700">Contraseña: <code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">[Contacta al administrador]</code></p>
                       </div>
                     </div>
 
@@ -798,7 +798,7 @@ export function MyComponent() {
                         <h4 className="font-medium mb-2 text-brand-purple text-lg">No se puede acceder al panel de administración</h4>
                         <p className="text-gray-700 mb-3">Si no se puede acceder al panel de administración:</p>
                         <ol className="list-decimal list-inside text-gray-700 space-y-1 ml-4">
-                          <li>Verificar que se está utilizando la contraseña correcta (<code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">mandala2024</code>)</li>
+                          <li>Verificar que se está utilizando la contraseña correcta (<code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">[Contacta al administrador]</code>)</li>
                           <li>Borrar la caché del navegador</li>
                           <li>Probar en otro navegador</li>
                         </ol>

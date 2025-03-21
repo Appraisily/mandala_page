@@ -48,7 +48,7 @@ Se han creado dos guías principales para la administración del sitio:
 
 Los aspectos más importantes para el administrador son:
 
-- **Panel de Administración**: Accesible en `/admin` con la contraseña `mandala2024`
+- **Panel de Administración**: Accesible en `/admin` con la contraseña proporcionada por el administrador del sistema
 - **Configuración de Servicios**: Google Calendar, Google Forms, Google Sites
 - **Redes Sociales**: Configuración de cuentas de Instagram y Facebook
 - **Información de Contacto**: Email, teléfono, dirección y horarios
