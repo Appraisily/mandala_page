@@ -94,23 +94,23 @@ export function Footer() {
                 <li className="flex items-start">
                   <MapPin className="h-5 w-5 text-brand-teal mt-0.5 flex-shrink-0" />
                   <a 
-                    href="https://goo.gl/maps/abc123" 
+                    href="https://maps.app.goo.gl/uNBdecH9ztaY5nJZ7" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="ml-2 text-sm text-gray-600 hover:text-brand-teal group"
                   >
-                    <span>C/ Dr. Fleming, Ourense, Galicia</span>
+                    <span>C/ Dr. Marañón 2, entresuelo. Ourense, Galicia</span>
                     <ExternalLink className="inline-block ml-1 h-3 w-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                   </a>
                 </li>
                 <li className="flex items-start">
                   <Phone className="h-5 w-5 text-brand-teal mt-0.5 flex-shrink-0" />
-                  <a 
-                    href="tel:+34600000000" 
-                    className="ml-2 text-sm text-gray-600 hover:text-brand-teal transition-colors"
-                  >
-                    +34 600 000 000
-                  </a>
+                  <div className="ml-2">
+                    <a href="tel:+34675091191" className="block text-sm text-gray-600 hover:text-brand-teal transition-colors">Alberto: 675 091 191</a>
+                    <a href="tel:+34627305963" className="block text-sm text-gray-600 hover:text-brand-teal transition-colors">Luz: 627 305 963</a>
+                    <a href="tel:+34679144037" className="block text-sm text-gray-600 hover:text-brand-teal transition-colors">Yolanda: 679 144 037</a>
+                    <a href="tel:+34644503174" className="block text-sm text-gray-600 hover:text-brand-teal transition-colors">Iria: 644 503 174</a>
+                  </div>
                 </li>
                 <li className="flex items-start">
                   <Mail className="h-5 w-5 text-brand-teal mt-0.5 flex-shrink-0" />
@@ -128,6 +128,14 @@ export function Footer() {
                     <p className="text-sm text-gray-600">Sáb: 10:00 - 14:00</p>
                     <p className="text-sm text-gray-600">Dom: Cerrado</p>
                   </div>
+                </li>
+                <li>
+                  <Link 
+                    href="/aviso-legal" 
+                    className="inline-flex text-sm text-gray-600 hover:text-brand-teal transition-colors border-b border-dotted border-gray-400 hover:border-brand-teal"
+                  >
+                    Aviso Legal y Condiciones de Uso
+                  </Link>
                 </li>
               </ul>
             </div>
