@@ -9,18 +9,20 @@ import { YogaStylesSection } from "@/components/yoga-styles-section"
 import { TherapiesSection } from "@/components/therapies-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { SchedulePreview } from "@/components/schedule-preview"
+import { FirstClassCTA } from "@/components/first-class-cta"
 import { CTASection } from "@/components/cta-section"
 
 export default function Home() {
   return (
-    <>
+    <main className="overflow-hidden">
       <HeroSection />
       <YogaStylesSection />
       <SchedulePreview />
       <TherapiesSection />
       <TestimonialsSection />
+      <FirstClassCTA />
       <CTASection />
-    </>
+    </main>
   )
 }
 
