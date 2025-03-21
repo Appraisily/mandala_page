@@ -20,21 +20,21 @@ export function FirstClassCTA() {
   return (
     <section className="py-32 md:py-40 relative overflow-hidden">
       {/* Background elements */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white via-amber-50/20 to-brand-beige/10"></div>
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(#f9d386_1px,transparent_1px)] [background-size:32px_32px] opacity-10"></div>
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-white via-amber-50/30 to-brand-beige/20"></div>
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(#f9d386_1px,transparent_1px)] [background-size:32px_32px] opacity-15"></div>
       
       {/* Decorative elements */}
-      <div className="absolute left-8 md:left-16 bottom-16 md:bottom-1/3 text-amber-400 opacity-80">
+      <div className="absolute left-8 md:left-16 bottom-16 md:bottom-1/3 text-amber-400 opacity-90">
         <Star className="h-8 w-8 fill-amber-400" strokeWidth={1} />
       </div>
-      <div className="absolute right-12 top-1/4 text-amber-300/30 hidden md:block">
+      <div className="absolute right-12 top-1/4 text-amber-300/40 hidden md:block">
         <Sparkles className="h-16 w-16" />
       </div>
-      <div className="absolute bottom-1/2 left-1/3 text-amber-200/20 hidden md:block">
+      <div className="absolute bottom-1/2 left-1/3 text-amber-200/30 hidden md:block">
         <Star className="h-10 w-10" strokeWidth={1} />
       </div>
-      <div className="absolute -bottom-10 -left-10 w-64 h-64 rounded-full bg-amber-500/5 blur-3xl -z-10"></div>
-      <div className="absolute -top-10 -right-10 w-64 h-64 rounded-full bg-brand-teal/5 blur-3xl -z-10"></div>
+      <div className="absolute -bottom-10 -left-10 w-64 h-64 rounded-full bg-amber-500/10 blur-3xl -z-10"></div>
+      <div className="absolute -top-10 -right-10 w-64 h-64 rounded-full bg-brand-teal/10 blur-3xl -z-10"></div>
       
       <Container>
         <div 

@@ -35,15 +35,18 @@ const classData = [
 
 export function SchedulePreview() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50/80 relative overflow-hidden">
+      {/* Background elements */}
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:20px_20px] opacity-30"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-brand-teal/5 blur-3xl -z-10"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-brand-purple/5 blur-3xl -z-10"></div>
+
       <Container>
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl font-heading font-semibold text-brand-purple mb-4">
-            CLASES SEMANALES
-          </h2>
-          <p className="text-gray-600">
+          <span className="text-sm font-medium text-brand-teal uppercase tracking-wider">CLASES SEMANALES</span>
+          <h2 className="text-3xl font-heading font-semibold text-brand-purple mt-2 mb-4">
             Encuentra el Momento Perfecto para Tu Práctica
-          </p>
+          </h2>
           <p className="text-gray-600 mt-2">
             Vista previa de nuestro horario semanal. Ofrecemos diferentes opciones de clases durante el día para adaptarnos a tu rutina.
           </p>
@@ -53,7 +56,7 @@ export function SchedulePreview() {
           {/* Left side: Class preview cards */}
           <div className="space-y-4">
             {classData.map((day, dayIndex) => (
-              <div key={dayIndex} className="bg-white rounded-lg shadow-sm overflow-hidden">
+              <div key={dayIndex} className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
                 <div className="bg-brand-purple p-3 text-white font-semibold">
                   <h3 className="text-lg">{day.day}</h3>
                 </div>
@@ -76,7 +79,7 @@ export function SchedulePreview() {
           </div>
 
           {/* Right side: Google Calendar */}
-          <div className="bg-white rounded-lg shadow-sm p-4">
+          <div className="bg-white rounded-lg shadow-sm p-4 border border-gray-100">
             <h3 className="text-lg font-medium text-center mb-4 text-brand-purple">Calendario Completo</h3>
             <GoogleCalendar 
               height="400px"
@@ -91,7 +94,7 @@ export function SchedulePreview() {
         </div>
 
         <div className="text-center mt-12">
-          <Button asChild variant="outline" className="px-6">
+          <Button asChild variant="outline" className="px-6 border-brand-purple text-brand-purple hover:bg-brand-purple/5">
             <Link href="/horarios-precios">Ver Horario Completo</Link>
           </Button>
         </div>

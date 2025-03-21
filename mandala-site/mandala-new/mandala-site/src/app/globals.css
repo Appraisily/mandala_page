@@ -33,6 +33,12 @@
     --ring: 173 71% 55%;
     
     --radius: 0.75rem;
+
+    --brand-purple: #6C5B7B;
+    --brand-teal: #4ECDC4;
+    --brand-beige: #F7F9F9;
+    --brand-amber: #F9A826;
+    --brand-terracotta: #C06C52;
   }
   
   .dark {

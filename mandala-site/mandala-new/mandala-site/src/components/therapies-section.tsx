@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
@@ -9,26 +11,26 @@ const therapies = [
     title: "Masaje Terapéutico",
     description: "Técnica manual que alivia tensiones musculares, reduce el estrés y mejora la circulación sanguínea.",
     icon: <Heart className="h-5 w-5 text-rose-500" />,
-    color: "bg-rose-50 border-l-4 border-l-rose-300"
+    color: "bg-rose-50 border-l-4 border-l-rose-400"
   },
   {
     title: "Tratamientos Ayurvédicos",
     description: "Terapias basadas en la medicina tradicional india para restaurar el equilibrio entre cuerpo, mente y espíritu.",
     icon: <Leaf className="h-5 w-5 text-emerald-500" />,
-    color: "bg-emerald-50 border-l-4 border-l-emerald-300"
+    color: "bg-emerald-50 border-l-4 border-l-emerald-400"
   },
   {
     title: "Constelaciones Familiares",
     description: "Método terapéutico que busca resolver conflictos y patrones heredados en el sistema familiar.",
     icon: <Sparkles className="h-5 w-5 text-amber-500" />,
-    color: "bg-amber-50 border-l-4 border-l-amber-300"
+    color: "bg-amber-50 border-l-4 border-l-amber-400"
   }
 ]
 
 export function TherapiesSection() {
   return (
     <section className="py-20 relative overflow-hidden">
-      {/* Background decorations */}
+      {/* Background elements */}
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(#f7f9f9_1px,transparent_1px)] [background-size:16px_16px] opacity-50"></div>
       <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-brand-purple/5 blur-3xl -z-10"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-brand-teal/5 blur-3xl -z-10"></div>
