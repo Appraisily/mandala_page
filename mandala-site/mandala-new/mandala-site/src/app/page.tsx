@@ -8,6 +8,7 @@ import { HeroSection } from "@/components/hero-section"
 import { YogaStylesSection } from "@/components/yoga-styles-section"
 import { TherapiesSection } from "@/components/therapies-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
+import { SchedulePreview } from "@/components/schedule-preview"
 import { CTASection } from "@/components/cta-section"
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
     <>
       <HeroSection />
       <YogaStylesSection />
+      <SchedulePreview />
       <TherapiesSection />
       <TestimonialsSection />
       <CTASection />

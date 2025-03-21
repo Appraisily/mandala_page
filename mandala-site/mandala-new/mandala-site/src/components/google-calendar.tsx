@@ -10,6 +10,7 @@ interface GoogleCalendarProps {
   description?: string
   height?: string
   className?: string
+  showFullCalendar?: boolean
 }
 
 export function GoogleCalendar({
@@ -18,6 +19,7 @@ export function GoogleCalendar({
   description = "Consulta nuestras clases y reserva tu plaza",
   height = "600px",
   className = "",
+  showFullCalendar = true
 }: GoogleCalendarProps) {
   const [calendarUrl, setCalendarUrl] = useState("")
   const { settings, isLoaded } = useSiteSettings()
@@ -40,23 +42,29 @@ export function GoogleCalendar({
       showTabs: "1",
       showCalendars: "0",
       showTz: "1",
-      mode: "WEEK"
+      mode: showFullCalendar ? "WEEK" : "AGENDA"
     })
     
     setCalendarUrl(`${baseUrl}?${params.toString()}`)
-  }, [effectiveCalendarId])
+  }, [effectiveCalendarId, showFullCalendar])
 
   return (
     <section className={`py-12 ${className}`}>
       <Container>
-        <div className="text-center max-w-3xl mx-auto mb-8">
-          <h2 className="text-3xl font-heading font-semibold text-brand-purple mb-4">
-            {title}
-          </h2>
-          <p className="text-gray-600">
-            {description}
-          </p>
-        </div>
+        {title || description ? (
+          <div className="text-center max-w-3xl mx-auto mb-8">
+            {title && (
+              <h2 className="text-3xl font-heading font-semibold text-brand-purple mb-4">
+                {title}
+              </h2>
+            )}
+            {description && (
+              <p className="text-gray-600">
+                {description}
+              </p>
+            )}
+          </div>
+        ) : null}
 
         <div className="rounded-lg overflow-hidden shadow-md border border-gray-200">
           {calendarUrl && (
