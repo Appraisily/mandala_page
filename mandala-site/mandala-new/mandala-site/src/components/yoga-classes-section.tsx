@@ -15,6 +15,12 @@ const yogaClasses = [
     href: "/yoga/daoyin-yoga",
   },
   {
+    title: "Yin Yoga",
+    description: "Práctica suave y profunda con posturas sostenidas que trabajan los tejidos conectivos y equilibran la energía.",
+    imageSrc: "https://images.unsplash.com/photo-1545389336-cf090694435e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    href: "/yoga/yin-yoga",
+  },
+  {
     title: "Yoga Nidra & Meditación",
     description: "Técnica de relajación profunda y meditación guiada que ayuda a reducir el estrés y mejorar la calidad del sueño.",
     imageSrc: "https://images.unsplash.com/photo-1536623975707-c4b3b2af565d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",

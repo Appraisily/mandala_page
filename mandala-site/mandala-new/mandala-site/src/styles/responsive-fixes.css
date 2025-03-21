@@ -1,0 +1,165 @@
+/* Responsive fixes for mobile devices */
+
+/* Prevent horizontal overflow - more aggressive fix */
+html, body {
+  overflow-x: hidden !important;
+  position: relative !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+}
+
+/* Root element fixes */
+#__next, main, div {
+  max-width: 100vw !important;
+}
+
+/* Fix for oversized images on small screens */
+img, svg {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Ensure tables don't cause overflow on mobile */
+.overflow-x-auto {
+  -webkit-overflow-scrolling: touch;
+  max-width: 100vw !important;
+}
+
+/* Fix potential issues with absolute positioned elements */
+.absolute {
+  max-width: 100vw !important;
+  left: auto !important;
+  right: auto !important;
+}
+
+/* Better mobile padding for containers */
+@media (max-width: 768px) {
+  .container-custom, .container, [class*="container"] {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Fix for specific elements identified as causing overflow */
+  .order-2, .lg\:order-1, .lg\:col-span-6,
+  .heading-2, .text-balance,
+  .space-y-5,
+  .card-hover,
+  .flex.gap-4,
+  .rounded-full,
+  h3, p {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    position: static !important;
+    left: auto !important;
+    right: auto !important;
+    width: auto !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Fix for nested grid items */
+  .grid > * {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    box-sizing: border-box !important;
+  }
+  
+  /* Adjust spacing for better mobile layout */
+  .section-padding {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+  
+  /* Make buttons more touch-friendly on mobile */
+  .btn-primary,
+  .btn-secondary,
+  .btn-outline {
+    padding: 0.75rem 1.25rem !important;
+    display: flex !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+  
+  /* Fix for hero section on small screens */
+  .min-h-\[85vh\] {
+    min-height: 70vh !important;
+  }
+  
+  /* Improve text readability on mobile */
+  h1, .heading-1 {
+    font-size: 2rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  h2, .heading-2 {
+    font-size: 1.75rem !important;
+    line-height: 1.2 !important;
+  }
+  
+  /* Fix for flex direction on mobile */
+  .flex-col-mobile {
+    flex-direction: column !important;
+  }
+
+  /* Fix background decorative elements that might cause overflow */
+  [class*="blur"], [class*="-left-"], [class*="-right-"] {
+    display: none !important;
+  }
+  
+  /* Fix negative margins */
+  [class*="-mx-"], [class*="-ml-"], [class*="-mr-"],
+  [class*="mx-"], [class*="ml-"], [class*="mr-"] {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Fix padding that might cause overflow */
+  [class*="px-"], [class*="pl-"], [class*="pr-"],
+  [class*="-px-"], [class*="-pl-"], [class*="-pr-"] {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+}
+
+/* Fixes for small tablets */
+@media (min-width: 641px) and (max-width: 768px) {
+  .container-custom, .container, [class*="container"] {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+  
+  /* Adjust spacing for better tablet layout */
+  .section-padding {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  
+  /* Fix background decorative elements that might cause overflow */
+  [class*="-left-"], [class*="-right-"] {
+    left: 0 !important;
+    right: 0 !important;
+  }
+}
+
+/* Fix for horizontal scrolling caused by negative margins */
+.negative-margin-fix, [class*="-mx-"], [class*="-ml-"], [class*="-mr-"] {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+}
+
+/* Fix potential overflow issues with grid layouts */
+@media (max-width: 768px) {
+  .grid {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+} 

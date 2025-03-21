@@ -1,9 +1,9 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
 import { motion } from "framer-motion"
 import { Check, ArrowRight, ArrowLeft } from "lucide-react"
+import { GoogleCalendar } from "@/components/google-calendar"
 
 export default function ClientPage() {
   return (
@@ -28,130 +28,29 @@ export default function ClientPage() {
         </div>
       </section>
 
-      {/* Schedule Section */}
-      <section className="py-16 bg-white">
-        <div className="container-custom">
-          <motion.div 
-            className="text-center max-w-3xl mx-auto mb-12"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            <h2 className="text-2xl md:text-3xl font-heading font-semibold text-brand-purple mb-4">
-              Horario Semanal
-            </h2>
-            <p className="text-gray-600">
-              Contamos con diferentes horarios y clases para que puedas elegir el que mejor se adapte a tus necesidades. 
-              También puedes reservar clases privadas.
-            </p>
-          </motion.div>
+      {/* Google Calendar Schedule Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+      >
+        <GoogleCalendar 
+          calendarId="mandalaourense@gmail.com" 
+          title="Horario de Clases" 
+          description="Consulta la disponibilidad y reserva tu plaza en nuestras clases de yoga" 
+        />
+      </motion.div>
 
-          <motion.div 
-            className="grid grid-cols-1 md:grid-cols-3 gap-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            {/* Monday */}
-            <div className="rounded-xl overflow-hidden shadow-sm border border-gray-100">
-              <div className="bg-brand-purple text-white p-4">
-                <h3 className="font-medium text-lg">Lunes</h3>
-              </div>
-              <div className="p-6 space-y-4">
-                <div className="bg-brand-beige/50 p-4 rounded-lg">
-                  <p className="font-medium text-brand-purple">Hatha Yoga</p>
-                  <div className="flex justify-between text-sm text-gray-600 mt-2">
-                    <span>10:00 - 11:30</span>
-                    <span>Todos los niveles</span>
-                  </div>
-                  <div className="text-xs text-gray-500 mt-1">
-                    Profesor/a: Ana
-                  </div>
-                </div>
-                <div className="bg-brand-amber/10 p-4 rounded-lg">
-                  <p className="font-medium text-brand-purple">Daoyin Yoga</p>
-                  <div className="flex justify-between text-sm text-gray-600 mt-2">
-                    <span>18:00 - 19:30</span>
-                    <span>Principiantes</span>
-                  </div>
-                  <div className="text-xs text-gray-500 mt-1">
-                    Profesor/a: Carlos
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Wednesday */}
-            <div className="rounded-xl overflow-hidden shadow-sm border border-gray-100">
-              <div className="bg-brand-purple text-white p-4">
-                <h3 className="font-medium text-lg">Miércoles</h3>
-              </div>
-              <div className="p-6 space-y-4">
-                <div className="bg-brand-amber/10 p-4 rounded-lg">
-                  <p className="font-medium text-brand-purple">Daoyin Yoga</p>
-                  <div className="flex justify-between text-sm text-gray-600 mt-2">
-                    <span>10:00 - 11:30</span>
-                    <span>Intermedio</span>
-                  </div>
-                  <div className="text-xs text-gray-500 mt-1">
-                    Profesor/a: Carlos
-                  </div>
-                </div>
-                <div className="bg-brand-beige/50 p-4 rounded-lg">
-                  <p className="font-medium text-brand-purple">Hatha Yoga</p>
-                  <div className="flex justify-between text-sm text-gray-600 mt-2">
-                    <span>18:00 - 19:30</span>
-                    <span>Principiantes</span>
-                  </div>
-                  <div className="text-xs text-gray-500 mt-1">
-                    Profesor/a: Ana
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Friday */}
-            <div className="rounded-xl overflow-hidden shadow-sm border border-gray-100">
-              <div className="bg-brand-purple text-white p-4">
-                <h3 className="font-medium text-lg">Viernes</h3>
-              </div>
-              <div className="p-6 space-y-4">
-                <div className="bg-brand-teal/10 p-4 rounded-lg">
-                  <p className="font-medium text-brand-purple">Yoga Nidra & Meditación</p>
-                  <div className="flex justify-between text-sm text-gray-600 mt-2">
-                    <span>11:00 - 12:30</span>
-                    <span>Todos los niveles</span>
-                  </div>
-                  <div className="text-xs text-gray-500 mt-1">
-                    Profesor/a: Lucía
-                  </div>
-                </div>
-                <div className="bg-brand-beige/50 p-4 rounded-lg">
-                  <p className="font-medium text-brand-purple">Hatha Yoga</p>
-                  <div className="flex justify-between text-sm text-gray-600 mt-2">
-                    <span>18:00 - 19:30</span>
-                    <span>Todos los niveles</span>
-                  </div>
-                  <div className="text-xs text-gray-500 mt-1">
-                    Profesor/a: Ana
-                  </div>
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          <motion.div 
-            className="mt-10 text-center"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            <div className="inline-block bg-brand-beige/30 rounded-lg px-4 py-2 text-sm text-gray-700">
-              * Los horarios pueden estar sujetos a cambios. Te recomendamos contactar previamente para confirmar.
-            </div>
-          </motion.div>
+      <motion.div 
+        className="container-custom mt-6 mb-16 text-center"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+      >
+        <div className="inline-block bg-brand-beige/30 rounded-lg px-4 py-2 text-sm text-gray-700">
+          * Puedes añadir clases a tu calendario personal haciendo clic en el evento y utilizando el botón "Añadir a mi calendario".
         </div>
-      </section>
+      </motion.div>
 
       {/* Pricing Section */}
       <section className="py-16 bg-brand-beige/30">

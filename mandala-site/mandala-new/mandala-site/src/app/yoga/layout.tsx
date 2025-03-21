@@ -22,7 +22,7 @@ export default function YogaLayout({
             </p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link 
               href="/yoga/hatha-yoga" 
               className="block p-6 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
@@ -37,6 +37,14 @@ export default function YogaLayout({
             >
               <h3 className="text-xl font-heading font-medium text-brand-purple mb-2">Daoyin Yoga</h3>
               <p className="text-gray-600 text-sm">Fusión de yoga con medicina china tradicional para equilibrar la energía vital.</p>
+            </Link>
+            
+            <Link 
+              href="/yoga/yin-yoga" 
+              className="block p-6 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow"
+            >
+              <h3 className="text-xl font-heading font-medium text-brand-purple mb-2">Yin Yoga</h3>
+              <p className="text-gray-600 text-sm">Práctica suave con posturas sostenidas para mejorar flexibilidad y equilibrio energético.</p>
             </Link>
             
             <Link 

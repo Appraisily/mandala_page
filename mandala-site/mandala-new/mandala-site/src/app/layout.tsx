@@ -1,4 +1,5 @@
 import './globals.css'
+import '../styles/responsive-fixes.css'
 import type { Metadata } from 'next'
 import { Cormorant_Garamond, Lato } from 'next/font/google'
 import { Navbar } from '@/components/navbar'

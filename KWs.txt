@@ -50,83 +50,83 @@
     },
     {
       "keyword": "yin yoga ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "yoga restaurativo ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "yoga terapéutico ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "profesor yoga ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "instructor yoga ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "mejor yoga ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "yoga cerca de mi ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "yoga en el centro de ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "horario clases yoga ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "precios clases yoga ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "ofertas yoga ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "descuentos yoga ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "bienestar ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "relajación ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "meditación ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "mindfulness ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "actividades bienestar ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "terapias ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "centro terapias ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "yoga y terapias ourense",
-      "isProcessed": false
+      "isProcessed": true
     },
     {
       "keyword": "yoga para estrés ourense",

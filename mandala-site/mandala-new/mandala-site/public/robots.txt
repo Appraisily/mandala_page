@@ -1,0 +1,10 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Disallow admin and docs pages
+Disallow: /admin
+Disallow: /docs
+
+# Sitemap location
+Sitemap: https://www.mandalaourense.com/sitemap.xml

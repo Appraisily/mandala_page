@@ -6,7 +6,5 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# Force all redirects to be handled by Next.js
+# The plugin handles this automatically so we don't need manual redirects

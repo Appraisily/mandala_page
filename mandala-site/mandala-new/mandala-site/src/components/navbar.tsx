@@ -12,9 +12,11 @@ const navigation = [
   { name: "Yoga", href: "/yoga", submenu: [
     { name: "Hatha Yoga", href: "/yoga/hatha-yoga" },
     { name: "Daoyin Yoga", href: "/yoga/daoyin-yoga" },
+    { name: "Yin Yoga", href: "/yoga/yin-yoga" },
     { name: "Yoga Nidra & Meditación", href: "/yoga/nidra-yoga-meditacion" },
   ]},
   { name: "Terapias", href: "/terapias" },
+  { name: "Noticias", href: "/noticias" },
   { name: "Cursos & Eventos", href: "/cursos-eventos" },
   { name: "Horarios & Precios", href: "/horarios-precios" },
   { name: "Contacto", href: "/contacto" },
