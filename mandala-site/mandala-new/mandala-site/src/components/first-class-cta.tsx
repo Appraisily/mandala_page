@@ -1,8 +1,22 @@
+"use client"
+
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import { Container } from "@/components/ui/container"
 import { ArrowRight, Sparkles, Star } from "lucide-react"
 
 export function FirstClassCTA() {
+  const [isVisible, setIsVisible] = useState(false)
+  
+  useEffect(() => {
+    // Add a small delay before showing the content
+    const timer = setTimeout(() => {
+      setIsVisible(true)
+    }, 300)
+    
+    return () => clearTimeout(timer)
+  }, [])
+  
   return (
     <section className="py-32 md:py-40 relative overflow-hidden">
       {/* Background elements */}
@@ -23,7 +37,11 @@ export function FirstClassCTA() {
       <div className="absolute -top-10 -right-10 w-64 h-64 rounded-full bg-brand-teal/5 blur-3xl -z-10"></div>
       
       <Container>
-        <div className="max-w-xl mx-auto text-center opacity-0 animate-fade-in" style={{ animationDelay: "300ms", animationFillMode: "forwards" }}>
+        <div 
+          className={`max-w-xl mx-auto text-center transform transition-all duration-700 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
+          }`}
+        >
           <h2 className="text-3xl md:text-4xl font-heading font-medium text-brand-purple mb-8">
             ¿Listo para iniciar tu práctica de yoga?
           </h2>
@@ -41,17 +59,6 @@ export function FirstClassCTA() {
           </Link>
         </div>
       </Container>
-      
-      {/* CSS for animation */}
-      <style jsx global>{`
-        @keyframes fade-in {
-          from { opacity: 0; transform: translateY(20px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-in {
-          animation: fade-in 0.8s ease-out forwards;
-        }
-      `}</style>
     </section>
   )
 } 
