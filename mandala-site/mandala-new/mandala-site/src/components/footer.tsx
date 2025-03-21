@@ -10,6 +10,7 @@ const navigation = {
     { name: "Horarios & Precios", href: "/horarios-precios" },
     { name: "Contacto", href: "/contacto" },
     { name: "Aviso Legal", href: "/aviso-legal" },
+    { name: "Política de Privacidad", href: "/politica-privacidad" },
   ],
   social: [
     {
@@ -135,6 +136,14 @@ export function Footer() {
                     className="inline-flex text-sm text-gray-600 hover:text-brand-teal transition-colors border-b border-dotted border-gray-400 hover:border-brand-teal"
                   >
                     Aviso Legal y Condiciones de Uso
+                  </Link>
+                </li>
+                <li className="mt-2">
+                  <Link 
+                    href="/politica-privacidad" 
+                    className="inline-flex text-sm text-gray-600 hover:text-brand-teal transition-colors border-b border-dotted border-gray-400 hover:border-brand-teal"
+                  >
+                    Política de Privacidad y Cookies
                   </Link>
                 </li>
               </ul>
