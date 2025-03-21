@@ -3,6 +3,11 @@ import type { Metadata } from 'next'
 import { Cormorant_Garamond, Lato } from 'next/font/google'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
+import { SiteSettingsProvider } from '@/lib/settings-context'
+import { GoogleTagManagerScript, GoogleTagManagerNoScript } from '@/components/google-tag-manager'
+
+// Default GTM ID that can be overridden in settings context
+const DEFAULT_GTM_ID = 'GTM-XXXXXXX'
 
 // Font configurations
 const lato = Lato({
@@ -54,11 +59,16 @@ export default function RootLayout({
   return (
     <html lang="es" className="scroll-smooth">
       <body className={`${lato.variable} ${cormorant.variable} font-sans min-h-screen flex flex-col`}>
-        <Navbar />
-        <main className="flex-grow">
-          {children}
-        </main>
-        <Footer />
+        <SiteSettingsProvider>
+          {/* GTM implementation that uses context */}
+          <GoogleTagManagerScript gtmId={DEFAULT_GTM_ID} />
+          <GoogleTagManagerNoScript gtmId={DEFAULT_GTM_ID} />
+          <Navbar />
+          <main className="flex-grow">
+            {children}
+          </main>
+          <Footer />
+        </SiteSettingsProvider>
       </body>
     </html>
   )
