@@ -4,23 +4,25 @@ import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { motion } from "framer-motion"
+import { useState } from "react"
 
 export function HeroSection() {
+  const [imageError, setImageError] = useState(false);
+  
   return (
     <div className="relative overflow-hidden min-h-[95vh]">
       {/* Background Image with animated subtle zoom */}
-      <div className="absolute inset-0 z-0 animate-subtle-zoom-out">
-        <Image
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-brand-purple-dark/90 to-brand-teal-dark/90">
+        <SafeImage
           src="/images/yoga-meditation.jpg"
           alt="Meditación y yoga en un ambiente tranquilo y colorido"
+          fallbackSrc="/yoga-meditation.jpg" 
           fill
           priority
-          className="object-cover object-center img-filter-bright"
-          onError={(e) => {
-            const target = e.target as HTMLImageElement;
-            console.error('Failed to load hero image');
-            target.style.display = 'none';
-          }}
+          sizes="100vw"
+          quality={90}
+          className="object-cover object-center brightness-105 contrast-105 mix-blend-overlay"
+          style={{ opacity: 0.95 }}
         />
       </div>
       
