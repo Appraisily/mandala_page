@@ -1,0 +1,23 @@
+Hero background image fix for Netlify
+
+Here are the image paths that should be accessible:
+1. /images/yoga-meditation.jpg
+2. /images/new-hero-background.jpg
+3. /hero.webp
+
+If the hero background is not displaying correctly, ensure these paths exist in your Netlify deployment.
+
+The deployment should include the following methods for rendering the hero:
+1. CSS background-image with multiple fallbacks
+2. Basic HTML img tag with error handler
+3. Next.js Image component (if available)
+4. Solid color gradient background as final fallback
+
+The background styling is defined in:
+- public/images/fix-hero.css (direct CSS approach)
+- src/app/page.tsx (React component implementation)
+
+To manually fix:
+1. Verify images exist in the correct paths in Netlify's deployment viewer
+2. Check if the CSS file is being loaded (fix-hero.css)
+3. Try testing with the /herofix.html file for a basic HTML-only implementation

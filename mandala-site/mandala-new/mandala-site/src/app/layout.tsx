@@ -61,6 +61,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className="scroll-smooth">
+      <head>
+        <link rel="stylesheet" href="/images/fix-hero.css" />
+      </head>
       <body className={`${lato.variable} ${cormorant.variable} font-sans min-h-screen flex flex-col`}>
         <SiteSettingsProvider>
           <CookieConsentProvider>
