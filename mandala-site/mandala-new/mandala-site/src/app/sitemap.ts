@@ -1,5 +1,8 @@
 import { MetadataRoute } from 'next'
 
+// Add dynamic export for static export
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://mandalaourense.com'
   

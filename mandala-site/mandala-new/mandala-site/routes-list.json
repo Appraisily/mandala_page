@@ -1,0 +1,260 @@
+{
+  "mainRoutes": [
+    {
+      "path": "/",
+      "name": "Home",
+      "description": "Página principal de Mandala Ourense",
+      "keyComponents": ["HeroSection", "YogaStylesSection", "TherapiesSection", "TestimonialsSection"]
+    },
+    {
+      "path": "/about",
+      "name": "Sobre Nosotros",
+      "description": "Información sobre el centro Mandala y su filosofía",
+      "keyComponents": ["AboutSection"]
+    },
+    {
+      "path": "/yoga",
+      "name": "Yoga",
+      "description": "Página principal de estilos de yoga",
+      "keyComponents": ["YogaStylesSection"]
+    },
+    {
+      "path": "/yoga/hatha-yoga",
+      "name": "Hatha Yoga",
+      "description": "Detalles sobre clases de Hatha Yoga",
+      "keyComponents": ["YogaClassCard"]
+    },
+    {
+      "path": "/yoga/daoyin-yoga",
+      "name": "Daoyin Yoga",
+      "description": "Detalles sobre clases de Daoyin Yoga",
+      "keyComponents": ["YogaClassCard"]
+    },
+    {
+      "path": "/yoga/nidra-yoga-meditacion",
+      "name": "Yoga Nidra y Meditación",
+      "description": "Detalles sobre clases de Yoga Nidra y Meditación",
+      "keyComponents": ["YogaClassCard"]
+    },
+    {
+      "path": "/yoga/yin-yoga",
+      "name": "Yin Yoga",
+      "description": "Detalles sobre clases de Yin Yoga",
+      "keyComponents": ["YogaClassCard"]
+    },
+    {
+      "path": "/terapias",
+      "name": "Terapias",
+      "description": "Información sobre las terapias ofrecidas",
+      "keyComponents": ["TherapiesSection"]
+    },
+    {
+      "path": "/horarios-precios",
+      "name": "Horarios y Precios",
+      "description": "Horarios de clases y precios de los servicios",
+      "keyComponents": ["SchedulePreview"]
+    },
+    {
+      "path": "/contacto",
+      "name": "Contacto",
+      "description": "Formulario de contacto e información de contacto",
+      "keyComponents": ["ContactForm", "ContactInfo"]
+    },
+    {
+      "path": "/noticias",
+      "name": "Noticias",
+      "description": "Blog y noticias del centro",
+      "keyComponents": ["SocialMediaFeed"]
+    }
+  ],
+  "seoRoutes": [
+    {
+      "path": "/centro-de-yoga-ourense",
+      "name": "Centro de Yoga Ourense",
+      "seoTarget": "Centro de yoga en Ourense"
+    },
+    {
+      "path": "/clases-de-yoga-en-ourense",
+      "name": "Clases de Yoga en Ourense",
+      "seoTarget": "Clases de yoga en Ourense"
+    },
+    {
+      "path": "/profesor-yoga-ourense",
+      "name": "Profesor de Yoga en Ourense",
+      "seoTarget": "Profesores de yoga en Ourense"
+    },
+    {
+      "path": "/hatha-yoga-ourense",
+      "name": "Hatha Yoga Ourense",
+      "seoTarget": "Hatha yoga en Ourense"
+    },
+    {
+      "path": "/yin-yoga-ourense",
+      "name": "Yin Yoga Ourense",
+      "seoTarget": "Yin yoga en Ourense"
+    },
+    {
+      "path": "/vinyasa-yoga-ourense",
+      "name": "Vinyasa Yoga Ourense",
+      "seoTarget": "Vinyasa yoga en Ourense"
+    },
+    {
+      "path": "/yoga-terapeutico-ourense",
+      "name": "Yoga Terapéutico Ourense",
+      "seoTarget": "Yoga terapéutico en Ourense"
+    },
+    {
+      "path": "/yoga-restaurativo-ourense",
+      "name": "Yoga Restaurativo Ourense",
+      "seoTarget": "Yoga restaurativo en Ourense"
+    },
+    {
+      "path": "/yoga-para-embarazadas-ourense",
+      "name": "Yoga para Embarazadas Ourense",
+      "seoTarget": "Yoga para embarazadas en Ourense"
+    },
+    {
+      "path": "/yoga-ninos-ourense",
+      "name": "Yoga para Niños Ourense",
+      "seoTarget": "Yoga para niños en Ourense"
+    },
+    {
+      "path": "/yoga-para-principiantes-ourense",
+      "name": "Yoga para Principiantes Ourense",
+      "seoTarget": "Yoga para principiantes en Ourense"
+    },
+    {
+      "path": "/yoga-en-el-centro-de-ourense",
+      "name": "Yoga en el Centro de Ourense",
+      "seoTarget": "Yoga en el centro de Ourense"
+    },
+    {
+      "path": "/yoga-cerca-ourense",
+      "name": "Yoga Cerca de Ourense",
+      "seoTarget": "Yoga cerca de Ourense"
+    },
+    {
+      "path": "/mejor-yoga-ourense",
+      "name": "Mejor Yoga de Ourense",
+      "seoTarget": "Mejor yoga de Ourense"
+    },
+    {
+      "path": "/escuela-de-yoga-ourense",
+      "name": "Escuela de Yoga Ourense",
+      "seoTarget": "Escuela de yoga en Ourense"
+    },
+    {
+      "path": "/estudio-yoga-ourense",
+      "name": "Estudio de Yoga Ourense",
+      "seoTarget": "Estudio de yoga en Ourense"
+    },
+    {
+      "path": "/precios-clases-yoga-ourense",
+      "name": "Precios de Clases de Yoga Ourense",
+      "seoTarget": "Precios de clases de yoga en Ourense"
+    },
+    {
+      "path": "/horario-clases-yoga-ourense",
+      "name": "Horario de Clases de Yoga Ourense",
+      "seoTarget": "Horario de clases de yoga en Ourense"
+    },
+    {
+      "path": "/descuentos-yoga-ourense",
+      "name": "Descuentos en Yoga Ourense",
+      "seoTarget": "Descuentos en yoga en Ourense"
+    },
+    {
+      "path": "/ofertas-yoga-ourense",
+      "name": "Ofertas de Yoga Ourense",
+      "seoTarget": "Ofertas de yoga en Ourense"
+    },
+    {
+      "path": "/meditacion-ourense",
+      "name": "Meditación Ourense",
+      "seoTarget": "Meditación en Ourense"
+    },
+    {
+      "path": "/mindfulness-ourense",
+      "name": "Mindfulness Ourense",
+      "seoTarget": "Mindfulness en Ourense"
+    },
+    {
+      "path": "/relajacion-ourense",
+      "name": "Relajación Ourense",
+      "seoTarget": "Técnicas de relajación en Ourense"
+    },
+    {
+      "path": "/terapias-ourense",
+      "name": "Terapias Ourense",
+      "seoTarget": "Terapias alternativas en Ourense"
+    },
+    {
+      "path": "/centro-terapias-ourense",
+      "name": "Centro de Terapias Ourense",
+      "seoTarget": "Centro de terapias en Ourense"
+    },
+    {
+      "path": "/yoga-y-terapias-ourense",
+      "name": "Yoga y Terapias Ourense",
+      "seoTarget": "Yoga y terapias en Ourense"
+    },
+    {
+      "path": "/bienestar-ourense",
+      "name": "Bienestar Ourense",
+      "seoTarget": "Bienestar y salud en Ourense"
+    },
+    {
+      "path": "/actividades-bienestar-ourense",
+      "name": "Actividades de Bienestar Ourense",
+      "seoTarget": "Actividades de bienestar en Ourense"
+    },
+    {
+      "path": "/ourense-yoga",
+      "name": "Ourense Yoga",
+      "seoTarget": "Ourense yoga"
+    },
+    {
+      "path": "/clases-yoga-ourense",
+      "name": "Clases Yoga Ourense",
+      "seoTarget": "Clases yoga Ourense"
+    }
+  ],
+  "legalRoutes": [
+    {
+      "path": "/aviso-legal",
+      "name": "Aviso Legal",
+      "description": "Información legal sobre el sitio web"
+    },
+    {
+      "path": "/politica-privacidad",
+      "name": "Política de Privacidad",
+      "description": "Política de privacidad del sitio web"
+    }
+  ],
+  "adminRoutes": [
+    {
+      "path": "/admin",
+      "name": "Admin",
+      "description": "Panel de administración",
+      "restricted": true
+    },
+    {
+      "path": "/docs",
+      "name": "Documentación",
+      "description": "Documentación del sitio",
+      "restricted": true
+    },
+    {
+      "path": "/docs/sitemap",
+      "name": "Sitemap",
+      "description": "Mapa del sitio para administradores",
+      "restricted": true
+    },
+    {
+      "path": "/docs/images",
+      "name": "Imágenes",
+      "description": "Documentación sobre las imágenes del sitio",
+      "restricted": true
+    }
+  ]
+}

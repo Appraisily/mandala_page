@@ -1,0 +1,1540 @@
+{
+  "imageReferences": [
+    {
+      "file": "src/components/therapies-section.tsx",
+      "imagePath": "/images/therapy.jpg",
+      "exists": true
+    },
+    {
+      "file": "src/components/therapies-section.tsx",
+      "imagePath": "/images/yoga-meditation.jpg",
+      "exists": true
+    },
+    {
+      "file": "src/components/social-media-feed.tsx",
+      "imagePath": "/images/yoga-meditation.jpg",
+      "exists": true
+    },
+    {
+      "file": "src/components/hero-section.tsx",
+      "imagePath": "/images/new-hero-background.jpg",
+      "exists": true
+    },
+    {
+      "file": "src/components/first-class-cta.tsx",
+      "imagePath": "/images/cta-background.jpg",
+      "exists": true
+    },
+    {
+      "file": "src/components/sections/therapies-section.tsx",
+      "imagePath": "/images/yoga-studio.jpg",
+      "exists": true
+    },
+    {
+      "file": "src/components/sections/therapies-section.tsx",
+      "imagePath": "/images/therapy.jpg",
+      "exists": true
+    },
+    {
+      "file": "src/components/sections/hero-section.tsx",
+      "imagePath": "/images/yoga-meditation.jpg",
+      "exists": true
+    },
+    {
+      "file": "src/components/sections/cta-section.tsx",
+      "imagePath": "/images/cta-background.jpg",
+      "exists": true
+    },
+    {
+      "file": "src/app/page.tsx",
+      "imagePath": "/images/yoga-meditation.jpg",
+      "exists": true
+    },
+    {
+      "file": "src/app/yoga-para-principiantes-ourense/page.tsx",
+      "imagePath": "/images/beginner-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-para-principiantes-ourense/page.tsx",
+      "imagePath": "/images/supportive-teachers.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-para-principiantes-ourense/page.tsx",
+      "imagePath": "/images/step-by-step.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-para-principiantes-ourense/page.tsx",
+      "imagePath": "/images/no-judgement.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-para-principiantes-ourense/page.tsx",
+      "imagePath": "/images/yoga-fundamentals.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-para-principiantes-ourense/page.tsx",
+      "imagePath": "/images/essential-poses.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-para-principiantes-ourense/page.tsx",
+      "imagePath": "/images/body-awareness.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/prenatal-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/physical-benefits.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/emotional-benefits.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/prenatal-class.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/prenatal-poses.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/breathing-techniques.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/deep-relaxation.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/community-sharing.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/teacher-ana.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/teacher-laura.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/kids-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/kids-physical.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/kids-mental.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/kids-emotional.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/mini-yoguis.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/explorer-yoguis.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/young-yoguis.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/kids-yoga-class.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/teacher-carlos.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/teacher-elena.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-en-el-centro-de-ourense/page.tsx",
+      "imagePath": "/images/mandala-center.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-en-el-centro-de-ourense/page.tsx",
+      "imagePath": "/images/convenience.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-en-el-centro-de-ourense/page.tsx",
+      "imagePath": "/images/accessibility.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-en-el-centro-de-ourense/page.tsx",
+      "imagePath": "/images/community.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-en-el-centro-de-ourense/page.tsx",
+      "imagePath": "/images/yoga-studio.jpg",
+      "exists": true
+    },
+    {
+      "file": "src/app/yoga-en-el-centro-de-ourense/page.tsx",
+      "imagePath": "/images/hatha-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-en-el-centro-de-ourense/page.tsx",
+      "imagePath": "/images/daoyin-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/yoga-en-el-centro-de-ourense/page.tsx",
+      "imagePath": "/images/nidra-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/vinyasa-yoga-ourense/page.tsx",
+      "imagePath": "/images/vinyasa-yoga-hero.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/vinyasa-yoga-ourense/page.tsx",
+      "imagePath": "/images/vinyasa-flow.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/vinyasa-yoga-ourense/page.tsx",
+      "imagePath": "/images/vinyasa-breath.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/vinyasa-yoga-ourense/page.tsx",
+      "imagePath": "/images/vinyasa-creative.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/vinyasa-yoga-ourense/page.tsx",
+      "imagePath": "/images/vinyasa-class.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/vinyasa-yoga-ourense/page.tsx",
+      "imagePath": "/images/vinyasa-practitioners.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/vinyasa-yoga-ourense/page.tsx",
+      "imagePath": "/images/teacher-andrea.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/vinyasa-yoga-ourense/page.tsx",
+      "imagePath": "/images/teacher-marcos.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/terapias/client-page.tsx",
+      "imagePath": "/images/therapy.jpg",
+      "exists": true
+    },
+    {
+      "file": "src/app/relajacion-ourense/page.tsx",
+      "imagePath": "/images/relaxation-center.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/relajacion-ourense/page.tsx",
+      "imagePath": "/images/yoga-nidra.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/relajacion-ourense/page.tsx",
+      "imagePath": "/images/meditation-relaxation.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/relajacion-ourense/page.tsx",
+      "imagePath": "/images/breathing-techniques.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/relajacion-ourense/page.tsx",
+      "imagePath": "/images/restorative-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/relajacion-ourense/page.tsx",
+      "imagePath": "/images/relaxation-expert1.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/relajacion-ourense/page.tsx",
+      "imagePath": "/images/relaxation-expert2.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/relajacion-ourense/page.tsx",
+      "imagePath": "/images/relaxation-expert3.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/precios-clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-prices.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/precios-clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/private-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/precios-clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/workshops.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/precios-clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-therapy.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/ourense-yoga/page.tsx",
+      "imagePath": "/images/studio-ourense.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/ourense-yoga/page.tsx",
+      "imagePath": "/images/hatha-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/ourense-yoga/page.tsx",
+      "imagePath": "/images/daoyin-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/ourense-yoga/page.tsx",
+      "imagePath": "/images/nidra-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/ofertas-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-offers.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/ofertas-yoga-ourense/page.tsx",
+      "imagePath": "/images/special-workshop.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/ofertas-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-package.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/ofertas-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-gift.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/ofertas-yoga-ourense/page.tsx",
+      "imagePath": "/images/step1.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/ofertas-yoga-ourense/page.tsx",
+      "imagePath": "/images/step2.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/ofertas-yoga-ourense/page.tsx",
+      "imagePath": "/images/step3.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/mindfulness-ourense/page.tsx",
+      "imagePath": "/images/mindfulness-center.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/mindfulness-ourense/page.tsx",
+      "imagePath": "/images/mbsr-program.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/mindfulness-ourense/page.tsx",
+      "imagePath": "/images/intro-mindfulness.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/mindfulness-ourense/page.tsx",
+      "imagePath": "/images/mindful-self-compassion.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/mindfulness-ourense/page.tsx",
+      "imagePath": "/images/corporate-mindfulness.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/mindfulness-ourense/page.tsx",
+      "imagePath": "/images/mindfulness-benefits.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/mindfulness-ourense/page.tsx",
+      "imagePath": "/images/mindfulness-teacher1.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/mindfulness-ourense/page.tsx",
+      "imagePath": "/images/mindfulness-teacher2.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/meditacion-ourense/page.tsx",
+      "imagePath": "/images/meditation-center.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/meditacion-ourense/page.tsx",
+      "imagePath": "/images/mindfulness-meditation.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/meditacion-ourense/page.tsx",
+      "imagePath": "/images/vipassana-meditation.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/meditacion-ourense/page.tsx",
+      "imagePath": "/images/metta-meditation.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/meditacion-ourense/page.tsx",
+      "imagePath": "/images/yoga-nidra-meditation.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/meditacion-ourense/page.tsx",
+      "imagePath": "/images/meditation-teacher1.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/meditacion-ourense/page.tsx",
+      "imagePath": "/images/meditation-teacher2.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/meditacion-ourense/page.tsx",
+      "imagePath": "/images/meditation-teacher3.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/horario-clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-schedule.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/horario-clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/morning-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/horario-clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/evening-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/horario-clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/night-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/horario-clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/weekend-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/hatha-yoga-ourense/page.tsx",
+      "imagePath": "/images/hatha-yoga-hero.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/hatha-yoga-ourense/page.tsx",
+      "imagePath": "/images/hatha-asanas.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/hatha-yoga-ourense/page.tsx",
+      "imagePath": "/images/hatha-pranayama.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/hatha-yoga-ourense/page.tsx",
+      "imagePath": "/images/hatha-meditation.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/hatha-yoga-ourense/page.tsx",
+      "imagePath": "/images/hatha-class.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/hatha-yoga-ourense/page.tsx",
+      "imagePath": "/images/hatha-diverse.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/hatha-yoga-ourense/page.tsx",
+      "imagePath": "/images/teacher-luz.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/hatha-yoga-ourense/page.tsx",
+      "imagePath": "/images/teacher-yoli.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/estudio-yoga-ourense/page.tsx",
+      "imagePath": "/images/mandala-studio.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/estudio-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-room.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/estudio-yoga-ourense/page.tsx",
+      "imagePath": "/images/therapy-room.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/estudio-yoga-ourense/page.tsx",
+      "imagePath": "/images/reception.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/estudio-yoga-ourense/page.tsx",
+      "imagePath": "/images/changing-room.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/estudio-yoga-ourense/page.tsx",
+      "imagePath": "/images/tea-corner.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/estudio-yoga-ourense/page.tsx",
+      "imagePath": "/images/studio-atmosphere.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/escuela-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-school.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/escuela-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/ytt-training.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/escuela-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/workshops.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/escuela-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/intensive-course.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/escuela-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/experienced-faculty.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/escuela-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/traditional-approach.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/escuela-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/small-groups.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/escuela-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/comprehensive-library.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/descuentos-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-discounts.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/descuentos-yoga-ourense/page.tsx",
+      "imagePath": "/images/class-pack.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/descuentos-yoga-ourense/page.tsx",
+      "imagePath": "/images/trimester-pack.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/descuentos-yoga-ourense/page.tsx",
+      "imagePath": "/images/family-pack.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/descuentos-yoga-ourense/page.tsx",
+      "imagePath": "/images/step1-discount.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/descuentos-yoga-ourense/page.tsx",
+      "imagePath": "/images/step2-discount.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/descuentos-yoga-ourense/page.tsx",
+      "imagePath": "/images/step3-discount.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-class-ourense.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/clases-de-yoga-en-ourense/page.tsx",
+      "imagePath": "/images/yoga-class-ourense.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/clases-de-yoga-en-ourense/page.tsx",
+      "imagePath": "/images/hatha-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/clases-de-yoga-en-ourense/page.tsx",
+      "imagePath": "/images/daoyin-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/clases-de-yoga-en-ourense/page.tsx",
+      "imagePath": "/images/nidra-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/clases-de-yoga-en-ourense/page.tsx",
+      "imagePath": "/images/meditation.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/mandala-center.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/experienced-teachers.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/authentic-approach.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/welcoming-community.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-philosophy.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/hatha-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/daoyin-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/nidra-yoga.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/teacher-1.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/teacher-2.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/teacher-3.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/teacher-4.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/teacher-5.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/wellness-center.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/physical-wellness.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/mental-wellness.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/emotional-wellness.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/spiritual-wellness.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/yoga-classes.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/meditation-sessions.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/holistic-therapies.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/workshops-events.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/wellbeing-expert1.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/wellbeing-expert2.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/wellbeing-expert3.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/wellbeing-expert4.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/wellbeing-expert5.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/wellness-activities.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/yoga-classes-activities.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/meditation-activities.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/therapy-sessions.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/spiritual-practices.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/yoga-workshop.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/sound-bath.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/mindful-eating.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/family-constellation.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/weekend-retreat.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/solstice-celebration.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/summer-intensive.jpg",
+      "exists": false
+    },
+    {
+      "file": "src/app/about/page.tsx",
+      "imagePath": "/images/yoga-studio.jpg",
+      "exists": true
+    },
+    {
+      "file": "src/app/about/page.tsx",
+      "imagePath": "/images/man1.jpg",
+      "exists": true
+    },
+    {
+      "file": "src/app/about/page.tsx",
+      "imagePath": "/images/man1.jpg",
+      "exists": true
+    },
+    {
+      "file": "src/app/about/page.tsx",
+      "imagePath": "/images/man1.jpg",
+      "exists": true
+    },
+    {
+      "file": "src/app/about/page.tsx",
+      "imagePath": "/images/yoga-studio.jpg",
+      "exists": true
+    }
+  ],
+  "missingImages": [
+    {
+      "file": "src/app/yoga-para-principiantes-ourense/page.tsx",
+      "imagePath": "/images/beginner-yoga.jpg"
+    },
+    {
+      "file": "src/app/yoga-para-principiantes-ourense/page.tsx",
+      "imagePath": "/images/supportive-teachers.jpg"
+    },
+    {
+      "file": "src/app/yoga-para-principiantes-ourense/page.tsx",
+      "imagePath": "/images/step-by-step.jpg"
+    },
+    {
+      "file": "src/app/yoga-para-principiantes-ourense/page.tsx",
+      "imagePath": "/images/no-judgement.jpg"
+    },
+    {
+      "file": "src/app/yoga-para-principiantes-ourense/page.tsx",
+      "imagePath": "/images/yoga-fundamentals.jpg"
+    },
+    {
+      "file": "src/app/yoga-para-principiantes-ourense/page.tsx",
+      "imagePath": "/images/essential-poses.jpg"
+    },
+    {
+      "file": "src/app/yoga-para-principiantes-ourense/page.tsx",
+      "imagePath": "/images/body-awareness.jpg"
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/prenatal-yoga.jpg"
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/physical-benefits.jpg"
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/emotional-benefits.jpg"
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/prenatal-class.jpg"
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/prenatal-poses.jpg"
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/breathing-techniques.jpg"
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/deep-relaxation.jpg"
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/community-sharing.jpg"
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/teacher-ana.jpg"
+    },
+    {
+      "file": "src/app/yoga-para-embarazadas-ourense/page.tsx",
+      "imagePath": "/images/teacher-laura.jpg"
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/kids-yoga.jpg"
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/kids-physical.jpg"
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/kids-mental.jpg"
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/kids-emotional.jpg"
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/mini-yoguis.jpg"
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/explorer-yoguis.jpg"
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/young-yoguis.jpg"
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/kids-yoga-class.jpg"
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/teacher-carlos.jpg"
+    },
+    {
+      "file": "src/app/yoga-ninos-ourense/page.tsx",
+      "imagePath": "/images/teacher-elena.jpg"
+    },
+    {
+      "file": "src/app/yoga-en-el-centro-de-ourense/page.tsx",
+      "imagePath": "/images/mandala-center.jpg"
+    },
+    {
+      "file": "src/app/yoga-en-el-centro-de-ourense/page.tsx",
+      "imagePath": "/images/convenience.jpg"
+    },
+    {
+      "file": "src/app/yoga-en-el-centro-de-ourense/page.tsx",
+      "imagePath": "/images/accessibility.jpg"
+    },
+    {
+      "file": "src/app/yoga-en-el-centro-de-ourense/page.tsx",
+      "imagePath": "/images/community.jpg"
+    },
+    {
+      "file": "src/app/yoga-en-el-centro-de-ourense/page.tsx",
+      "imagePath": "/images/hatha-yoga.jpg"
+    },
+    {
+      "file": "src/app/yoga-en-el-centro-de-ourense/page.tsx",
+      "imagePath": "/images/daoyin-yoga.jpg"
+    },
+    {
+      "file": "src/app/yoga-en-el-centro-de-ourense/page.tsx",
+      "imagePath": "/images/nidra-yoga.jpg"
+    },
+    {
+      "file": "src/app/vinyasa-yoga-ourense/page.tsx",
+      "imagePath": "/images/vinyasa-yoga-hero.jpg"
+    },
+    {
+      "file": "src/app/vinyasa-yoga-ourense/page.tsx",
+      "imagePath": "/images/vinyasa-flow.jpg"
+    },
+    {
+      "file": "src/app/vinyasa-yoga-ourense/page.tsx",
+      "imagePath": "/images/vinyasa-breath.jpg"
+    },
+    {
+      "file": "src/app/vinyasa-yoga-ourense/page.tsx",
+      "imagePath": "/images/vinyasa-creative.jpg"
+    },
+    {
+      "file": "src/app/vinyasa-yoga-ourense/page.tsx",
+      "imagePath": "/images/vinyasa-class.jpg"
+    },
+    {
+      "file": "src/app/vinyasa-yoga-ourense/page.tsx",
+      "imagePath": "/images/vinyasa-practitioners.jpg"
+    },
+    {
+      "file": "src/app/vinyasa-yoga-ourense/page.tsx",
+      "imagePath": "/images/teacher-andrea.jpg"
+    },
+    {
+      "file": "src/app/vinyasa-yoga-ourense/page.tsx",
+      "imagePath": "/images/teacher-marcos.jpg"
+    },
+    {
+      "file": "src/app/relajacion-ourense/page.tsx",
+      "imagePath": "/images/relaxation-center.jpg"
+    },
+    {
+      "file": "src/app/relajacion-ourense/page.tsx",
+      "imagePath": "/images/yoga-nidra.jpg"
+    },
+    {
+      "file": "src/app/relajacion-ourense/page.tsx",
+      "imagePath": "/images/meditation-relaxation.jpg"
+    },
+    {
+      "file": "src/app/relajacion-ourense/page.tsx",
+      "imagePath": "/images/breathing-techniques.jpg"
+    },
+    {
+      "file": "src/app/relajacion-ourense/page.tsx",
+      "imagePath": "/images/restorative-yoga.jpg"
+    },
+    {
+      "file": "src/app/relajacion-ourense/page.tsx",
+      "imagePath": "/images/relaxation-expert1.jpg"
+    },
+    {
+      "file": "src/app/relajacion-ourense/page.tsx",
+      "imagePath": "/images/relaxation-expert2.jpg"
+    },
+    {
+      "file": "src/app/relajacion-ourense/page.tsx",
+      "imagePath": "/images/relaxation-expert3.jpg"
+    },
+    {
+      "file": "src/app/precios-clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-prices.jpg"
+    },
+    {
+      "file": "src/app/precios-clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/private-yoga.jpg"
+    },
+    {
+      "file": "src/app/precios-clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/workshops.jpg"
+    },
+    {
+      "file": "src/app/precios-clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-therapy.jpg"
+    },
+    {
+      "file": "src/app/ourense-yoga/page.tsx",
+      "imagePath": "/images/studio-ourense.jpg"
+    },
+    {
+      "file": "src/app/ourense-yoga/page.tsx",
+      "imagePath": "/images/hatha-yoga.jpg"
+    },
+    {
+      "file": "src/app/ourense-yoga/page.tsx",
+      "imagePath": "/images/daoyin-yoga.jpg"
+    },
+    {
+      "file": "src/app/ourense-yoga/page.tsx",
+      "imagePath": "/images/nidra-yoga.jpg"
+    },
+    {
+      "file": "src/app/ofertas-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-offers.jpg"
+    },
+    {
+      "file": "src/app/ofertas-yoga-ourense/page.tsx",
+      "imagePath": "/images/special-workshop.jpg"
+    },
+    {
+      "file": "src/app/ofertas-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-package.jpg"
+    },
+    {
+      "file": "src/app/ofertas-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-gift.jpg"
+    },
+    {
+      "file": "src/app/ofertas-yoga-ourense/page.tsx",
+      "imagePath": "/images/step1.jpg"
+    },
+    {
+      "file": "src/app/ofertas-yoga-ourense/page.tsx",
+      "imagePath": "/images/step2.jpg"
+    },
+    {
+      "file": "src/app/ofertas-yoga-ourense/page.tsx",
+      "imagePath": "/images/step3.jpg"
+    },
+    {
+      "file": "src/app/mindfulness-ourense/page.tsx",
+      "imagePath": "/images/mindfulness-center.jpg"
+    },
+    {
+      "file": "src/app/mindfulness-ourense/page.tsx",
+      "imagePath": "/images/mbsr-program.jpg"
+    },
+    {
+      "file": "src/app/mindfulness-ourense/page.tsx",
+      "imagePath": "/images/intro-mindfulness.jpg"
+    },
+    {
+      "file": "src/app/mindfulness-ourense/page.tsx",
+      "imagePath": "/images/mindful-self-compassion.jpg"
+    },
+    {
+      "file": "src/app/mindfulness-ourense/page.tsx",
+      "imagePath": "/images/corporate-mindfulness.jpg"
+    },
+    {
+      "file": "src/app/mindfulness-ourense/page.tsx",
+      "imagePath": "/images/mindfulness-benefits.jpg"
+    },
+    {
+      "file": "src/app/mindfulness-ourense/page.tsx",
+      "imagePath": "/images/mindfulness-teacher1.jpg"
+    },
+    {
+      "file": "src/app/mindfulness-ourense/page.tsx",
+      "imagePath": "/images/mindfulness-teacher2.jpg"
+    },
+    {
+      "file": "src/app/meditacion-ourense/page.tsx",
+      "imagePath": "/images/meditation-center.jpg"
+    },
+    {
+      "file": "src/app/meditacion-ourense/page.tsx",
+      "imagePath": "/images/mindfulness-meditation.jpg"
+    },
+    {
+      "file": "src/app/meditacion-ourense/page.tsx",
+      "imagePath": "/images/vipassana-meditation.jpg"
+    },
+    {
+      "file": "src/app/meditacion-ourense/page.tsx",
+      "imagePath": "/images/metta-meditation.jpg"
+    },
+    {
+      "file": "src/app/meditacion-ourense/page.tsx",
+      "imagePath": "/images/yoga-nidra-meditation.jpg"
+    },
+    {
+      "file": "src/app/meditacion-ourense/page.tsx",
+      "imagePath": "/images/meditation-teacher1.jpg"
+    },
+    {
+      "file": "src/app/meditacion-ourense/page.tsx",
+      "imagePath": "/images/meditation-teacher2.jpg"
+    },
+    {
+      "file": "src/app/meditacion-ourense/page.tsx",
+      "imagePath": "/images/meditation-teacher3.jpg"
+    },
+    {
+      "file": "src/app/horario-clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-schedule.jpg"
+    },
+    {
+      "file": "src/app/horario-clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/morning-yoga.jpg"
+    },
+    {
+      "file": "src/app/horario-clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/evening-yoga.jpg"
+    },
+    {
+      "file": "src/app/horario-clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/night-yoga.jpg"
+    },
+    {
+      "file": "src/app/horario-clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/weekend-yoga.jpg"
+    },
+    {
+      "file": "src/app/hatha-yoga-ourense/page.tsx",
+      "imagePath": "/images/hatha-yoga-hero.jpg"
+    },
+    {
+      "file": "src/app/hatha-yoga-ourense/page.tsx",
+      "imagePath": "/images/hatha-asanas.jpg"
+    },
+    {
+      "file": "src/app/hatha-yoga-ourense/page.tsx",
+      "imagePath": "/images/hatha-pranayama.jpg"
+    },
+    {
+      "file": "src/app/hatha-yoga-ourense/page.tsx",
+      "imagePath": "/images/hatha-meditation.jpg"
+    },
+    {
+      "file": "src/app/hatha-yoga-ourense/page.tsx",
+      "imagePath": "/images/hatha-class.jpg"
+    },
+    {
+      "file": "src/app/hatha-yoga-ourense/page.tsx",
+      "imagePath": "/images/hatha-diverse.jpg"
+    },
+    {
+      "file": "src/app/hatha-yoga-ourense/page.tsx",
+      "imagePath": "/images/teacher-luz.jpg"
+    },
+    {
+      "file": "src/app/hatha-yoga-ourense/page.tsx",
+      "imagePath": "/images/teacher-yoli.jpg"
+    },
+    {
+      "file": "src/app/estudio-yoga-ourense/page.tsx",
+      "imagePath": "/images/mandala-studio.jpg"
+    },
+    {
+      "file": "src/app/estudio-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-room.jpg"
+    },
+    {
+      "file": "src/app/estudio-yoga-ourense/page.tsx",
+      "imagePath": "/images/therapy-room.jpg"
+    },
+    {
+      "file": "src/app/estudio-yoga-ourense/page.tsx",
+      "imagePath": "/images/reception.jpg"
+    },
+    {
+      "file": "src/app/estudio-yoga-ourense/page.tsx",
+      "imagePath": "/images/changing-room.jpg"
+    },
+    {
+      "file": "src/app/estudio-yoga-ourense/page.tsx",
+      "imagePath": "/images/tea-corner.jpg"
+    },
+    {
+      "file": "src/app/estudio-yoga-ourense/page.tsx",
+      "imagePath": "/images/studio-atmosphere.jpg"
+    },
+    {
+      "file": "src/app/escuela-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-school.jpg"
+    },
+    {
+      "file": "src/app/escuela-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/ytt-training.jpg"
+    },
+    {
+      "file": "src/app/escuela-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/workshops.jpg"
+    },
+    {
+      "file": "src/app/escuela-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/intensive-course.jpg"
+    },
+    {
+      "file": "src/app/escuela-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/experienced-faculty.jpg"
+    },
+    {
+      "file": "src/app/escuela-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/traditional-approach.jpg"
+    },
+    {
+      "file": "src/app/escuela-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/small-groups.jpg"
+    },
+    {
+      "file": "src/app/escuela-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/comprehensive-library.jpg"
+    },
+    {
+      "file": "src/app/descuentos-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-discounts.jpg"
+    },
+    {
+      "file": "src/app/descuentos-yoga-ourense/page.tsx",
+      "imagePath": "/images/class-pack.jpg"
+    },
+    {
+      "file": "src/app/descuentos-yoga-ourense/page.tsx",
+      "imagePath": "/images/trimester-pack.jpg"
+    },
+    {
+      "file": "src/app/descuentos-yoga-ourense/page.tsx",
+      "imagePath": "/images/family-pack.jpg"
+    },
+    {
+      "file": "src/app/descuentos-yoga-ourense/page.tsx",
+      "imagePath": "/images/step1-discount.jpg"
+    },
+    {
+      "file": "src/app/descuentos-yoga-ourense/page.tsx",
+      "imagePath": "/images/step2-discount.jpg"
+    },
+    {
+      "file": "src/app/descuentos-yoga-ourense/page.tsx",
+      "imagePath": "/images/step3-discount.jpg"
+    },
+    {
+      "file": "src/app/clases-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-class-ourense.jpg"
+    },
+    {
+      "file": "src/app/clases-de-yoga-en-ourense/page.tsx",
+      "imagePath": "/images/yoga-class-ourense.jpg"
+    },
+    {
+      "file": "src/app/clases-de-yoga-en-ourense/page.tsx",
+      "imagePath": "/images/hatha-yoga.jpg"
+    },
+    {
+      "file": "src/app/clases-de-yoga-en-ourense/page.tsx",
+      "imagePath": "/images/daoyin-yoga.jpg"
+    },
+    {
+      "file": "src/app/clases-de-yoga-en-ourense/page.tsx",
+      "imagePath": "/images/nidra-yoga.jpg"
+    },
+    {
+      "file": "src/app/clases-de-yoga-en-ourense/page.tsx",
+      "imagePath": "/images/meditation.jpg"
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/mandala-center.jpg"
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/experienced-teachers.jpg"
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/authentic-approach.jpg"
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/welcoming-community.jpg"
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/yoga-philosophy.jpg"
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/hatha-yoga.jpg"
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/daoyin-yoga.jpg"
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/nidra-yoga.jpg"
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/teacher-1.jpg"
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/teacher-2.jpg"
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/teacher-3.jpg"
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/teacher-4.jpg"
+    },
+    {
+      "file": "src/app/centro-de-yoga-ourense/page.tsx",
+      "imagePath": "/images/teacher-5.jpg"
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/wellness-center.jpg"
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/physical-wellness.jpg"
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/mental-wellness.jpg"
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/emotional-wellness.jpg"
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/spiritual-wellness.jpg"
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/yoga-classes.jpg"
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/meditation-sessions.jpg"
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/holistic-therapies.jpg"
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/workshops-events.jpg"
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/wellbeing-expert1.jpg"
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/wellbeing-expert2.jpg"
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/wellbeing-expert3.jpg"
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/wellbeing-expert4.jpg"
+    },
+    {
+      "file": "src/app/bienestar-ourense/page.tsx",
+      "imagePath": "/images/wellbeing-expert5.jpg"
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/wellness-activities.jpg"
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/yoga-classes-activities.jpg"
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/meditation-activities.jpg"
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/therapy-sessions.jpg"
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/spiritual-practices.jpg"
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/yoga-workshop.jpg"
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/sound-bath.jpg"
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/mindful-eating.jpg"
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/family-constellation.jpg"
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/weekend-retreat.jpg"
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/solstice-celebration.jpg"
+    },
+    {
+      "file": "src/app/actividades-bienestar-ourense/page.tsx",
+      "imagePath": "/images/summer-intensive.jpg"
+    }
+  ]
+}

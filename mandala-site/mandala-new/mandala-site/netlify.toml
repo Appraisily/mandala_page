@@ -5,5 +5,8 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
-# Force all redirects to be handled by Next.js
-# The plugin handles this automatically so we don't need manual redirects
+# Add explicit fallback for SPA routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

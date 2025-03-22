@@ -1,0 +1,185 @@
+{
+  "buildStatus": {
+    "status": "fixed",
+    "issues": [
+      {
+        "file": "src/app/yoga/page.tsx",
+        "issue": "Page was not a valid Next.js module",
+        "fix": "Added proper React component export and fixed YogaStylesSection import"
+      },
+      {
+        "file": "src/components/yoga-styles-section.tsx",
+        "issue": "Component not handling custom yoga styles correctly",
+        "fix": "Updated to accept yogaStyles prop and handle image path variations"
+      }
+    ]
+  },
+  "imageAssets": {
+    "status": "critical",
+    "totalReferences": 178,
+    "missingReferences": 161,
+    "existingImages": 18,
+    "critical": [
+      "/images/new-hero-background.jpg",
+      "/images/yoga/hatha-yoga.png",
+      "/images/yoga/daoyin-yoga.png",
+      "/images/yoga/yoga-nidra.png"
+    ]
+  },
+  "routes": [
+    {
+      "path": "/",
+      "status": "functional",
+      "components": ["HeroSection", "YogaStylesSection", "TestimonialsSection"],
+      "issues": ["Hero background may not display", "Some yoga style images missing"]
+    },
+    {
+      "path": "/yoga",
+      "status": "fixed",
+      "components": ["YogaStylesSection"],
+      "issues": ["Component now fixed but some images may not display"]
+    },
+    {
+      "path": "/yoga/hatha-yoga",
+      "status": "functional",
+      "components": ["YogaClassCard"],
+      "issues": []
+    },
+    {
+      "path": "/yoga/daoyin-yoga",
+      "status": "functional",
+      "components": ["YogaClassCard"],
+      "issues": []
+    },
+    {
+      "path": "/yoga/nidra-yoga-meditacion",
+      "status": "functional",
+      "components": ["YogaClassCard"],
+      "issues": []
+    },
+    {
+      "path": "/yoga/yin-yoga",
+      "status": "functional",
+      "components": ["YogaClassCard"],
+      "issues": []
+    },
+    {
+      "path": "/terapias",
+      "status": "functional",
+      "components": ["TherapiesSection"],
+      "issues": ["Some therapy images may not display"]
+    },
+    {
+      "path": "/horarios-precios",
+      "status": "functional",
+      "components": ["SchedulePreview"],
+      "issues": []
+    },
+    {
+      "path": "/contacto",
+      "status": "functional",
+      "components": ["ContactForm", "ContactInfo"],
+      "issues": []
+    },
+    {
+      "path": "/noticias",
+      "status": "functional",
+      "components": ["SocialMediaFeed"],
+      "issues": []
+    },
+    {
+      "path": "/about",
+      "status": "functional",
+      "components": ["AboutSection"],
+      "issues": []
+    }
+  ],
+  "seoRoutes": [
+    {
+      "path": "/centro-de-yoga-ourense",
+      "status": "functional",
+      "issues": ["Missing referenced images"]
+    },
+    {
+      "path": "/clases-de-yoga-en-ourense",
+      "status": "functional",
+      "issues": ["Missing referenced images"]
+    },
+    {
+      "path": "/yoga-para-principiantes-ourense",
+      "status": "functional",
+      "issues": ["Missing referenced images"]
+    },
+    {
+      "path": "/yoga-para-embarazadas-ourense",
+      "status": "functional",
+      "issues": ["Missing referenced images"]
+    },
+    {
+      "path": "/yoga-ninos-ourense",
+      "status": "functional",
+      "issues": ["Missing referenced images"]
+    },
+    {
+      "path": "/yoga-en-el-centro-de-ourense",
+      "status": "functional",
+      "issues": ["Missing referenced images"]
+    },
+    {
+      "path": "/hatha-yoga-ourense",
+      "status": "functional",
+      "issues": ["Missing referenced images"]
+    },
+    {
+      "path": "/vinyasa-yoga-ourense",
+      "status": "functional",
+      "issues": ["Missing referenced images"]
+    },
+    {
+      "path": "/yin-yoga-ourense",
+      "status": "functional",
+      "issues": ["Missing referenced images"]
+    },
+    {
+      "path": "/relajacion-ourense",
+      "status": "functional",
+      "issues": ["Missing referenced images"]
+    },
+    {
+      "path": "/meditacion-ourense",
+      "status": "functional",
+      "issues": ["Missing referenced images"]
+    },
+    {
+      "path": "/mindfulness-ourense",
+      "status": "functional",
+      "issues": ["Missing referenced images"]
+    }
+  ],
+  "fixPriorities": [
+    {
+      "priority": 1,
+      "description": "Fix build issues",
+      "status": "completed",
+      "details": "Fixed module exports in yoga/page.tsx"
+    },
+    {
+      "priority": 2,
+      "description": "Add critical images",
+      "status": "pending",
+      "details": "Need to add hero image and yoga style images"
+    },
+    {
+      "priority": 3,
+      "description": "Update components for image error handling",
+      "status": "started",
+      "details": "Created SafeImage component to handle missing images"
+    },
+    {
+      "priority": 4,
+      "description": "Test deployed site",
+      "status": "pending",
+      "details": "Once images are fixed, deploy to Netlify and test all routes"
+    }
+  ]
+}

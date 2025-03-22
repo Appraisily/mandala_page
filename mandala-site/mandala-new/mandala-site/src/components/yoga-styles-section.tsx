@@ -1,13 +1,14 @@
 "use client"
 
-import Image from "next/image";
+import Image from "next/image"
+import { SafeImage } from "@/components/ui/safe-image";
 import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 // Define yoga styles data
-const yogaStyles = [
+const yogaStyles: YogaStyle[] = [
   {
     id: "hatha-yoga",
     title: "Hatha Yoga",
@@ -65,7 +66,26 @@ const itemVariants = {
   }
 };
 
-export function YogaStylesSection() {
+// Define the shape of a yoga style
+interface YogaStyle {
+  id: string;
+  title: string;
+  description: string;
+  benefits: string[];
+  // Make all image-related fields optional
+  image?: string;
+  imageSrc?: string;
+  iconSrc?: string;
+  href?: string;
+}
+
+interface YogaStylesProps {
+  yogaStyles?: YogaStyle[];
+}
+
+export function YogaStylesSection({ yogaStyles: customStyles }: YogaStylesProps) {
+  // Use provided styles or fall back to default
+  const stylesData = customStyles || yogaStyles;
   return (
     <section className="py-20 bg-gradient-to-b from-white to-brand-beige/30">
       <Container>
@@ -86,29 +106,31 @@ export function YogaStylesSection() {
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
         >
-          {yogaStyles.map((style) => (
+          {stylesData.map((style) => (
             <motion.div 
               key={style.id}
               className="relative bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
               variants={itemVariants}
             >
               <div className="relative h-56 w-full overflow-hidden">
-                <Image
-                  src={style.imageSrc}
+                <SafeImage
+                  src={style.imageSrc || style.image || ''}
                   alt={style.title}
                   fill
                   className="object-cover object-center hover:scale-105 transition-transform duration-500"
                 />
-                <div className="absolute left-4 bottom-4 bg-white rounded-full p-2 shadow-md">
-                  <div className="w-8 h-8 relative">
-                    <Image 
-                      src={style.iconSrc} 
-                      alt={`${style.title} icon`} 
-                      width={32} 
-                      height={32}
-                    />
+                {style.iconSrc && (
+                  <div className="absolute left-4 bottom-4 bg-white rounded-full p-2 shadow-md">
+                    <div className="w-8 h-8 relative">
+                      <Image 
+                        src={style.iconSrc} 
+                        alt={`${style.title} icon`} 
+                        width={32} 
+                        height={32}
+                      />
+                    </div>
                   </div>
-                </div>
+                )}
               </div>
               
               <div className="p-6 bg-gradient-to-br from-white to-brand-beige/20">
@@ -133,7 +155,7 @@ export function YogaStylesSection() {
                 </div>
                 
                 <Link 
-                  href={style.href} 
+                  href={style.href || '#'} 
                   className="inline-flex items-center text-brand-teal hover:text-brand-purple transition-colors text-sm font-medium"
                 >
                   Descubrir más

@@ -1,0 +1,39 @@
+{
+  "fallbacks": {
+    "/images/new-hero-background.jpg": "/images/new-hero-background.jpg",
+    "/images/hatha-yoga.jpg": "/images/yoga/hatha-yoga.png",
+    "/images/daoyin-yoga.jpg": "/images/yoga/daoyin-yoga.png",
+    "/images/nidra-yoga.jpg": "/images/yoga/yoga-nidra.png",
+    "/images/yin-yoga.jpg": "/images/fallback/yoga.jpg",
+    "/images/vinyasa-yoga.jpg": "/images/fallback/yoga.jpg",
+    "/images/teacher-": "/images/fallback/teacher.jpg",
+    "/images/testimonial-": "/images/fallback/testimonial.jpg",
+    "/images/therapy-": "/images/therapy.jpg"
+  },
+  "categories": {
+    "yoga": [
+      "/images/hatha-yoga.jpg",
+      "/images/daoyin-yoga.jpg",
+      "/images/nidra-yoga.jpg",
+      "/images/yin-yoga.jpg",
+      "/images/vinyasa-yoga.jpg",
+      "/images/restorative-yoga.jpg",
+      "/images/beginner-yoga.jpg",
+      "/images/prenatal-yoga.jpg",
+      "/images/kids-yoga.jpg"
+    ],
+    "teachers": [
+      "/images/teacher-1.jpg",
+      "/images/teacher-2.jpg",
+      "/images/teacher-3.jpg",
+      "/images/teacher-4.jpg",
+      "/images/teacher-5.jpg" 
+    ],
+    "therapies": [
+      "/images/therapy.jpg",
+      "/images/therapy-room.jpg",
+      "/images/holistic-therapies.jpg",
+      "/images/therapy-sessions.jpg"
+    ]
+  }
+}

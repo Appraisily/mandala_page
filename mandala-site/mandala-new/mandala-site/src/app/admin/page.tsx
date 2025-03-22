@@ -413,6 +413,25 @@ export default function AdminPage() {
                   </div>
                 </dl>
 
+                <div className="mx-4 mt-6 p-4 rounded-md bg-yellow-50 border border-yellow-200">
+                  <div className="flex">
+                    <div className="ml-3">
+                      <p className="text-sm font-medium text-yellow-800 mb-2">
+                        <strong>⚠️ Importante:</strong> Los cambios que realices en esta página solo se guardarán en este navegador.
+                      </p>
+                      <ul className="list-disc list-inside text-xs text-yellow-700 space-y-1">
+                        <li>Los cambios solo afectan al navegador actual</li>
+                        <li>No se comparten entre dispositivos o usuarios</li>
+                        <li>Se perderán si borras los datos del navegador o usas modo incógnito</li>
+                        <li>Para cambios permanentes que afecten a todos los visitantes, es necesario modificar el archivo <code className="px-1 rounded bg-yellow-100">site-config.json</code> y redesplegar el sitio</li>
+                      </ul>
+                      <p className="text-xs text-yellow-700 mt-2">
+                        Si necesitas hacer cambios permanentes, contacta con el administrador del sitio web.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
                 <div className="px-4 py-5 sm:px-6 flex justify-end">
                   <button
                     type="submit"

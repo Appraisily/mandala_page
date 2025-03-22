@@ -154,12 +154,23 @@ El sitio incluye un panel de administración accesible en `/admin` protegido con
 - Usuarios de Instagram y Facebook para integración social
 - Información de contacto y horarios de apertura
 
-Esta configuración se almacena en localStorage y es accesible a través del contexto `SiteSettingsContext` para toda la aplicación.
+Esta configuración utiliza un enfoque híbrido:
+- **Valores predeterminados**: Definidos en `src/lib/site-config.json`
+- **Modificaciones temporales**: Almacenadas en localStorage del navegador
+- **Acceso en la aplicación**: A través del contexto `SiteSettingsContext`
+
+⚠️ **Limitación importante**: Los cambios realizados en el panel de administrador solo afectan al navegador donde se realizaron. No se reflejan para otros usuarios o dispositivos. Para cambios permanentes, se debe modificar `src/lib/site-config.json` y redesplegar el sitio.
 
 ### Acceso al panel de administración
 1. Navega a `/admin` en tu navegador
 2. Introduce la contraseña configurada en `.env.local` (`NEXT_PUBLIC_ADMIN_PASSWORD`)
 3. Configura los parámetros necesarios
+
+### Modificando la configuración por defecto
+Para realizar cambios permanentes que afecten a todos los usuarios:
+1. Edita el archivo `src/lib/site-config.json`
+2. Ejecuta `npm run build` para reconstruir el sitio
+3. Despliega la nueva versión en Netlify
 
 ## Seguridad
 
@@ -249,6 +260,12 @@ public/
 - La mayoría de errores de recursos externos se han solucionado utilizando contenido estático
 - Si aparecen errores de Google Tag Manager, verifica la configuración o deshabilítalo
 - Para errores de CORS, asegúrate de usar imágenes locales en lugar de externas
+
+### Configuración del Panel de Administración
+- **Cambios no visibles para todos los usuarios**: Esto es normal. Los cambios realizados en el panel de administración solo afectan al navegador donde se realizaron, ya que se almacenan en localStorage.
+- **Configuración perdida**: Si la configuración se pierde al borrar datos de navegación, esto es esperado. La configuración se recuperará a los valores predeterminados definidos en `src/lib/site-config.json`.
+- **Hacer cambios permanentes**: Para que los cambios afecten a todos los usuarios, edita `src/lib/site-config.json` y redesplega el sitio.
+- **Recuperar configuración**: Si necesitas recuperar una configuración específica, puedes usar la consola del navegador con `localStorage.getItem('mandala-site-settings')` y guardar el resultado para usarlo más tarde.
 
 ### Problemas de despliegue
 - Revisa los logs de Netlify para identificar errores específicos

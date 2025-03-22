@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { SafeImage } from "@/components/ui/safe-image"
 import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -15,6 +16,11 @@ export function HeroSection() {
           fill
           priority
           className="object-cover object-center"
+          onError={(e) => {
+            const target = e.target as HTMLImageElement;
+            console.error('Failed to load hero image');
+            target.style.display = 'none';
+          }}
         />
       </div>
       

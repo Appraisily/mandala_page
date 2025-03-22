@@ -1,0 +1,11 @@
+{
+  "totalReferences": 178,
+  "missingImages": 161,
+  "totalImageFiles": 18,
+  "recommendations": [
+    {
+      "issue": "Missing 161 referenced images",
+      "fix": "Add the missing image files to the public directory"
+    }
+  ]
+}

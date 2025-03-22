@@ -1,6 +1,7 @@
 "use client"
 
 import { createContext, useContext, useState, useEffect, ReactNode } from "react"
+import siteConfig from './site-config.json'
 
 // Define the site settings type
 export interface SiteSettings {
@@ -19,22 +20,9 @@ export interface SiteSettings {
   }
 }
 
-// Default settings
-const defaultSettings: SiteSettings = {
-  calendarId: "mandalaourense@gmail.com",
-  instagramUsername: "mandalaourense",
-  facebookPageId: "mandalaourense",
-  contactEmail: "info@mandalaourense.com",
-  contactPhone: "+34 605 66 68 30",
-  contactAddress: "C/ Dr. Marañón 2, entresuelo. 32005 Ourense",
-  googleSiteUrl: "https://sites.google.com/view/mandalaourense/inicio",
-  gtmId: "GTM-XXXXXXX", // Replace with actual GTM ID when available
-  businessHours: {
-    weekdays: "9:30 - 21:00",
-    saturday: "10:00 - 14:00",
-    sunday: "Cerrado"
-  }
-}
+// Default settings from site-config.json
+// This provides a consistent source of defaults that can be updated at build time
+const defaultSettings: SiteSettings = siteConfig as SiteSettings
 
 // Context type
 type SiteSettingsContextType = {

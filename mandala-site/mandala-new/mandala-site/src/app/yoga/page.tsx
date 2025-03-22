@@ -1,3 +1,6 @@
+import React from 'react';
+import { YogaStylesSection } from '@/components/yoga-styles-section';
+
 const yogaStyles = [
   {
     id: "hatha",
@@ -32,4 +35,13 @@ const yogaStyles = [
       "Favorece la claridad mental"
     ]
   }
-] 
+];
+
+export default function YogaPage() {
+  return (
+    <div className="container mx-auto py-8">
+      <h1 className="text-3xl font-bold mb-8 text-center">Nuestros Estilos de Yoga</h1>
+      <YogaStylesSection yogaStyles={yogaStyles} />
+    </div>
+  );
+} 

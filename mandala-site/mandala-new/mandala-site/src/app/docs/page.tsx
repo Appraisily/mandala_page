@@ -253,6 +253,101 @@ export default function DocsPage() {
                 </p>
               </div>
 
+              {/* Quick Start Guide */}
+              <section className="mb-16 scroll-mt-20" id="quick-start">
+                <div className="flex items-center gap-2 mb-6">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-brand-purple" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M12 19V5" />
+                    <path d="M5 12l7-7 7 7" />
+                  </svg>
+                  <h2 className="text-3xl font-heading font-semibold text-brand-purple m-0">Guía de Inicio Rápido</h2>
+                </div>
+
+                <div className="space-y-6 mt-6">
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div className="rounded-xl p-6 border border-gray-200 shadow-sm bg-white">
+                      <h3 className="text-xl font-heading font-medium text-brand-purple mb-3">Requisitos Previos</h3>
+                      <ul className="list-disc list-inside space-y-1 text-gray-700">
+                        <li>Node.js 18.x o superior</li>
+                        <li>npm 9.x o superior</li>
+                        <li>Git</li>
+                      </ul>
+                    </div>
+
+                    <div className="rounded-xl p-6 border border-gray-200 shadow-sm bg-white">
+                      <h3 className="text-xl font-heading font-medium text-brand-purple mb-3">Comandos Principales</h3>
+                      <div className="space-y-2">
+                        <div className="bg-gray-50 p-2 rounded-lg border border-gray-200">
+                          <code className="text-sm text-gray-800">npm run dev</code>
+                          <p className="text-xs text-gray-500 mt-1 mb-0">Inicia el servidor de desarrollo</p>
+                        </div>
+                        <div className="bg-gray-50 p-2 rounded-lg border border-gray-200">
+                          <code className="text-sm text-gray-800">npm run build</code>
+                          <p className="text-xs text-gray-500 mt-1 mb-0">Construye el sitio para producción</p>
+                        </div>
+                        <div className="bg-gray-50 p-2 rounded-lg border border-gray-200">
+                          <code className="text-sm text-gray-800">npm run lint</code>
+                          <p className="text-xs text-gray-500 mt-1 mb-0">Ejecuta el linter</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="rounded-xl p-6 border border-gray-200 shadow-sm bg-white">
+                    <h3 className="text-xl font-heading font-medium text-brand-purple mb-3">Pasos de Instalación</h3>
+                    <ol className="list-decimal list-inside space-y-2 text-gray-700">
+                      <li>
+                        <span className="font-medium">Clonar el repositorio</span>
+                        <div className="bg-gray-50 p-3 rounded-lg border border-gray-200 mt-1 mb-2">
+                          <code className="text-sm text-gray-800">git clone https://github.com/tu-usuario/mandala-site.git</code>
+                        </div>
+                      </li>
+                      <li>
+                        <span className="font-medium">Instalar dependencias</span>
+                        <div className="bg-gray-50 p-3 rounded-lg border border-gray-200 mt-1 mb-2">
+                          <code className="text-sm text-gray-800">cd mandala-site && npm install</code>
+                        </div>
+                      </li>
+                      <li>
+                        <span className="font-medium">Configurar las variables de entorno</span>
+                        <div className="bg-gray-50 p-3 rounded-lg border border-gray-200 mt-1 mb-2">
+                          <code className="text-sm text-gray-800">cp .env.local.example .env.local</code>
+                          <p className="text-xs text-gray-500 mt-1 mb-0">Luego edita el archivo .env.local con tus valores</p>
+                        </div>
+                      </li>
+                      <li>
+                        <span className="font-medium">Configurar las imágenes</span>
+                        <div className="bg-gray-50 p-3 rounded-lg border border-gray-200 mt-1 mb-2">
+                          <code className="text-sm text-gray-800">./copy-testimonial-images.bat</code>
+                        </div>
+                      </li>
+                      <li>
+                        <span className="font-medium">Iniciar el servidor de desarrollo</span>
+                        <div className="bg-gray-50 p-3 rounded-lg border border-gray-200 mt-1 mb-2">
+                          <code className="text-sm text-gray-800">npm run dev</code>
+                          <p className="text-xs text-gray-500 mt-1 mb-0">Abre http://localhost:3000 en tu navegador</p>
+                        </div>
+                      </li>
+                    </ol>
+                  </div>
+
+                  <div className="rounded-xl p-6 border border-gray-200 shadow-sm bg-white">
+                    <h3 className="text-xl font-heading font-medium text-brand-purple mb-3">Estructura de Archivos Clave</h3>
+                    <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                      <pre className="text-sm text-gray-800 overflow-x-auto">
+{`src/
+├── app/                  # Rutas y páginas
+├── components/           # Componentes reutilizables
+├── lib/                  # Utilidades y contextos
+│   ├── settings-context.tsx    # Contexto de configuración
+│   └── site-config.json        # Configuración predeterminada
+└── public/               # Archivos estáticos
+    └── images/           # Imágenes del sitio`}</pre>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
               {/* Rutas del Sitio */}
               <section className="mb-16 scroll-mt-20" id="routes">
                 <div className="flex items-center gap-2 mb-6">
@@ -598,6 +693,31 @@ export default function DocsPage() {
                       </div>
                     </div>
                   </div>
+
+                  <div className="mt-6 rounded-xl p-6 border-l-4 border-yellow-400 bg-yellow-50">
+                    <h3 className="text-xl font-heading font-medium text-yellow-800 mb-3">⚠️ Limitaciones Importantes</h3>
+                    <div className="text-sm text-yellow-800 space-y-2">
+                      <p>
+                        <strong>Almacenamiento Local:</strong> La configuración se guarda en localStorage, lo que significa que:
+                      </p>
+                      <ul className="list-disc list-inside pl-2">
+                        <li>Los cambios solo afectan al navegador donde se realizaron</li>
+                        <li>No se comparten entre dispositivos o usuarios</li>
+                        <li>Se pierden si se borran los datos de navegación</li>
+                      </ul>
+                      <p className="mt-2">
+                        <strong>Enfoque de Configuración Híbrido:</strong> 
+                      </p>
+                      <ul className="list-disc list-inside pl-2">
+                        <li>Los valores predeterminados se establecen en <code className="px-1 py-0.5 rounded bg-yellow-100 text-yellow-800">site-config.json</code></li>
+                        <li>El contexto <code className="px-1 py-0.5 rounded bg-yellow-100 text-yellow-800">SiteSettingsContext</code> usa localStorage si existe, o valores predeterminados si no</li>
+                        <li>Para cambios permanentes que afecten a todos los usuarios, se debe modificar <code className="px-1 py-0.5 rounded bg-yellow-100 text-yellow-800">site-config.json</code> y redesplegar el sitio</li>
+                      </ul>
+                      <p className="mt-2 font-medium">
+                        Solución a largo plazo: En el futuro, se recomienda migrar a una solución basada en base de datos o CMS para permitir modificaciones persistentes y compartidas.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </section>
 
@@ -651,6 +771,57 @@ export function MyComponent() {
   // Usar settings.contactEmail, settings.instagramUsername, etc.
   // isLoaded indica si la configuración ya se ha cargado
 }`}
+                      </pre>
+                    </div>
+                  </div>
+
+                  <div className="rounded-xl p-6 border border-gray-200 shadow-sm bg-white mt-6">
+                    <h3 className="text-xl font-heading font-medium text-brand-purple mb-3">Enfoque de Configuración Híbrido</h3>
+                    <p className="mb-4 text-gray-700">
+                      El sitio utiliza un enfoque híbrido para su configuración:
+                    </p>
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h4 className="font-medium mb-2 text-gray-800">site-config.json</h4>
+                        <ul className="list-disc list-inside space-y-1 text-sm text-gray-600">
+                          <li>Proporciona los valores predeterminados</li>
+                          <li>Se carga en tiempo de construcción</li>
+                          <li>Se usa cuando no hay configuración en localStorage</li>
+                          <li>Editar requiere redesplegar el sitio</li>
+                        </ul>
+                      </div>
+                      <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <h4 className="font-medium mb-2 text-gray-800">localStorage</h4>
+                        <ul className="list-disc list-inside space-y-1 text-sm text-gray-600">
+                          <li>Configuración modificada por el administrador</li>
+                          <li>Específica del navegador del usuario</li>
+                          <li>Temporal y local al dispositivo</li>
+                          <li>Permite cambios sin redespliegue</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="bg-gray-50 p-4 rounded-lg border border-gray-200 mt-4">
+                      <pre className="text-sm text-gray-800">
+{`// Implementación en settings-context.tsx
+import siteConfig from './site-config.json'
+
+// Valores predeterminados desde site-config.json
+const defaultSettings = siteConfig as SiteSettings
+
+// En el provider:
+useEffect(() => {
+  if (typeof window !== "undefined") {
+    try {
+      const savedSettings = localStorage.getItem("mandala-site-settings")
+      if (savedSettings) {
+        setSettings(JSON.parse(savedSettings))
+      }
+    } catch (error) {
+      // Si hay error, se usan los valores predeterminados
+      console.error("Error loading settings:", error)
+    }
+  }
+}, [])`}
                       </pre>
                     </div>
                   </div>
@@ -801,6 +972,18 @@ export function MyComponent() {
                           <li>Verificar que se está utilizando la contraseña correcta (<code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">[Contacta al administrador]</code>)</li>
                           <li>Borrar la caché del navegador</li>
                           <li>Probar en otro navegador</li>
+                        </ol>
+                      </div>
+
+                      <div className="p-6 border-t border-gray-200">
+                        <h4 className="font-medium mb-2 text-brand-purple text-lg">Cambios en el panel de administración no afectan a todos los usuarios</h4>
+                        <p className="text-gray-700 mb-3">Si los cambios hechos en el panel de administrador no se ven reflejados para todos los usuarios:</p>
+                        <ol className="list-decimal list-inside text-gray-700 space-y-1 ml-4">
+                          <li>Esto es normal debido a la implementación basada en localStorage</li>
+                          <li>Los cambios solo afectan al navegador donde se realizaron</li>
+                          <li>Para cambios permanentes, se debe editar el archivo <code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/lib/site-config.json</code></li>
+                          <li>Después de editar site-config.json, es necesario reconstruir y redesplegar el sitio</li>
+                          <li>Consulta la sección <a href="#admin-panel" className="text-brand-purple hover:underline">Panel de Administración</a> para más detalles</li>
                         </ol>
                       </div>
                     </div>

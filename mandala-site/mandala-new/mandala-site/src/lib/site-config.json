@@ -1,0 +1,15 @@
+{
+  "calendarId": "mandalaourense@gmail.com",
+  "instagramUsername": "mandalaourense",
+  "facebookPageId": "mandalaourense",
+  "contactEmail": "info@mandalaourense.com",
+  "contactPhone": "+34 605 66 68 30",
+  "contactAddress": "C/ Dr. Marañón 2, entresuelo. 32005 Ourense",
+  "googleSiteUrl": "https://sites.google.com/view/mandalaourense/inicio",
+  "gtmId": "GTM-XXXXXXX",
+  "businessHours": {
+    "weekdays": "9:30 - 21:00",
+    "saturday": "10:00 - 14:00",
+    "sunday": "Cerrado"
+  }
+}
