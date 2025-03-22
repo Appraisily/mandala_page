@@ -52,43 +52,35 @@ export function SchedulePreview() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-8">
-          {/* Left side: Class preview cards */}
-          <div className="space-y-4">
-            {classData.map((day, dayIndex) => (
-              <div key={dayIndex} className="bg-white rounded-lg shadow-sm overflow-hidden border border-gray-100">
-                <div className="bg-brand-purple p-3 text-white font-semibold">
-                  <h3 className="text-lg">{day.day}</h3>
-                </div>
-                <div className="p-4 space-y-3">
-                  {day.classes.map((cls, clsIndex) => (
-                    <div key={clsIndex} className={`p-3 rounded-md ${cls.color}`}>
-                      <p className="font-medium text-brand-purple">{cls.name}</p>
-                      <div className="flex justify-between text-sm text-gray-600 mt-1">
-                        <span className="flex items-center">
-                          <Clock className="h-3.5 w-3.5 mr-1" />
-                          {cls.time}
-                        </span>
-                        <span>{cls.level}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Right side: Google Calendar */}
-          <div className="bg-white rounded-lg shadow-sm p-4 border border-gray-100">
-            <h3 className="text-lg font-medium text-center mb-4 text-brand-purple">Calendario Completo</h3>
-            <GoogleCalendar 
-              height="400px"
-              title=""
-              description=""
-              showFullCalendar={false}
-            />
-            <p className="text-xs text-center text-gray-500 mt-3">
-              * El calendario muestra todas las clases configuradas desde el panel de administración
+        <div className="grid grid-cols-1 gap-12 mb-8">
+          {/* Full width: Google Calendar */}
+          <div className="bg-white rounded-lg shadow-md p-6 border border-gray-200">
+            <h3 className="text-xl font-medium text-center mb-6 text-brand-purple">Calendario de Clases</h3>
+            
+            {/* Today's Activities */}
+            <div className="mb-8">
+              <h4 className="text-lg font-medium mb-4 text-brand-teal border-b pb-2">Actividades de Hoy</h4>
+              <GoogleCalendar 
+                height="200px"
+                title=""
+                description=""
+                showFullCalendar={false}
+              />
+            </div>
+            
+            {/* Monthly Calendar */}
+            <div>
+              <h4 className="text-lg font-medium mb-4 text-brand-teal border-b pb-2">Calendario Mensual</h4>
+              <GoogleCalendar 
+                height="500px"
+                title=""
+                description=""
+                showFullCalendar={true}
+              />
+            </div>
+            
+            <p className="text-sm text-center text-gray-500 mt-6">
+              * Para reservar una clase, haz clic en el evento y contacta con nosotros
             </p>
           </div>
         </div>

@@ -15,7 +15,6 @@ const navigation = [
     { name: "Yin Yoga", href: "/yoga/yin-yoga" },
     { name: "Yoga Nidra & Meditación", href: "/yoga/nidra-yoga-meditacion" },
   ]},
-  { name: "Terapias", href: "/terapias" },
   { name: "Noticias", href: "/noticias" },
   { name: "Cursos y Eventos", href: "/cursos-eventos" },
   { name: "Horarios y Precios", href: "/horarios-precios" },
@@ -128,7 +127,7 @@ export function Navbar() {
               size="sm" 
               className={cn(
                 "ml-3 rounded-full",
-                !isScrolled && "border-white text-white hover:bg-white/20"
+                !isScrolled && "border-white text-white hover:bg-white/20 hover:text-white"
               )}
             >
               <Link href="/contacto">Reservar Clase</Link>

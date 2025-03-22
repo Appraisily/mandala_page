@@ -51,13 +51,26 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Brand colors from our design recommendations
+        // Enhanced brand colors with variants
         brand: {
-          teal: "#4ECDC4",
-          purple: "#6C5B7B",
-          beige: "#F7F9F9",
-          amber: "#F9A826",
-          terracotta: "#C06C52",
+          teal: "var(--brand-teal)",
+          "teal-dark": "var(--brand-teal-dark)",
+          "teal-light": "var(--brand-teal-light)",
+          
+          purple: "var(--brand-purple)",
+          "purple-dark": "var(--brand-purple-dark)",
+          "purple-light": "var(--brand-purple-light)",
+          
+          beige: "var(--brand-beige)",
+          "beige-dark": "var(--brand-beige-dark)",
+          
+          amber: "var(--brand-amber)",
+          "amber-dark": "var(--brand-amber-dark)",
+          "amber-light": "var(--brand-amber-light)",
+          
+          terracotta: "var(--brand-terracotta)",
+          "terracotta-dark": "var(--brand-terracotta-dark)",
+          "terracotta-light": "var(--brand-terracotta-light)",
         },
       },
       borderRadius: {
@@ -113,6 +126,10 @@ module.exports = {
         "slide-down": "slide-down 0.5s ease-out",
         "scale-in": "scale-in 0.5s ease-out",
         "scale-out": "scale-out 0.5s ease-out",
+        "subtle-zoom-out": "subtle-zoom-out 20s ease-out forwards",
+        "spin-slow": "spin-slow 20s linear infinite",
+        "floating": "floating 3s ease-in-out infinite",
+        "pulse-slow": "pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
     },
   },

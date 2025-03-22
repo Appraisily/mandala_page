@@ -79,14 +79,14 @@ export default function ClientPage() {
             <div className="rounded-xl overflow-hidden flex flex-col bg-white shadow-sm border border-gray-100 transition-shadow hover:shadow-md">
               <div className="p-8 flex-grow">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl font-heading font-medium text-brand-purple">Clase Suelta</h3>
+                  <h3 className="text-xl font-heading font-medium text-brand-purple">Yoga 1 Día por Semana</h3>
                   <div className="bg-brand-teal/10 text-brand-teal text-xs font-medium py-1 px-2 rounded">
-                    Sin compromiso
+                    Flexible
                   </div>
                 </div>
                 <div className="mt-4 mb-6">
-                  <span className="text-4xl font-bold text-gray-900">12€</span>
-                  <span className="text-gray-500 text-sm">/clase</span>
+                  <span className="text-4xl font-bold text-gray-900">35€</span>
+                  <span className="text-gray-500 text-sm">/mes</span>
                 </div>
                 
                 <ul className="space-y-3 mb-8">
@@ -121,11 +121,11 @@ export default function ClientPage() {
                 Más popular
               </div>
               <div className="p-8 pt-12 flex-grow">
-                <h3 className="text-xl font-heading font-medium text-brand-purple mb-4">Bono 8 Clases</h3>
+                <h3 className="text-xl font-heading font-medium text-brand-purple mb-4">Yoga 2 Días por Semana</h3>
                 <div className="mt-4 mb-6">
-                  <span className="text-4xl font-bold text-gray-900">80€</span>
-                  <span className="text-gray-500 text-sm">/bono</span>
-                  <p className="text-sm text-gray-500 mt-1">10€ por clase - Válido por 2 meses</p>
+                  <span className="text-4xl font-bold text-gray-900">60€</span>
+                  <span className="text-gray-500 text-sm">/mes</span>
+                  <p className="text-sm text-gray-500 mt-1">Acceso a clases 2 días por semana</p>
                 </div>
                 
                 <ul className="space-y-3 mb-8">
@@ -162,13 +162,13 @@ export default function ClientPage() {
             <div className="rounded-xl overflow-hidden flex flex-col bg-white shadow-sm border border-gray-100 transition-shadow hover:shadow-md">
               <div className="p-8 flex-grow">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-xl font-heading font-medium text-brand-purple">Mensualidad</h3>
+                  <h3 className="text-xl font-heading font-medium text-brand-purple">Acceso Ilimitado</h3>
                   <div className="bg-brand-purple/10 text-brand-purple text-xs font-medium py-1 px-2 rounded">
                     Mejor valor
                   </div>
                 </div>
                 <div className="mt-4 mb-6">
-                  <span className="text-4xl font-bold text-gray-900">65€</span>
+                  <span className="text-4xl font-bold text-gray-900">80€</span>
                   <span className="text-gray-500 text-sm">/mes</span>
                   <p className="text-sm text-gray-500 mt-1">Acceso ilimitado a todas las clases</p>
                 </div>

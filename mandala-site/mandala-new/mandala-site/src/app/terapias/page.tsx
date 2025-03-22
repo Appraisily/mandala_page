@@ -1,11 +1,12 @@
-import { Metadata } from "next"
-import ClientPage from "./client-page"
-
-export const metadata: Metadata = {
-  title: "Terapias Holísticas | Mandala Ourense",
-  description: "Descubre nuestras terapias holísticas (masaje ayurvédico, reflexología, reiki y aromaterapia) dirigidas al bienestar integral, diseñadas para armonizar cuerpo, mente y espíritu.",
-}
-
 export default function TherapiesPage() {
-  return <ClientPage />
+  return (
+    <>
+      <head>
+        <meta httpEquiv="refresh" content="0;url=/" />
+      </head>
+      <body>
+        <p>Redirecting to <a href="/">home page</a>...</p>
+      </body>
+    </>
+  )
 }

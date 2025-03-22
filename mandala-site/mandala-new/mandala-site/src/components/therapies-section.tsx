@@ -36,9 +36,9 @@ export function TherapiesSection() {
       <div className="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-brand-teal/5 blur-3xl -z-10"></div>
       
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left column - Image */}
-          <div className="order-1 lg:order-1 lg:col-span-5 relative">
+          <div className="order-2 lg:order-1 relative">
             <div className="aspect-[4/3] relative rounded-lg overflow-hidden shadow-lg border border-white/80">
               <Image
                 src="/images/therapy.jpg"
@@ -77,7 +77,7 @@ export function TherapiesSection() {
           </div>
           
           {/* Right column - Content */}
-          <div className="order-2 lg:order-2 lg:col-span-7">
+          <div className="order-1 lg:order-2">
             <span className="text-sm font-medium text-brand-teal uppercase tracking-wider">SALUD INTEGRAL</span>
             <h2 className="text-3xl font-heading font-semibold text-brand-purple mt-2 mb-4">
               Bienestar para Cuerpo, Mente y Espíritu

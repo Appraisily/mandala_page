@@ -5,7 +5,7 @@ const navigation = {
   main: [
     { name: "Inicio", href: "/" },
     { name: "Yoga", href: "/yoga" },
-    { name: "Terapias", href: "/terapias" },
+    { name: "Noticias", href: "/noticias" },
     { name: "Cursos & Eventos", href: "/cursos-eventos" },
     { name: "Horarios & Precios", href: "/horarios-precios" },
     { name: "Contacto", href: "/contacto" },
@@ -44,20 +44,22 @@ export function Footer() {
     <footer className="bg-brand-beige" aria-labelledby="footer-heading">
       <h2 id="footer-heading" className="sr-only">Footer</h2>
       <div className="container-custom py-12 md:py-16">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-          <div className="space-y-4">
-            <Link href="/" className="flex items-center">
-              <span className="text-3xl font-heading font-semibold text-brand-purple">
-                Mandala
-              </span>
-              <span className="ml-1 text-3xl font-heading text-brand-teal">
-                Ourense
-              </span>
-            </Link>
-            <p className="text-sm text-gray-600 max-w-sm">
-              Centro de yoga y terapias holísticas en Ourense, ofreciendo un espacio
-              para el bienestar físico, mental y espiritual.
-            </p>
+        <div className="xl:grid xl:grid-cols-4 xl:gap-8">
+          <div className="xl:col-span-1 space-y-6">
+            <div>
+              <Link href="/" className="flex items-center">
+                <span className="text-3xl font-heading font-semibold text-brand-purple">
+                  Mandala
+                </span>
+                <span className="ml-1 text-3xl font-heading text-brand-teal">
+                  Ourense
+                </span>
+              </Link>
+              <p className="mt-3 text-sm text-gray-600 max-w-sm">
+                Centro especializado en yoga en Ourense, ofreciendo un espacio
+                para el bienestar físico, mental y espiritual a través de diversas disciplinas.
+              </p>
+            </div>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
                 <a
@@ -73,20 +75,55 @@ export function Footer() {
               ))}
             </div>
           </div>
-          <div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+          <div className="mt-12 grid md:grid-cols-3 gap-8 xl:col-span-3 xl:mt-0">
             <div>
-              <h3 className="text-base font-medium text-brand-purple">Navegar</h3>
+              <h3 className="text-base font-medium text-brand-purple">Mandala</h3>
               <ul role="list" className="mt-4 space-y-3">
-                {navigation.main.map((item) => (
-                  <li key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="text-sm text-gray-600 hover:text-brand-teal transition-colors"
-                    >
-                      {item.name}
-                    </Link>
-                  </li>
-                ))}
+                <li>
+                  <Link href="/" className="text-sm text-gray-600 hover:text-brand-teal transition-colors">
+                    Inicio
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/yoga" className="text-sm text-gray-600 hover:text-brand-teal transition-colors">
+                    Yoga
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/noticias" className="text-sm text-gray-600 hover:text-brand-teal transition-colors">
+                    Noticias
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contacto" className="text-sm text-gray-600 hover:text-brand-teal transition-colors">
+                    Contacto
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-base font-medium text-brand-purple">Información</h3>
+              <ul role="list" className="mt-4 space-y-3">
+                <li>
+                  <Link href="/cursos-eventos" className="text-sm text-gray-600 hover:text-brand-teal transition-colors">
+                    Cursos & Eventos
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/horarios-precios" className="text-sm text-gray-600 hover:text-brand-teal transition-colors">
+                    Horarios & Precios
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/aviso-legal" className="text-sm text-gray-600 hover:text-brand-teal transition-colors">
+                    Aviso Legal
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/politica-privacidad" className="text-sm text-gray-600 hover:text-brand-teal transition-colors">
+                    Política de Privacidad
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
@@ -131,20 +168,15 @@ export function Footer() {
                   </div>
                 </li>
                 <li>
-                  <Link 
-                    href="/aviso-legal" 
-                    className="inline-flex text-sm text-gray-600 hover:text-brand-teal transition-colors border-b border-dotted border-gray-400 hover:border-brand-teal"
+                  <a 
+                    href="https://goo.gl/maps/uNBdecH9ztaY5nJZ7" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-sm text-gray-600 hover:text-brand-teal transition-colors"
                   >
-                    Aviso Legal y Condiciones de Uso
-                  </Link>
-                </li>
-                <li className="mt-2">
-                  <Link 
-                    href="/politica-privacidad" 
-                    className="inline-flex text-sm text-gray-600 hover:text-brand-teal transition-colors border-b border-dotted border-gray-400 hover:border-brand-teal"
-                  >
-                    Política de Privacidad y Cookies
-                  </Link>
+                    <span>Cómo llegar</span>
+                    <ExternalLink className="ml-1 h-3 w-3" />
+                  </a>
                 </li>
               </ul>
             </div>
