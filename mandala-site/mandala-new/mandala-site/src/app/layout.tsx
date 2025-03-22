@@ -5,6 +5,8 @@ import { Cormorant_Garamond, Lato } from 'next/font/google'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { SiteSettingsProvider } from '@/lib/settings-context'
+import { CookieConsentProvider } from '@/lib/cookie-consent'
+import { CookieConsentBanner } from '@/components/cookie-consent-banner'
 import { GoogleTagManagerClient } from '@/components/analytics/google-tag-manager-client'
 
 // Remove default GTM ID since we'll use the value from settings context
@@ -60,13 +62,16 @@ export default function RootLayout({
     <html lang="es" className="scroll-smooth">
       <body className={`${lato.variable} ${cormorant.variable} font-sans min-h-screen flex flex-col`}>
         <SiteSettingsProvider>
-          {/* GTM implementation that reads from settings context */}
-          <GoogleTagManagerClient />
-          <Navbar />
-          <main className="flex-grow">
-            {children}
-          </main>
-          <Footer />
+          <CookieConsentProvider>
+            {/* GTM implementation that reads from settings context */}
+            <GoogleTagManagerClient />
+            <Navbar />
+            <main className="flex-grow">
+              {children}
+            </main>
+            <Footer />
+            <CookieConsentBanner />
+          </CookieConsentProvider>
         </SiteSettingsProvider>
       </body>
     </html>

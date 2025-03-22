@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { ExternalLink, Instagram, Facebook, Mail, MapPin, Phone, Clock } from "lucide-react"
+import { ExternalLink, Instagram, Facebook, Mail, MapPin, Phone, Clock, CookieIcon } from "lucide-react"
+import { CookieSettingsButton } from "@/components/cookie-consent-banner"
 
 const navigation = {
   main: [
@@ -183,9 +184,17 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-12 border-t border-gray-200 pt-8">
-          <p className="text-sm text-gray-500 xl:text-center">
-            &copy; {currentYear} Mandala Ourense. Todos los derechos reservados.
-          </p>
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+            <p className="text-sm text-gray-500">
+              &copy; {currentYear} Mandala Ourense. Todos los derechos reservados.
+            </p>
+            <div className="mt-4 md:mt-0">
+              <CookieSettingsButton className="inline-flex items-center text-sm text-gray-500 hover:text-brand-teal transition-colors">
+                <CookieIcon className="h-4 w-4 mr-1" />
+                <span>Configuración de cookies</span>
+              </CookieSettingsButton>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

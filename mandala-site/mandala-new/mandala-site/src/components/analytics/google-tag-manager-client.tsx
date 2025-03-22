@@ -2,14 +2,17 @@
 
 import { useEffect } from 'react'
 import { useSiteSettings } from '@/lib/settings-context'
+import { useCookieConsent } from '@/lib/cookie-consent'
 import { GoogleTagManagerScript, GoogleTagManagerNoScript } from '@/components/google-tag-manager'
 
 export function GoogleTagManagerClient() {
   const { settings, isLoaded } = useSiteSettings()
+  const { preferences, consentGiven } = useCookieConsent()
   
   // Client-side only code to initialize dataLayer
   useEffect(() => {
-    if (isLoaded && settings.gtmId) {
+    // Only load GTM if analytics cookies are accepted
+    if (isLoaded && settings.gtmId && consentGiven && preferences.analytics) {
       // Initialize dataLayer
       window.dataLayer = window.dataLayer || []
       
@@ -20,9 +23,10 @@ export function GoogleTagManagerClient() {
         page_title: document.title
       })
     }
-  }, [isLoaded, settings.gtmId])
+  }, [isLoaded, settings.gtmId, consentGiven, preferences.analytics])
   
-  if (!isLoaded || !settings.gtmId) {
+  // Only render GTM if analytics cookies are accepted
+  if (!isLoaded || !settings.gtmId || !consentGiven || !preferences.analytics) {
     return null
   }
   
