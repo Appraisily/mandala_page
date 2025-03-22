@@ -1,22 +1,31 @@
 import Image from "next/image"
 import { SafeImage } from "@/components/ui/safe-image"
+import { FallbackImage } from "@/components/ui/fallback-image"
 import { Container } from "@/components/ui/container"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { motion } from "framer-motion"
 import { useState } from "react"
 
+// Import hero images statically to ensure they're included in the build
+import heroBackgroundImg from "../../../public/images/yoga-meditation.jpg"
+import fallbackHeroImg from "../../../public/images/new-hero-background.jpg"
+
 export function HeroSection() {
   const [imageError, setImageError] = useState(false);
   
   return (
     <div className="relative overflow-hidden min-h-[95vh]">
-      {/* Background Image with animated subtle zoom */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-br from-brand-purple-dark/90 to-brand-teal-dark/90">
-        <SafeImage
-          src="/images/yoga-meditation.jpg"
+      {/* Background Image with multiple fallback mechanisms */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-br from-brand-purple-dark/90 to-brand-teal-dark/90 hero-gradient-fallback">
+        {/* CSS fallback background */}
+        <div className="absolute inset-0 hero-background mix-blend-overlay opacity-95"></div>
+        
+        {/* Next.js Image component (will be hidden if CSS background works) */}
+        <FallbackImage
+          src={heroBackgroundImg.src}
+          fallbackSrc={fallbackHeroImg.src}
           alt="Meditación y yoga en un ambiente tranquilo y colorido"
-          fallbackSrc="/yoga-meditation.jpg" 
           fill
           priority
           sizes="100vw"
@@ -24,6 +33,9 @@ export function HeroSection() {
           className="object-cover object-center brightness-105 contrast-105 mix-blend-overlay"
           style={{ opacity: 0.95 }}
         />
+        
+        {/* Fallback solid color always present as a base layer */}
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-purple-dark to-brand-teal-dark mix-blend-multiply"></div>
       </div>
       
       {/* Enhanced gradient overlay with multiple layers */}

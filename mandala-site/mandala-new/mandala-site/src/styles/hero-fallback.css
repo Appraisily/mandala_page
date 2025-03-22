@@ -1,0 +1,19 @@
+/* Hero section fallback styles */
+.hero-background {
+  background-image: url('/images/yoga-meditation.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Add fallback background images with decreasing specificity */
+@media (max-width: 9999px) {
+  .hero-background {
+    background-image: url('/images/yoga-meditation.jpg'), url('/yoga-meditation.jpg'), url('/images/new-hero-background.jpg'), url('/hero.webp');
+  }
+}
+
+/* Fallback gradient if all images fail */
+.hero-gradient-fallback {
+  background: linear-gradient(135deg, #422c5d, #1e606e);
+}

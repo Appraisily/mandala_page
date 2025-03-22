@@ -1,6 +1,8 @@
 {
   "fallbacks": {
     "/images/new-hero-background.jpg": "/images/new-hero-background.jpg",
+    "/images/yoga-meditation.jpg": "/images/new-hero-background.jpg",
+    "/yoga-meditation.jpg": "/hero.webp",
     "/images/hatha-yoga.jpg": "/images/yoga/hatha-yoga.png",
     "/images/daoyin-yoga.jpg": "/images/yoga/daoyin-yoga.png",
     "/images/nidra-yoga.jpg": "/images/yoga/yoga-nidra.png",
