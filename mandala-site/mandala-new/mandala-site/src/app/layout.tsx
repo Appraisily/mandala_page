@@ -62,7 +62,17 @@ export default function RootLayout({
   return (
     <html lang="es" className="scroll-smooth">
       <head>
+        {/* Load hero CSS from multiple locations to ensure it's found */}
         <link rel="stylesheet" href="/images/fix-hero.css" />
+        <link rel="stylesheet" href="/fix-hero.css" />
+        {/* Inline minimal critical CSS as ultimate fallback */}
+        <style dangerouslySetInnerHTML={{ __html: `
+          .hero-section{position:relative;min-height:600px;display:flex;align-items:center;color:white;overflow:hidden}
+          .hero-bg{position:absolute;top:0;left:0;width:100%;height:100%;z-index:-1;background-color:#2A245E}
+          .hero-bg::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background-image:url('/images/yoga-meditation.jpg');background-size:cover;background-position:center;opacity:0.8}
+          .hero-bg::after{content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(to right,rgba(0,0,0,0.7),rgba(0,0,0,0.3))}
+          .hero-content{position:relative;z-index:1;max-width:800px;margin:0 auto;padding:0 20px}
+        ` }} />
       </head>
       <body className={`${lato.variable} ${cormorant.variable} font-sans min-h-screen flex flex-col`}>
         <SiteSettingsProvider>
