@@ -44,6 +44,20 @@ export default function DocsPage() {
             <nav className="space-y-6 text-lg">
               <div>
                 <button
+                  className={`flex w-full items-center justify-between py-2 text-left font-medium ${activeSection === 'quick-start' ? 'text-brand-purple' : 'text-gray-700'}`}
+                  onClick={() => scrollToSection('quick-start')}
+                >
+                  <div className="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 19V5" />
+                      <path d="M5 12l7-7 7 7" />
+                    </svg>
+                    <span>Inicio Rápido</span>
+                  </div>
+                </button>
+              </div>
+              <div>
+                <button
                   className={`flex w-full items-center justify-between py-2 text-left font-medium ${activeSection === 'routes' ? 'text-brand-purple' : 'text-gray-700'}`}
                   onClick={() => scrollToSection('routes')}
                 >
@@ -155,6 +169,18 @@ export default function DocsPage() {
         <aside className="hidden lg:block w-64 shrink-0 border-r border-gray-200 pt-8 pb-10 pr-4">
           <nav className="space-y-1 pl-6">
             <h2 className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-4">Documentación</h2>
+            <div>
+              <button
+                className={`flex w-full items-center text-left py-2 px-3 rounded-md ${activeSection === 'quick-start' ? 'bg-brand-purple/10 text-brand-purple font-medium' : 'text-gray-700 hover:bg-gray-100'}`}
+                onClick={() => scrollToSection('quick-start')}
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="mr-2 h-4 w-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M12 19V5" />
+                  <path d="M5 12l7-7 7 7" />
+                </svg>
+                <span>Inicio Rápido</span>
+              </button>
+            </div>
             <div>
               <button
                 className={`flex w-full items-center text-left py-2 px-3 rounded-md ${activeSection === 'routes' ? 'bg-brand-purple/10 text-brand-purple font-medium' : 'text-gray-700 hover:bg-gray-100'}`}
@@ -396,21 +422,50 @@ export default function DocsPage() {
                   </div>
                 </div>
 
+                <div className="space-y-4 mb-6">
+                  <h3 className="text-xl font-heading font-medium text-brand-purple mb-3">Categorías de Rutas</h3>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                    <div className="p-3 bg-brand-purple/10 rounded-lg border border-brand-purple/20">
+                      <h4 className="font-medium text-brand-purple mb-1">Rutas Principales</h4>
+                      <p className="text-sm text-gray-600 mb-0">
+                        Secciones principales del sitio web
+                      </p>
+                    </div>
+                    <div className="p-3 bg-green-50 rounded-lg border border-green-200">
+                      <h4 className="font-medium text-green-700 mb-1">Tipos de Yoga</h4>
+                      <p className="text-sm text-gray-600 mb-0">
+                        Páginas detalladas para cada estilo de yoga
+                      </p>
+                    </div>
+                    <div className="p-3 bg-amber-50 rounded-lg border border-amber-200">
+                      <h4 className="font-medium text-amber-700 mb-1">Rutas SEO</h4>
+                      <p className="text-sm text-gray-600 mb-0">
+                        Páginas adicionales optimizadas para motores de búsqueda
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
                 <div className="not-prose rounded-xl overflow-hidden border border-gray-200 shadow-sm mt-6">
                   <div className="overflow-x-auto">
                     <table className="w-full text-sm">
                       <thead>
-                        <tr className="bg-gray-50 border-b border-gray-200">
-                          <th className="px-4 py-3 text-left font-medium text-gray-600">Ruta</th>
-                          <th className="px-4 py-3 text-left font-medium text-gray-600">Descripción</th>
-                          <th className="px-4 py-3 text-left font-medium text-gray-600">Archivo</th>
+                        <tr className="bg-brand-purple text-white border-b border-brand-purple/20">
+                          <th className="px-4 py-3 text-left font-medium">Rutas Principales</th>
+                          <th className="px-4 py-3 text-left font-medium">Descripción</th>
+                          <th className="px-4 py-3 text-left font-medium">Componentes</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr className="border-b border-gray-200 hover:bg-gray-50">
                           <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/</code></td>
                           <td className="px-4 py-3 align-top">Página de inicio</td>
-                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/page.tsx</code></td>
+                          <td className="px-4 py-3 align-top">
+                            <div className="space-y-1">
+                              <code className="block px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/page.tsx</code>
+                              <span className="text-xs text-gray-500">Incluye: HeroSection, YogaClassesSection, TestimonialsSection</span>
+                            </div>
+                          </td>
                         </tr>
                         <tr className="border-b border-gray-200 hover:bg-gray-50">
                           <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/about</code></td>
@@ -418,50 +473,187 @@ export default function DocsPage() {
                           <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/about/page.tsx</code></td>
                         </tr>
                         <tr className="border-b border-gray-200 hover:bg-gray-50">
-                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/yoga/**</code></td>
-                          <td className="px-4 py-3 align-top">Páginas de tipos de yoga</td>
-                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/yoga/[type]/page.tsx</code></td>
-                        </tr>
-                        <tr className="border-b border-gray-200 hover:bg-gray-50">
                           <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/terapias</code></td>
                           <td className="px-4 py-3 align-top">Información sobre terapias</td>
-                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/terapias/page.tsx</code></td>
+                          <td className="px-4 py-3 align-top">
+                            <div className="space-y-1">
+                              <code className="block px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/terapias/page.tsx</code>
+                              <code className="block px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/terapias/client-page.tsx</code>
+                            </div>
+                          </td>
                         </tr>
                         <tr className="border-b border-gray-200 hover:bg-gray-50">
                           <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/horarios-precios</code></td>
                           <td className="px-4 py-3 align-top">Horarios y precios</td>
-                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/horarios-precios/page.tsx</code></td>
+                          <td className="px-4 py-3 align-top">
+                            <div className="space-y-1">
+                              <code className="block px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/horarios-precios/page.tsx</code>
+                              <code className="block px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/horarios-precios/client-page.tsx</code>
+                              <span className="text-xs text-gray-500">Integración con GoogleCalendar</span>
+                            </div>
+                          </td>
                         </tr>
                         <tr className="border-b border-gray-200 hover:bg-gray-50">
                           <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/contacto</code></td>
                           <td className="px-4 py-3 align-top">Página de contacto</td>
-                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/contacto/page.tsx</code></td>
+                          <td className="px-4 py-3 align-top">
+                            <div className="space-y-1">
+                              <code className="block px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/contacto/page.tsx</code>
+                              <code className="block px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/contacto/client-page.tsx</code>
+                              <span className="text-xs text-gray-500">Integración con GoogleForm</span>
+                            </div>
+                          </td>
                         </tr>
                         <tr className="border-b border-gray-200 hover:bg-gray-50">
                           <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/noticias</code></td>
                           <td className="px-4 py-3 align-top">Noticias y actualizaciones</td>
-                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/noticias/page.tsx</code></td>
+                          <td className="px-4 py-3 align-top">
+                            <div className="space-y-1">
+                              <code className="block px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/noticias/page.tsx</code>
+                              <span className="text-xs text-gray-500">Integración con GoogleSites y feed estático de redes sociales</span>
+                            </div>
+                          </td>
                         </tr>
                         <tr className="border-b border-gray-200 hover:bg-gray-50">
                           <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/admin</code></td>
                           <td className="px-4 py-3 align-top">Panel de administración</td>
-                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/admin/page.tsx</code></td>
+                          <td className="px-4 py-3 align-top">
+                            <div className="space-y-1">
+                              <code className="block px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/admin/page.tsx</code>
+                              <span className="text-xs text-gray-500">Cliente: utiliza localStorage y settings-context</span>
+                            </div>
+                          </td>
                         </tr>
                         <tr className="border-b border-gray-200 hover:bg-gray-50">
                           <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/docs</code></td>
                           <td className="px-4 py-3 align-top">Esta documentación</td>
-                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/docs/page.tsx</code></td>
+                          <td className="px-4 py-3 align-top">
+                            <div className="space-y-1">
+                              <code className="block px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/docs/page.tsx</code>
+                              <code className="block px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/docs/layout.tsx</code>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div className="not-prose rounded-xl overflow-hidden border border-gray-200 shadow-sm mt-8">
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-green-600 text-white border-b border-green-700">
+                          <th className="px-4 py-3 text-left font-medium">Rutas de Yoga</th>
+                          <th className="px-4 py-3 text-left font-medium">Descripción</th>
+                          <th className="px-4 py-3 text-left font-medium">Componentes</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b border-gray-200 hover:bg-gray-50">
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/yoga</code></td>
+                          <td className="px-4 py-3 align-top">Página general de yoga</td>
+                          <td className="px-4 py-3 align-top">
+                            <div className="space-y-1">
+                              <code className="block px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/yoga/page.tsx</code>
+                              <span className="text-xs text-gray-500">Incluye: YogaStylesSection</span>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr className="border-b border-gray-200 hover:bg-gray-50">
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/yoga/hatha-yoga</code></td>
+                          <td className="px-4 py-3 align-top">Hatha Yoga</td>
+                          <td className="px-4 py-3 align-top">
+                            <div className="space-y-1">
+                              <code className="block px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/yoga/hatha-yoga/page.tsx</code>
+                              <code className="block px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/yoga/hatha-yoga/client-page.tsx</code>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr className="border-b border-gray-200 hover:bg-gray-50">
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/yoga/nidra-yoga-meditacion</code></td>
+                          <td className="px-4 py-3 align-top">Yoga Nidra y Meditación</td>
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/yoga/nidra-yoga-meditacion/page.tsx</code></td>
+                        </tr>
+                        <tr className="border-b border-gray-200 hover:bg-gray-50">
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/yoga/yin-yoga</code></td>
+                          <td className="px-4 py-3 align-top">Yin Yoga</td>
+                          <td className="px-4 py-3 align-top">
+                            <div className="space-y-1">
+                              <code className="block px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/yoga/yin-yoga/page.tsx</code>
+                              <code className="block px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/yoga/yin-yoga/client-page.tsx</code>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr className="border-b border-gray-200 hover:bg-gray-50">
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/yoga/daoyin-yoga</code></td>
+                          <td className="px-4 py-3 align-top">Daoyin Yoga</td>
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/yoga/daoyin-yoga/page.tsx</code></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div className="not-prose rounded-xl overflow-hidden border border-gray-200 shadow-sm mt-8">
+                  <div className="overflow-x-auto">
+                    <table className="w-full text-sm">
+                      <thead>
+                        <tr className="bg-amber-500 text-white border-b border-amber-600">
+                          <th className="px-4 py-3 text-left font-medium">Rutas SEO & Legales</th>
+                          <th className="px-4 py-3 text-left font-medium">Descripción</th>
+                          <th className="px-4 py-3 text-left font-medium">Archivo</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="border-b border-gray-200 hover:bg-gray-50">
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/hatha-yoga-ourense</code></td>
+                          <td className="px-4 py-3 align-top">SEO: Hatha Yoga en Ourense</td>
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/hatha-yoga-ourense/page.tsx</code></td>
+                        </tr>
+                        <tr className="border-b border-gray-200 hover:bg-gray-50">
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/centro-de-yoga-ourense</code></td>
+                          <td className="px-4 py-3 align-top">SEO: Centro de Yoga en Ourense</td>
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/centro-de-yoga-ourense/page.tsx</code></td>
+                        </tr>
+                        <tr className="border-b border-gray-200 hover:bg-gray-50">
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/yoga-para-principiantes-ourense</code></td>
+                          <td className="px-4 py-3 align-top">SEO: Yoga para Principiantes</td>
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/yoga-para-principiantes-ourense/page.tsx</code></td>
+                        </tr>
+                        <tr className="border-b border-gray-200 hover:bg-gray-50">
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/ofertas-yoga-ourense</code></td>
+                          <td className="px-4 py-3 align-top">SEO: Ofertas de Yoga</td>
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/ofertas-yoga-ourense/page.tsx</code></td>
+                        </tr>
+                        <tr className="border-b border-gray-200 hover:bg-gray-50">
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/aviso-legal</code></td>
+                          <td className="px-4 py-3 align-top">Aviso Legal</td>
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/aviso-legal/page.tsx</code></td>
+                        </tr>
+                        <tr className="border-b border-gray-200 hover:bg-gray-50">
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">/politica-privacidad</code></td>
+                          <td className="px-4 py-3 align-top">Política de Privacidad</td>
+                          <td className="px-4 py-3 align-top"><code className="px-1.5 py-0.5 rounded bg-gray-100 text-gray-800">src/app/politica-privacidad/page.tsx</code></td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                 </div>
                 
-                <div className="mt-6 p-4 rounded-lg bg-yellow-50 border border-yellow-200">
+                <div className="mt-6 p-4 rounded-lg bg-gray-50 border border-gray-200">
+                  <h4 className="font-medium text-gray-700 mb-2">Información Técnica Adicional</h4>
+                  <ul className="list-disc list-inside space-y-1 text-sm text-gray-600">
+                    <li>Todas las rutas usan el mismo <code className="px-1 py-0.5 rounded bg-gray-100 text-gray-800">layout.tsx</code> compartido</li>
+                    <li>Los archivos <code className="px-1 py-0.5 rounded bg-gray-100 text-gray-800">client-page.tsx</code> son componentes con "use client" para funcionalidad interactiva</li>
+                    <li>La mayoría de páginas SEO son redirecciones internas a las rutas principales</li>
+                    <li>Las rutas <code className="px-1 py-0.5 rounded bg-gray-100 text-gray-800">/robots.txt</code> y <code className="px-1 py-0.5 rounded bg-gray-100 text-gray-800">/sitemap.xml</code> son generadas automáticamente</li>
+                  </ul>
+                </div>
+
+                <div className="mt-6 p-4 rounded-lg bg-amber-50 border border-amber-200">
                   <p className="text-sm text-amber-800 mb-0">
-                    <strong>Nota:</strong> Además de estas rutas principales, el sitio incluye múltiples páginas de aterrizaje SEO, como 
-                    <code className="mx-1 px-1 py-0.5 rounded bg-yellow-100 text-amber-800">/centro-de-yoga-ourense</code>, 
-                    <code className="mx-1 px-1 py-0.5 rounded bg-yellow-100 text-amber-800">/yoga-para-principiantes-ourense</code>, etc.
+                    <strong>Nota:</strong> Existen más de 20 rutas adicionales para SEO no listadas en esta tabla. Todas son similares a las mostradas y siguen patrones de nombres como <code className="mx-1 px-1 py-0.5 rounded bg-amber-100 text-amber-800">/yoga-terapeutico-ourense</code>, <code className="mx-1 px-1 py-0.5 rounded bg-amber-100 text-amber-800">/escuela-de-yoga-ourense</code>, etc.
                   </p>
                 </div>
               </section>
